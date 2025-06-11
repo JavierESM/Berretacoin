@@ -251,7 +251,6 @@ public class BerretacoinTests {
         };
 
         berretacoin.agregarBloque(transacciones);
-        
         berretacoin.hackearTx();
 
         assertEquals(berretacoin.maximoTenedor(), 3);

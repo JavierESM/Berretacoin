@@ -1,10 +1,14 @@
 package aed;
 
-public class Usuario implements Comparable<Usuario>, metodosHeap{
+import aed.Heap.HandleHeap;
+import aed.Array.Handle;
+
+public class Usuario implements Comparable<Usuario>{
     private int id;
     private int monto;
-    private Heap<Usuario>.Handle handleDelheap;
-    private ListaEnlazada<Usuario>.Handle handleDeLista;
+    private Heap<Usuario>.HandleHeap handleDelheap;
+    private Array<Usuario>.Handle handleDelArray;
+    
 
     public Usuario (int id, int monto) {
         this.id = id;
@@ -20,21 +24,38 @@ public class Usuario implements Comparable<Usuario>, metodosHeap{
     }
     
     public void setearMonto(int nuevoMonto) {
+        System.out.println("Actualizando monto de usuario " + id + " de " + this.monto + " a " + nuevoMonto);
+
         this.monto = nuevoMonto;
+        System.out.println(this.monto);
     }
 
-     @Override
-    public void setearIndiceHeap(int i) {
-        this.indiceHeap = i;
+    public void setearHandleHeapU(Heap<Usuario>.HandleHeap handle) {
+        this.handleDelheap = handle;
+    }
+
+    public void setearHandleArray(Array<Usuario>.Handle handle) {
+        this.handleDelArray = handle;
+    }
+
+    public HandleHeap obtenerHandleHeapU() {
+        return this.handleDelheap;
+    }
+
+    public Handle obtenerHandleArray() {
+        return this.handleDelArray;
     }
 
     @Override
-    public int obtenerIndiceHeap() {
-        return this.indiceHeap;
-    }
+        public int compareTo(Usuario otro) {
+            if (this.monto != otro.monto) {
+                return Integer.compare(otro.monto, this.monto); 
+            }
+            return Integer.compare(this.id, otro.id); 
+        }
 
     @Override
-    public int compareTo(Usuario otro) {
-        return Integer.compare(this.id, otro.id);  
-    }
+        public String toString() {
+            return "Usuario{id=" + id + ", monto=" + monto + "}";
+        }
 }

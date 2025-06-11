@@ -1,13 +1,16 @@
 package aed;
 
-import java.util.ArrayList;
+public class Bloque {
+    public Heap<Transaccion> transaccionesHeap;
+    public ListaEnlazada<Transaccion> transaccionesLista;
 
-public class Bloque<T> {
-
-    private ArrayList<T> bloque;
-
-    public Bloque(){
-        this.bloque = new ArrayList<T>();
+    public Bloque() {
+        transaccionesHeap = new Heap<>();
+        transaccionesLista = new ListaEnlazada<>();
     }
 
+    public Bloque(Heap<Transaccion> heap, ListaEnlazada<Transaccion> lista) {
+        this.transaccionesHeap = heap;
+        this.transaccionesLista = lista;
+    }
 }

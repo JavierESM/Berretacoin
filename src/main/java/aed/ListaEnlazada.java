@@ -3,6 +3,7 @@ package aed;
 public class ListaEnlazada<T> {
     private Nodo cabeza;
     private Nodo cola;
+    private int longitud;
 
     private class Nodo {
         T dato;
@@ -31,30 +32,16 @@ public class ListaEnlazada<T> {
     public ListaEnlazada() {
         cabeza = null;
         cola = null;
+        longitud = 0;
     }
 
     public int longitud() {
-        int contador = 0;
-        for (Nodo actual = cabeza; actual != null; actual = actual.siguiente) {
-            contador++;
-        }
-        return contador;
+        return longitud;
     }
 
-    public void agregarAdelante(T elem) {
+    public Handle agregarAtras(T elem) {
         Nodo otro = new Nodo(elem);
-        otro.siguiente = cabeza;
-        if (cabeza != null) {
-            cabeza.anterior = otro;
-        }
-        cabeza = otro;
-        if (cola == null) {
-            cola = otro;
-        }
-    }
-
-    public void agregarAtras(T elem) {
-        Nodo otro = new Nodo(elem);
+        Handle nuevoHandle = new Handle(otro);
         if (cabeza == null) {
             cabeza = otro;
             cola = otro;
@@ -67,8 +54,11 @@ public class ListaEnlazada<T> {
             actual.siguiente = otro;
             cola = otro;
         }
+        longitud++;
+        return nuevoHandle;
     }
 
+   
     public T obtener(int i) {
         if (i < 0 || i >= longitud()) {
             throw new IndexOutOfBoundsException("El índice se fué de rango");
@@ -80,41 +70,25 @@ public class ListaEnlazada<T> {
         return actual.dato;
     }
 
-    public void eliminar(int i) {
-        if (cabeza == null) {
-            return;
-        }
-        Nodo actual = cabeza;
-        for (int j = 0; actual != null && j < i; j++) {
-            actual = actual.siguiente;
-        }
+    public void eliminar(Handle h) {
+        Nodo actual = h.nodoApuntado;
         if (actual == null) {
             return;
-        }
+            }
         if (actual.anterior != null) {
             actual.anterior.siguiente = actual.siguiente;
-        }
+            }
         if (actual.siguiente != null) {
             actual.siguiente.anterior = actual.anterior;
-        }
+            }
         if (cabeza == actual) {
             cabeza = actual.siguiente;
-        }
+            }
         if (cola == actual) {
             cola = actual.anterior;
+            }
+        h.nodoApuntado = null;
         }
-    }
-
-    public void modificarPosicion(int indice, T elem) {
-        if (indice < 0 || indice >= longitud()) {
-            throw new IndexOutOfBoundsException("El índice se fue de rango");
-        }
-        Nodo actual = cabeza;
-        for (int i = 0; actual != null && i < indice; i++) {
-            actual = actual.siguiente;
-        }
-        actual.dato = elem;
-    }
 
     public ListaEnlazada(ListaEnlazada<T> lista) {
         this();
@@ -125,27 +99,11 @@ public class ListaEnlazada<T> {
         }
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("[");
-        Nodo actual = cabeza;
-        while (actual != null) {
-            sb.append(actual.dato);
-            actual = actual.siguiente;
-            if (actual != null) {
-                sb.append(", ");
-            }
-        }
-        sb.append("]");
-        return sb.toString();
-    }
-
     public Iterador<T> iterador() {
     return new ListaIterador();
 }
 
-private class ListaIterador implements Iterador<T> {
+public class ListaIterador implements Iterador<T> {
     private Nodo actual;
     private Nodo ultimoReturn;
 
