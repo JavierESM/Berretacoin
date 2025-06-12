@@ -52,7 +52,7 @@ public class Heap<T extends Comparable<T>> {
         return nuevoHandle;
     }
 
-    public void editar(HandleHeap handle, T nuevoDato, T viejoDato) {
+    public void editar(HandleHeap handle) {
     
             System.out.println("Llamando siftUp y siftDown (igualdad)...");
             siftUp(handle.nodoApuntado);
@@ -71,6 +71,8 @@ public class Heap<T extends Comparable<T>> {
         if (raiz == null) {
             return null;
         }
+        System.out.println("=== extraerMaximo() → root.id=" + raiz.dato
+                       + " monto=" + raiz.dato + " ===");
 
         HandleHeap handleMaximo = raiz.aSiMismo;
 
@@ -118,7 +120,7 @@ public class Heap<T extends Comparable<T>> {
 
 
     private void siftUp(Nodo nodo) {
-        while (nodo.padre != null && nodo.dato.compareTo(nodo.padre.dato) > 0) {
+        while (nodo.padre != null && nodo.dato.compareTo(nodo.padre.dato) < 0) {
             intercambiar(nodo, nodo.padre);
             nodo = nodo.padre;
         }
@@ -128,11 +130,11 @@ public class Heap<T extends Comparable<T>> {
         while (true) {
             Nodo mayor = nodo;
 
-            if (nodo.hijoIzquierdo != null && nodo.hijoIzquierdo.dato.compareTo(mayor.dato) > 0) {
+            if (nodo.hijoIzquierdo != null && nodo.hijoIzquierdo.dato.compareTo(mayor.dato) < 0) {
                 mayor = nodo.hijoIzquierdo;
             }
 
-            if (nodo.hijoDerecho != null && nodo.hijoDerecho.dato.compareTo(mayor.dato) > 0) {
+            if (nodo.hijoDerecho != null && nodo.hijoDerecho.dato.compareTo(mayor.dato) < 0) {
                 mayor = nodo.hijoDerecho;
             }
 
@@ -144,6 +146,7 @@ public class Heap<T extends Comparable<T>> {
             }
         }
     }
+
 
     private Nodo dondeInsertar(Nodo actual) {
         actual.tamañoSubarbol++;

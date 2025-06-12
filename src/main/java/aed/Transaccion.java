@@ -56,16 +56,21 @@ public class Transaccion implements Comparable<Transaccion> {
         return this.handleDeLL;
     }
 
+    
     @Override
-    public int compareTo(Transaccion otro) {
-        return Integer.compare(this.monto, otro.monto);  
-    }
+        public int compareTo(Transaccion otro) {
+            if (this.monto != otro.monto) {
+                return Integer.compare(otro.monto, this.monto); 
+            }
+            return Integer.compare(otro.id, this.id); 
+        }
 
-    @Override
-    public boolean equals(Object transaccion) {
-        if (this == transaccion) return true;
-        if (!(transaccion instanceof Transaccion)) return false;
-        Transaccion t = (Transaccion) transaccion;
-        return this.id == t.id;
-    }
+            @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof Transaccion)) return false;
+            Transaccion t = (Transaccion) o;
+            return this.id == t.id;
+        }
+
 }

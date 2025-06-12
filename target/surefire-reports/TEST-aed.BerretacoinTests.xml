@@ -1,0 +1,5221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="aed.BerretacoinTests" time="0.632" tests="15" errors="0" skipped="0" failures="8">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\javie\Downloads\tp2 (1)\estudiantes\target\test-classes;C:\Users\javie\Downloads\tp2 (1)\estudiantes\target\classes;C:\Users\javie\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\javie\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\javie\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\javie\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\javie\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\javie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\javie\AppData\Local\Temp\surefire663887478475911447\surefirebooter-20250612143635730_3.jar C:\Users\javie\AppData\Local\Temp\surefire663887478475911447 2025-06-12T14-36-35_574-jvmRun1 surefire-20250612143635730_1tmp surefire_0-20250612143635730_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\javie\Downloads\tp2 (1)\estudiantes\target\test-classes;C:\Users\javie\Downloads\tp2 (1)\estudiantes\target\classes;C:\Users\javie\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\javie\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\javie\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\javie\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\javie\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\javie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\javie"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\javie\Downloads\tp2 (1)\estudiantes"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\javie\AppData\Local\Temp\surefire663887478475911447\surefirebooter-20250612143635730_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="user.name" value="javie"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\javie\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\javie\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="C:\Users\javie\Downloads\tp2 (1)\estudiantes"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\javie\Downloads\apache-maven-3.9.8-bin\apache-maven-3.9.8\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Users\javie\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\javie\AppData\Local\Programs\Python\Python311\;C:\Users\javie\AppData\Roaming\local\bin;C:\Users\javie\AppData\Local\Microsoft\WindowsApps;C:\Users\javie\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\javie\AppData\Roaming\npm;C:\Users\javie\AppData\Roaming\cabal\bin;C:\tools\ghc-9.6.1\bin;C:\Users\javie\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-22\bin;C:\Users\javie\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.2+9-70"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="hackeoUnicaTransaccion" classname="aed.BerretacoinTests" time="0.113">
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 1 de 0 a 1
+1
+Actualizando vendedor 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+=== extraerMaximo() → root.id=aed.Transaccion@3e7dd664 monto=aed.Transaccion@3e7dd664 ===
+Transacciones restantes en el último bloque:
+]]></system-out>
+  </testcase>
+  <testcase name="maximoTenedorEsElMinimoCuandoNuevo" classname="aed.BerretacoinTests" time="0.016">
+    <failure message="expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at aed.BerretacoinTests.maximoTenedorEsElMinimoCuandoNuevo(BerretacoinTests.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Máximo del heap: Usuario{id=0, monto=0}
+]]></system-out>
+  </testcase>
+  <testcase name="hackeoTotalDeBloque" classname="aed.BerretacoinTests" time="0.025">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at aed.BerretacoinTests.hackeoTotalDeBloque(BerretacoinTests.java:272)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 1 de 0 a 1
+1
+Actualizando vendedor 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 1 a 0
+0
+Actualizando comprador 1 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Intercambiando nodo aed.Transaccion@495b0487 con nodo aed.Transaccion@55dfcc6
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Intercambiando nodo aed.Transaccion@222eb8aa con nodo aed.Transaccion@495b0487
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 2
+=== extraerMaximo() → root.id=aed.Transaccion@222eb8aa monto=aed.Transaccion@222eb8aa ===
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=2, compr=2, vend=3, m=1]
+]]></system-out>
+  </testcase>
+  <testcase name="empatesEnTransaccionMayorValor" classname="aed.BerretacoinTests" time="0.022">
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 1 de 0 a 1
+1
+Actualizando vendedor 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 1 a 0
+0
+Actualizando comprador 1 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Intercambiando nodo aed.Transaccion@2a76840c con nodo aed.Transaccion@71454b9d
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Intercambiando nodo aed.Transaccion@eda25e5 con nodo aed.Transaccion@2a76840c
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=4, monto=0}
+Actualizando monto de usuario 3 de 1 a 0
+0
+Actualizando comprador 3 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 0 a 1
+1
+Actualizando vendedor 4 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Intercambiando nodo aed.Transaccion@7cf6a5f9 con nodo aed.Transaccion@71454b9d
+Intercambiando nodo aed.Transaccion@7cf6a5f9 con nodo aed.Transaccion@eda25e5
+Antes de la transacción:
+Comprador: Usuario{id=4, monto=1}
+Vendedor: Usuario{id=5, monto=0}
+Actualizando monto de usuario 4 de 1 a 0
+0
+Actualizando comprador 4 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=2, monto=0}
+Actualizando monto de usuario 5 de 0 a 1
+1
+Actualizando vendedor 5 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=5, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=5, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=4, monto=0}
+Vendedor: Usuario{id=5, monto=1}
+Intercambiando nodo aed.Transaccion@623e088f con nodo aed.Transaccion@2a76840c
+Intercambiando nodo aed.Transaccion@623e088f con nodo aed.Transaccion@7cf6a5f9
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 2
+Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 3
+Tx: comprador=4, vendedor=5, monto=1, id de transaccion= 4
+]]></system-out>
+  </testcase>
+  <testcase name="empatesEnMaximoTenedor" classname="aed.BerretacoinTests" time="0.02">
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 1 de 0 a 1
+1
+Actualizando vendedor 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 1 a 0
+0
+Actualizando comprador 1 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Intercambiando nodo aed.Transaccion@5023bb8b con nodo aed.Transaccion@5d5f10b2
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=3, monto=1}
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=1, monto=0}
+Actualizando monto de usuario 1 de 0 a 1
+1
+Actualizando vendedor 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=3, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Intercambiando nodo aed.Transaccion@74c79fa2 con nodo aed.Transaccion@1e0f9063
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=3, monto=1, id de transaccion= 2
+Tx: comprador=2, vendedor=1, monto=1, id de transaccion= 3
+Máximo del heap: Usuario{id=1, monto=1}
+]]></system-out>
+  </testcase>
+  <testcase name="agregarVariosBloques" classname="aed.BerretacoinTests" time="0.01">
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Intercambiando nodo aed.Transaccion@53bd8fca con nodo aed.Transaccion@7642df8f
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=4, monto=0}
+Actualizando monto de usuario 3 de 1 a 0
+0
+Actualizando comprador 3 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 0 a 1
+1
+Actualizando vendedor 4 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Intercambiando nodo aed.Transaccion@3e30646a con nodo aed.Transaccion@53bd8fca
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
+Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 2
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Actualizando monto de usuario 4 de 1 a 2
+2
+Actualizando vendedor 4 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=4, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=4, monto=2}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 2 a 0
+0
+Actualizando comprador 4 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 0 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=4, monto=0}
+Vendedor: Usuario{id=1, monto=2}
+Intercambiando nodo aed.Transaccion@5cde6747 con nodo aed.Transaccion@63a270c9
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 2 a 1
+1
+Actualizando comprador 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=1}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=4, monto=1, id de transaccion= 0
+Tx: comprador=4, vendedor=1, monto=2, id de transaccion= 1
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 2
+Máximo del heap: Usuario{id=1, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Actualizando monto de usuario 1 de 1 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=1}
+Actualizando monto de usuario 1 de 2 a 0
+0
+Actualizando comprador 1 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=2, monto=1}
+Actualizando monto de usuario 2 de 1 a 3
+3
+Actualizando vendedor 2 con nuevo monto 3
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=1, monto=0}
+Vendedor: Usuario{id=2, monto=3}
+Intercambiando nodo aed.Transaccion@37c7595 con nodo aed.Transaccion@3ed242a4
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=3}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 3 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 3
+3
+Actualizando vendedor 3 con nuevo monto 3
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=3}
+Intercambiando nodo aed.Transaccion@1199fe66 con nodo aed.Transaccion@37c7595
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=3}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 3 de 3 a 1
+1
+Actualizando comprador 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 1 de 0 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=3, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=1, monto=2}
+Intercambiando nodo aed.Transaccion@614df0a4 con nodo aed.Transaccion@3ed242a4
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 2 a 1
+1
+Actualizando comprador 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=1}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 1 a 2
+2
+Actualizando vendedor 3 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=2} con nodo Usuario{id=1, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=2}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=2, id de transaccion= 1
+Tx: comprador=2, vendedor=3, monto=3, id de transaccion= 2
+Tx: comprador=3, vendedor=1, monto=2, id de transaccion= 3
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 4
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 5
+Máximo del heap: Usuario{id=3, monto=2}
+]]></system-out>
+  </testcase>
+  <testcase name="multiplesBloquesPequenos" classname="aed.BerretacoinTests" time="0.018">
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 1 de 0 a 1
+1
+Actualizando vendedor 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 1 a 0
+0
+Actualizando comprador 1 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Intercambiando nodo aed.Transaccion@2d96543c con nodo aed.Transaccion@73a2e526
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Actualizando monto de usuario 2 de 1 a 2
+2
+Actualizando vendedor 2 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=2}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 2 a 1
+1
+Actualizando comprador 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=1}
+Intercambiando nodo aed.Transaccion@7d64e326 con nodo aed.Transaccion@13f95696
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Actualizando monto de usuario 3 de 1 a 2
+2
+Actualizando vendedor 3 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=2} con nodo Usuario{id=2, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=3, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=2}
+Vendedor: Usuario{id=4, monto=0}
+Actualizando monto de usuario 3 de 2 a 1
+1
+Actualizando comprador 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=2, monto=1}
+Actualizando monto de usuario 4 de 0 a 1
+1
+Actualizando vendedor 4 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=4, monto=1}
+Intercambiando nodo aed.Transaccion@cd1d761 con nodo aed.Transaccion@68be8808
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=3, monto=1, id de transaccion= 0
+Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Actualizando monto de usuario 4 de 1 a 2
+2
+Actualizando vendedor 4 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=2} con nodo Usuario{id=2, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=4, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=4, monto=2}
+Vendedor: Usuario{id=5, monto=0}
+Actualizando monto de usuario 4 de 2 a 1
+1
+Actualizando comprador 4 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=1}
+Actualizando monto de usuario 5 de 0 a 1
+1
+Actualizando vendedor 5 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=4, monto=1}
+Vendedor: Usuario{id=5, monto=1}
+Intercambiando nodo aed.Transaccion@32193bea con nodo aed.Transaccion@6b8d96d9
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=4, monto=1, id de transaccion= 0
+Tx: comprador=4, vendedor=5, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=5, monto=1}
+Actualizando monto de usuario 5 de 1 a 2
+2
+Actualizando vendedor 5 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=5, monto=2} con nodo Usuario{id=3, monto=1}
+Intercambiando nodo Usuario{id=5, monto=2} con nodo Usuario{id=2, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=5, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=5, monto=2}
+Vendedor: Usuario{id=6, monto=0}
+Actualizando monto de usuario 5 de 2 a 1
+1
+Actualizando comprador 5 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=5, monto=1} con nodo Usuario{id=2, monto=1}
+Intercambiando nodo Usuario{id=5, monto=1} con nodo Usuario{id=3, monto=1}
+Actualizando monto de usuario 6 de 0 a 1
+1
+Actualizando vendedor 6 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=5, monto=1}
+Vendedor: Usuario{id=6, monto=1}
+Intercambiando nodo aed.Transaccion@69653e16 con nodo aed.Transaccion@758705fa
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=5, monto=1, id de transaccion= 0
+Tx: comprador=5, vendedor=6, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=6, monto=1}
+Actualizando monto de usuario 6 de 1 a 2
+2
+Actualizando vendedor 6 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=6, monto=2} con nodo Usuario{id=4, monto=1}
+Intercambiando nodo Usuario{id=6, monto=2} con nodo Usuario{id=2, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=6, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=6, monto=2}
+Vendedor: Usuario{id=7, monto=0}
+Actualizando monto de usuario 6 de 2 a 1
+1
+Actualizando comprador 6 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=6, monto=1} con nodo Usuario{id=2, monto=1}
+Intercambiando nodo Usuario{id=6, monto=1} con nodo Usuario{id=4, monto=1}
+Actualizando monto de usuario 7 de 0 a 1
+1
+Actualizando vendedor 7 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=7, monto=1} con nodo Usuario{id=1, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=6, monto=1}
+Vendedor: Usuario{id=7, monto=1}
+Intercambiando nodo aed.Transaccion@ebaa6cb con nodo aed.Transaccion@906d29b
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=6, monto=1, id de transaccion= 0
+Tx: comprador=6, vendedor=7, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=7, monto=1}
+Actualizando monto de usuario 7 de 1 a 2
+2
+Actualizando vendedor 7 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=7, monto=2} con nodo Usuario{id=3, monto=1}
+Intercambiando nodo Usuario{id=7, monto=2} con nodo Usuario{id=2, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=7, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=7, monto=2}
+Vendedor: Usuario{id=8, monto=0}
+Actualizando monto de usuario 7 de 2 a 1
+1
+Actualizando comprador 7 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=7, monto=1} con nodo Usuario{id=2, monto=1}
+Intercambiando nodo Usuario{id=7, monto=1} con nodo Usuario{id=3, monto=1}
+Actualizando monto de usuario 8 de 0 a 1
+1
+Actualizando vendedor 8 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=8, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=7, monto=1}
+Vendedor: Usuario{id=8, monto=1}
+Intercambiando nodo aed.Transaccion@49d3c823 con nodo aed.Transaccion@436bc36
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=7, monto=1, id de transaccion= 0
+Tx: comprador=7, vendedor=8, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=8, monto=1}
+Actualizando monto de usuario 8 de 1 a 2
+2
+Actualizando vendedor 8 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=8, monto=2} con nodo Usuario{id=4, monto=1}
+Intercambiando nodo Usuario{id=8, monto=2} con nodo Usuario{id=2, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=8, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=8, monto=2}
+Vendedor: Usuario{id=9, monto=0}
+Actualizando monto de usuario 8 de 2 a 1
+1
+Actualizando comprador 8 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=8, monto=1} con nodo Usuario{id=2, monto=1}
+Intercambiando nodo Usuario{id=8, monto=1} con nodo Usuario{id=4, monto=1}
+Actualizando monto de usuario 9 de 0 a 1
+1
+Actualizando vendedor 9 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=8, monto=1}
+Vendedor: Usuario{id=9, monto=1}
+Intercambiando nodo aed.Transaccion@5fe1ce85 con nodo aed.Transaccion@604c5de8
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=8, monto=1, id de transaccion= 0
+Tx: comprador=8, vendedor=9, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=9, monto=1}
+Actualizando monto de usuario 9 de 1 a 2
+2
+Actualizando vendedor 9 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=9, monto=2} con nodo Usuario{id=5, monto=1}
+Intercambiando nodo Usuario{id=9, monto=2} con nodo Usuario{id=3, monto=1}
+Intercambiando nodo Usuario{id=9, monto=2} con nodo Usuario{id=2, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=9, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=9, monto=2}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 9 de 2 a 1
+1
+Actualizando comprador 9 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=9, monto=1} con nodo Usuario{id=2, monto=1}
+Intercambiando nodo Usuario{id=9, monto=1} con nodo Usuario{id=3, monto=1}
+Intercambiando nodo Usuario{id=9, monto=1} con nodo Usuario{id=5, monto=1}
+Actualizando monto de usuario 1 de 0 a 1
+1
+Actualizando vendedor 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=7, monto=1}
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=3, monto=1}
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=2, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=9, monto=1}
+Vendedor: Usuario{id=1, monto=1}
+Intercambiando nodo aed.Transaccion@37091312 con nodo aed.Transaccion@66fdec9
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=9, monto=1, id de transaccion= 0
+Tx: comprador=9, vendedor=1, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=1, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Actualizando monto de usuario 1 de 1 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=1}
+Actualizando monto de usuario 1 de 2 a 1
+1
+Actualizando comprador 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 2 de 1 a 2
+2
+Actualizando vendedor 2 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=2} con nodo Usuario{id=1, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=2}
+Intercambiando nodo aed.Transaccion@57abad67 con nodo aed.Transaccion@550a1967
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=2}
+]]></system-out>
+  </testcase>
+  <testcase name="hackearVariasVeces" classname="aed.BerretacoinTests" time="0.006">
+    <failure message="expected: &lt;3&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at aed.BerretacoinTests.hackearVariasVeces(BerretacoinTests.java:349)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Intercambiando nodo aed.Transaccion@2a640157 con nodo aed.Transaccion@52851b44
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=4, monto=0}
+Actualizando monto de usuario 3 de 1 a 0
+0
+Actualizando comprador 3 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 0 a 1
+1
+Actualizando vendedor 4 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Intercambiando nodo aed.Transaccion@584f54e6 con nodo aed.Transaccion@2a640157
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
+Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 2
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Actualizando monto de usuario 4 de 1 a 2
+2
+Actualizando vendedor 4 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=4, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=4, monto=2}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 2 a 0
+0
+Actualizando comprador 4 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 0 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=4, monto=0}
+Vendedor: Usuario{id=1, monto=2}
+Intercambiando nodo aed.Transaccion@5d8bafa9 con nodo aed.Transaccion@576f63f6
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 2 a 1
+1
+Actualizando comprador 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=1}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=4, monto=1, id de transaccion= 0
+Tx: comprador=4, vendedor=1, monto=2, id de transaccion= 1
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 2
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Actualizando monto de usuario 1 de 1 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=1}
+Actualizando monto de usuario 1 de 2 a 0
+0
+Actualizando comprador 1 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=2, monto=1}
+Actualizando monto de usuario 2 de 1 a 3
+3
+Actualizando vendedor 2 con nuevo monto 3
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=1, monto=0}
+Vendedor: Usuario{id=2, monto=3}
+Intercambiando nodo aed.Transaccion@2dca0d64 con nodo aed.Transaccion@f80945f
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=3}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 3 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 3
+3
+Actualizando vendedor 3 con nuevo monto 3
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=3}
+Intercambiando nodo aed.Transaccion@ff684e1 con nodo aed.Transaccion@2dca0d64
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=3}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 3 de 3 a 1
+1
+Actualizando comprador 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 1 de 0 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=3, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=1, monto=2}
+Intercambiando nodo aed.Transaccion@23aa363a con nodo aed.Transaccion@f80945f
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 2 a 1
+1
+Actualizando comprador 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=1}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 1 a 2
+2
+Actualizando vendedor 3 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=2} con nodo Usuario{id=1, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=2}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=2, id de transaccion= 1
+Tx: comprador=2, vendedor=3, monto=3, id de transaccion= 2
+Tx: comprador=3, vendedor=1, monto=2, id de transaccion= 3
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 4
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 5
+=== extraerMaximo() → root.id=aed.Transaccion@ff684e1 monto=aed.Transaccion@ff684e1 ===
+Intercambiando nodo aed.Transaccion@5ef6ae06 con nodo aed.Transaccion@23aa363a
+Intercambiando nodo aed.Transaccion@5ef6ae06 con nodo aed.Transaccion@55dfebeb
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=1, compr=1, vend=2, m=2] [id=2, compr=2, vend=3, m=3] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
+=== extraerMaximo() → root.id=aed.Transaccion@23aa363a monto=aed.Transaccion@23aa363a ===
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=2, compr=2, vend=3, m=3] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
+Máximo del heap: Usuario{id=3, monto=2}
+]]></system-out>
+  </testcase>
+  <testcase name="agregarBloque" classname="aed.BerretacoinTests" time="0.003">
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Intercambiando nodo aed.Transaccion@5d9b7a8a con nodo aed.Transaccion@1e8ce150
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=4, monto=0}
+Actualizando monto de usuario 3 de 1 a 0
+0
+Actualizando comprador 3 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 0 a 1
+1
+Actualizando vendedor 4 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Intercambiando nodo aed.Transaccion@604f2bd2 con nodo aed.Transaccion@5d9b7a8a
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
+Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 2
+Máximo del heap: Usuario{id=4, monto=1}
+]]></system-out>
+  </testcase>
+  <testcase name="bloqueConSoloTransaccionDeCreacion" classname="aed.BerretacoinTests" time="0">
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=3, monto=1, id de transaccion= 0
+Máximo del heap: Usuario{id=3, monto=1}
+]]></system-out>
+  </testcase>
+  <testcase name="hackearConVariosBloques" classname="aed.BerretacoinTests" time="0.017">
+    <failure message="expected: &lt;3&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at aed.BerretacoinTests.hackearConVariosBloques(BerretacoinTests.java:322)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Intercambiando nodo aed.Transaccion@1d3ac898 con nodo aed.Transaccion@1b73be9f
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=4, monto=0}
+Actualizando monto de usuario 3 de 1 a 0
+0
+Actualizando comprador 3 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 0 a 1
+1
+Actualizando vendedor 4 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Intercambiando nodo aed.Transaccion@628c4ac0 con nodo aed.Transaccion@1d3ac898
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
+Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 2
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Actualizando monto de usuario 4 de 1 a 2
+2
+Actualizando vendedor 4 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=4, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=4, monto=2}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 2 a 0
+0
+Actualizando comprador 4 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 0 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=4, monto=0}
+Vendedor: Usuario{id=1, monto=2}
+Intercambiando nodo aed.Transaccion@7b84fcf8 con nodo aed.Transaccion@30b19518
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 2 a 1
+1
+Actualizando comprador 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=1}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=4, monto=1, id de transaccion= 0
+Tx: comprador=4, vendedor=1, monto=2, id de transaccion= 1
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 2
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Actualizando monto de usuario 1 de 1 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=2}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=1}
+Actualizando monto de usuario 1 de 2 a 0
+0
+Actualizando comprador 1 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=2, monto=1}
+Actualizando monto de usuario 2 de 1 a 3
+3
+Actualizando vendedor 2 con nuevo monto 3
+Llamando siftUp y siftDown (igualdad)...
+Después de la transacción:
+Comprador: Usuario{id=1, monto=0}
+Vendedor: Usuario{id=2, monto=3}
+Intercambiando nodo aed.Transaccion@363042d7 con nodo aed.Transaccion@366ac49b
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=3}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 3 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 3
+3
+Actualizando vendedor 3 con nuevo monto 3
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=3}
+Intercambiando nodo aed.Transaccion@6ad59d92 con nodo aed.Transaccion@363042d7
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=3}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 3 de 3 a 1
+1
+Actualizando comprador 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 1 de 0 a 2
+2
+Actualizando vendedor 1 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=3, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=1, monto=2}
+Intercambiando nodo aed.Transaccion@56f0cc85 con nodo aed.Transaccion@366ac49b
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=2}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 2 a 1
+1
+Actualizando comprador 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=1}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 1 a 2
+2
+Actualizando vendedor 3 con nuevo monto 2
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=2} con nodo Usuario{id=1, monto=1}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=2}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=2, id de transaccion= 1
+Tx: comprador=2, vendedor=3, monto=3, id de transaccion= 2
+Tx: comprador=3, vendedor=1, monto=2, id de transaccion= 3
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 4
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 5
+=== extraerMaximo() → root.id=aed.Transaccion@6ad59d92 monto=aed.Transaccion@6ad59d92 ===
+Intercambiando nodo aed.Transaccion@62e20a76 con nodo aed.Transaccion@56f0cc85
+Intercambiando nodo aed.Transaccion@62e20a76 con nodo aed.Transaccion@2cc44ad
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=1, compr=1, vend=2, m=2] [id=2, compr=2, vend=3, m=3] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
+Máximo del heap: Usuario{id=3, monto=2}
+]]></system-out>
+  </testcase>
+  <testcase name="testStress" classname="aed.BerretacoinTests" time="0.233">
+    <failure message="expected: &lt;1&gt; but was: &lt;3000&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <3000>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at aed.BerretacoinTests.testStress(BerretacoinTests.java:425)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Creando usuario 11
+Creando usuario 12
+Creando usuario 13
+Creando usuario 14
+Creando usuario 15
+Creando usuario 16
+Creando usuario 17
+Creando usuario 18
+Creando usuario 19
+Creando usuario 20
+Creando usuario 21
+Creando usuario 22
+Creando usuario 23
+Creando usuario 24
+Creando usuario 25
+Creando usuario 26
+Creando usuario 27
+Creando usuario 28
+Creando usuario 29
+Creando usuario 30
+Creando usuario 31
+Creando usuario 32
+Creando usuario 33
+Creando usuario 34
+Creando usuario 35
+Creando usuario 36
+Creando usuario 37
+Creando usuario 38
+Creando usuario 39
+Creando usuario 40
+Creando usuario 41
+Creando usuario 42
+Creando usuario 43
+Creando usuario 44
+Creando usuario 45
+Creando usuario 46
+Creando usuario 47
+Creando usuario 48
+Creando usuario 49
+Creando usuario 50
+Creando usuario 51
+Creando usuario 52
+Creando usuario 53
+Creando usuario 54
+Creando usuario 55
+Creando usuario 56
+Creando usuario 57
+Creando usuario 58
+Creando usuario 59
+Creando usuario 60
+Creando usuario 61
+Creando usuario 62
+Creando usuario 63
+Creando usuario 64
+Creando usuario 65
+Creando usuario 66
+Creando usuario 67
+Creando usuario 68
+Creando usuario 69
+Creando usuario 70
+Creando usuario 71
+Creando usuario 72
+Creando usuario 73
+Creando usuario 74
+Creando usuario 75
+Creando usuario 76
+Creando usuario 77
+Creando usuario 78
+Creando usuario 79
+Creando usuario 80
+Creando usuario 81
+Creando usuario 82
+Creando usuario 83
+Creando usuario 84
+Creando usuario 85
+Creando usuario 86
+Creando usuario 87
+Creando usuario 88
+Creando usuario 89
+Creando usuario 90
+Creando usuario 91
+Creando usuario 92
+Creando usuario 93
+Creando usuario 94
+Creando usuario 95
+Creando usuario 96
+Creando usuario 97
+Creando usuario 98
+Creando usuario 99
+Creando usuario 100
+Creando usuario 101
+Creando usuario 102
+Creando usuario 103
+Creando usuario 104
+Creando usuario 105
+Creando usuario 106
+Creando usuario 107
+Creando usuario 108
+Creando usuario 109
+Creando usuario 110
+Creando usuario 111
+Creando usuario 112
+Creando usuario 113
+Creando usuario 114
+Creando usuario 115
+Creando usuario 116
+Creando usuario 117
+Creando usuario 118
+Creando usuario 119
+Creando usuario 120
+Creando usuario 121
+Creando usuario 122
+Creando usuario 123
+Creando usuario 124
+Creando usuario 125
+Creando usuario 126
+Creando usuario 127
+Creando usuario 128
+Creando usuario 129
+Creando usuario 130
+Creando usuario 131
+Creando usuario 132
+Creando usuario 133
+Creando usuario 134
+Creando usuario 135
+Creando usuario 136
+Creando usuario 137
+Creando usuario 138
+Creando usuario 139
+Creando usuario 140
+Creando usuario 141
+Creando usuario 142
+Creando usuario 143
+Creando usuario 144
+Creando usuario 145
+Creando usuario 146
+Creando usuario 147
+Creando usuario 148
+Creando usuario 149
+Creando usuario 150
+Creando usuario 151
+Creando usuario 152
+Creando usuario 153
+Creando usuario 154
+Creando usuario 155
+Creando usuario 156
+Creando usuario 157
+Creando usuario 158
+Creando usuario 159
+Creando usuario 160
+Creando usuario 161
+Creando usuario 162
+Creando usuario 163
+Creando usuario 164
+Creando usuario 165
+Creando usuario 166
+Creando usuario 167
+Creando usuario 168
+Creando usuario 169
+Creando usuario 170
+Creando usuario 171
+Creando usuario 172
+Creando usuario 173
+Creando usuario 174
+Creando usuario 175
+Creando usuario 176
+Creando usuario 177
+Creando usuario 178
+Creando usuario 179
+Creando usuario 180
+Creando usuario 181
+Creando usuario 182
+Creando usuario 183
+Creando usuario 184
+Creando usuario 185
+Creando usuario 186
+Creando usuario 187
+Creando usuario 188
+Creando usuario 189
+Creando usuario 190
+Creando usuario 191
+Creando usuario 192
+Creando usuario 193
+Creando usuario 194
+Creando usuario 195
+Creando usuario 196
+Creando usuario 197
+Creando usuario 198
+Creando usuario 199
+Creando usuario 200
+Creando usuario 201
+Creando usuario 202
+Creando usuario 203
+Creando usuario 204
+Creando usuario 205
+Creando usuario 206
+Creando usuario 207
+Creando usuario 208
+Creando usuario 209
+Creando usuario 210
+Creando usuario 211
+Creando usuario 212
+Creando usuario 213
+Creando usuario 214
+Creando usuario 215
+Creando usuario 216
+Creando usuario 217
+Creando usuario 218
+Creando usuario 219
+Creando usuario 220
+Creando usuario 221
+Creando usuario 222
+Creando usuario 223
+Creando usuario 224
+Creando usuario 225
+Creando usuario 226
+Creando usuario 227
+Creando usuario 228
+Creando usuario 229
+Creando usuario 230
+Creando usuario 231
+Creando usuario 232
+Creando usuario 233
+Creando usuario 234
+Creando usuario 235
+Creando usuario 236
+Creando usuario 237
+Creando usuario 238
+Creando usuario 239
+Creando usuario 240
+Creando usuario 241
+Creando usuario 242
+Creando usuario 243
+Creando usuario 244
+Creando usuario 245
+Creando usuario 246
+Creando usuario 247
+Creando usuario 248
+Creando usuario 249
+Creando usuario 250
+Creando usuario 251
+Creando usuario 252
+Creando usuario 253
+Creando usuario 254
+Creando usuario 255
+Creando usuario 256
+Creando usuario 257
+Creando usuario 258
+Creando usuario 259
+Creando usuario 260
+Creando usuario 261
+Creando usuario 262
+Creando usuario 263
+Creando usuario 264
+Creando usuario 265
+Creando usuario 266
+Creando usuario 267
+Creando usuario 268
+Creando usuario 269
+Creando usuario 270
+Creando usuario 271
+Creando usuario 272
+Creando usuario 273
+Creando usuario 274
+Creando usuario 275
+Creando usuario 276
+Creando usuario 277
+Creando usuario 278
+Creando usuario 279
+Creando usuario 280
+Creando usuario 281
+Creando usuario 282
+Creando usuario 283
+Creando usuario 284
+Creando usuario 285
+Creando usuario 286
+Creando usuario 287
+Creando usuario 288
+Creando usuario 289
+Creando usuario 290
+Creando usuario 291
+Creando usuario 292
+Creando usuario 293
+Creando usuario 294
+Creando usuario 295
+Creando usuario 296
+Creando usuario 297
+Creando usuario 298
+Creando usuario 299
+Creando usuario 300
+Creando usuario 301
+Creando usuario 302
+Creando usuario 303
+Creando usuario 304
+Creando usuario 305
+Creando usuario 306
+Creando usuario 307
+Creando usuario 308
+Creando usuario 309
+Creando usuario 310
+Creando usuario 311
+Creando usuario 312
+Creando usuario 313
+Creando usuario 314
+Creando usuario 315
+Creando usuario 316
+Creando usuario 317
+Creando usuario 318
+Creando usuario 319
+Creando usuario 320
+Creando usuario 321
+Creando usuario 322
+Creando usuario 323
+Creando usuario 324
+Creando usuario 325
+Creando usuario 326
+Creando usuario 327
+Creando usuario 328
+Creando usuario 329
+Creando usuario 330
+Creando usuario 331
+Creando usuario 332
+Creando usuario 333
+Creando usuario 334
+Creando usuario 335
+Creando usuario 336
+Creando usuario 337
+Creando usuario 338
+Creando usuario 339
+Creando usuario 340
+Creando usuario 341
+Creando usuario 342
+Creando usuario 343
+Creando usuario 344
+Creando usuario 345
+Creando usuario 346
+Creando usuario 347
+Creando usuario 348
+Creando usuario 349
+Creando usuario 350
+Creando usuario 351
+Creando usuario 352
+Creando usuario 353
+Creando usuario 354
+Creando usuario 355
+Creando usuario 356
+Creando usuario 357
+Creando usuario 358
+Creando usuario 359
+Creando usuario 360
+Creando usuario 361
+Creando usuario 362
+Creando usuario 363
+Creando usuario 364
+Creando usuario 365
+Creando usuario 366
+Creando usuario 367
+Creando usuario 368
+Creando usuario 369
+Creando usuario 370
+Creando usuario 371
+Creando usuario 372
+Creando usuario 373
+Creando usuario 374
+Creando usuario 375
+Creando usuario 376
+Creando usuario 377
+Creando usuario 378
+Creando usuario 379
+Creando usuario 380
+Creando usuario 381
+Creando usuario 382
+Creando usuario 383
+Creando usuario 384
+Creando usuario 385
+Creando usuario 386
+Creando usuario 387
+Creando usuario 388
+Creando usuario 389
+Creando usuario 390
+Creando usuario 391
+Creando usuario 392
+Creando usuario 393
+Creando usuario 394
+Creando usuario 395
+Creando usuario 396
+Creando usuario 397
+Creando usuario 398
+Creando usuario 399
+Creando usuario 400
+Creando usuario 401
+Creando usuario 402
+Creando usuario 403
+Creando usuario 404
+Creando usuario 405
+Creando usuario 406
+Creando usuario 407
+Creando usuario 408
+Creando usuario 409
+Creando usuario 410
+Creando usuario 411
+Creando usuario 412
+Creando usuario 413
+Creando usuario 414
+Creando usuario 415
+Creando usuario 416
+Creando usuario 417
+Creando usuario 418
+Creando usuario 419
+Creando usuario 420
+Creando usuario 421
+Creando usuario 422
+Creando usuario 423
+Creando usuario 424
+Creando usuario 425
+Creando usuario 426
+Creando usuario 427
+Creando usuario 428
+Creando usuario 429
+Creando usuario 430
+Creando usuario 431
+Creando usuario 432
+Creando usuario 433
+Creando usuario 434
+Creando usuario 435
+Creando usuario 436
+Creando usuario 437
+Creando usuario 438
+Creando usuario 439
+Creando usuario 440
+Creando usuario 441
+Creando usuario 442
+Creando usuario 443
+Creando usuario 444
+Creando usuario 445
+Creando usuario 446
+Creando usuario 447
+Creando usuario 448
+Creando usuario 449
+Creando usuario 450
+Creando usuario 451
+Creando usuario 452
+Creando usuario 453
+Creando usuario 454
+Creando usuario 455
+Creando usuario 456
+Creando usuario 457
+Creando usuario 458
+Creando usuario 459
+Creando usuario 460
+Creando usuario 461
+Creando usuario 462
+Creando usuario 463
+Creando usuario 464
+Creando usuario 465
+Creando usuario 466
+Creando usuario 467
+Creando usuario 468
+Creando usuario 469
+Creando usuario 470
+Creando usuario 471
+Creando usuario 472
+Creando usuario 473
+Creando usuario 474
+Creando usuario 475
+Creando usuario 476
+Creando usuario 477
+Creando usuario 478
+Creando usuario 479
+Creando usuario 480
+Creando usuario 481
+Creando usuario 482
+Creando usuario 483
+Creando usuario 484
+Creando usuario 485
+Creando usuario 486
+Creando usuario 487
+Creando usuario 488
+Creando usuario 489
+Creando usuario 490
+Creando usuario 491
+Creando usuario 492
+Creando usuario 493
+Creando usuario 494
+Creando usuario 495
+Creando usuario 496
+Creando usuario 497
+Creando usuario 498
+Creando usuario 499
+Creando usuario 500
+Creando usuario 501
+Creando usuario 502
+Creando usuario 503
+Creando usuario 504
+Creando usuario 505
+Creando usuario 506
+Creando usuario 507
+Creando usuario 508
+Creando usuario 509
+Creando usuario 510
+Creando usuario 511
+Creando usuario 512
+Creando usuario 513
+Creando usuario 514
+Creando usuario 515
+Creando usuario 516
+Creando usuario 517
+Creando usuario 518
+Creando usuario 519
+Creando usuario 520
+Creando usuario 521
+Creando usuario 522
+Creando usuario 523
+Creando usuario 524
+Creando usuario 525
+Creando usuario 526
+Creando usuario 527
+Creando usuario 528
+Creando usuario 529
+Creando usuario 530
+Creando usuario 531
+Creando usuario 532
+Creando usuario 533
+Creando usuario 534
+Creando usuario 535
+Creando usuario 536
+Creando usuario 537
+Creando usuario 538
+Creando usuario 539
+Creando usuario 540
+Creando usuario 541
+Creando usuario 542
+Creando usuario 543
+Creando usuario 544
+Creando usuario 545
+Creando usuario 546
+Creando usuario 547
+Creando usuario 548
+Creando usuario 549
+Creando usuario 550
+Creando usuario 551
+Creando usuario 552
+Creando usuario 553
+Creando usuario 554
+Creando usuario 555
+Creando usuario 556
+Creando usuario 557
+Creando usuario 558
+Creando usuario 559
+Creando usuario 560
+Creando usuario 561
+Creando usuario 562
+Creando usuario 563
+Creando usuario 564
+Creando usuario 565
+Creando usuario 566
+Creando usuario 567
+Creando usuario 568
+Creando usuario 569
+Creando usuario 570
+Creando usuario 571
+Creando usuario 572
+Creando usuario 573
+Creando usuario 574
+Creando usuario 575
+Creando usuario 576
+Creando usuario 577
+Creando usuario 578
+Creando usuario 579
+Creando usuario 580
+Creando usuario 581
+Creando usuario 582
+Creando usuario 583
+Creando usuario 584
+Creando usuario 585
+Creando usuario 586
+Creando usuario 587
+Creando usuario 588
+Creando usuario 589
+Creando usuario 590
+Creando usuario 591
+Creando usuario 592
+Creando usuario 593
+Creando usuario 594
+Creando usuario 595
+Creando usuario 596
+Creando usuario 597
+Creando usuario 598
+Creando usuario 599
+Creando usuario 600
+Creando usuario 601
+Creando usuario 602
+Creando usuario 603
+Creando usuario 604
+Creando usuario 605
+Creando usuario 606
+Creando usuario 607
+Creando usuario 608
+Creando usuario 609
+Creando usuario 610
+Creando usuario 611
+Creando usuario 612
+Creando usuario 613
+Creando usuario 614
+Creando usuario 615
+Creando usuario 616
+Creando usuario 617
+Creando usuario 618
+Creando usuario 619
+Creando usuario 620
+Creando usuario 621
+Creando usuario 622
+Creando usuario 623
+Creando usuario 624
+Creando usuario 625
+Creando usuario 626
+Creando usuario 627
+Creando usuario 628
+Creando usuario 629
+Creando usuario 630
+Creando usuario 631
+Creando usuario 632
+Creando usuario 633
+Creando usuario 634
+Creando usuario 635
+Creando usuario 636
+Creando usuario 637
+Creando usuario 638
+Creando usuario 639
+Creando usuario 640
+Creando usuario 641
+Creando usuario 642
+Creando usuario 643
+Creando usuario 644
+Creando usuario 645
+Creando usuario 646
+Creando usuario 647
+Creando usuario 648
+Creando usuario 649
+Creando usuario 650
+Creando usuario 651
+Creando usuario 652
+Creando usuario 653
+Creando usuario 654
+Creando usuario 655
+Creando usuario 656
+Creando usuario 657
+Creando usuario 658
+Creando usuario 659
+Creando usuario 660
+Creando usuario 661
+Creando usuario 662
+Creando usuario 663
+Creando usuario 664
+Creando usuario 665
+Creando usuario 666
+Creando usuario 667
+Creando usuario 668
+Creando usuario 669
+Creando usuario 670
+Creando usuario 671
+Creando usuario 672
+Creando usuario 673
+Creando usuario 674
+Creando usuario 675
+Creando usuario 676
+Creando usuario 677
+Creando usuario 678
+Creando usuario 679
+Creando usuario 680
+Creando usuario 681
+Creando usuario 682
+Creando usuario 683
+Creando usuario 684
+Creando usuario 685
+Creando usuario 686
+Creando usuario 687
+Creando usuario 688
+Creando usuario 689
+Creando usuario 690
+Creando usuario 691
+Creando usuario 692
+Creando usuario 693
+Creando usuario 694
+Creando usuario 695
+Creando usuario 696
+Creando usuario 697
+Creando usuario 698
+Creando usuario 699
+Creando usuario 700
+Creando usuario 701
+Creando usuario 702
+Creando usuario 703
+Creando usuario 704
+Creando usuario 705
+Creando usuario 706
+Creando usuario 707
+Creando usuario 708
+Creando usuario 709
+Creando usuario 710
+Creando usuario 711
+Creando usuario 712
+Creando usuario 713
+Creando usuario 714
+Creando usuario 715
+Creando usuario 716
+Creando usuario 717
+Creando usuario 718
+Creando usuario 719
+Creando usuario 720
+Creando usuario 721
+Creando usuario 722
+Creando usuario 723
+Creando usuario 724
+Creando usuario 725
+Creando usuario 726
+Creando usuario 727
+Creando usuario 728
+Creando usuario 729
+Creando usuario 730
+Creando usuario 731
+Creando usuario 732
+Creando usuario 733
+Creando usuario 734
+Creando usuario 735
+Creando usuario 736
+Creando usuario 737
+Creando usuario 738
+Creando usuario 739
+Creando usuario 740
+Creando usuario 741
+Creando usuario 742
+Creando usuario 743
+Creando usuario 744
+Creando usuario 745
+Creando usuario 746
+Creando usuario 747
+Creando usuario 748
+Creando usuario 749
+Creando usuario 750
+Creando usuario 751
+Creando usuario 752
+Creando usuario 753
+Creando usuario 754
+Creando usuario 755
+Creando usuario 756
+Creando usuario 757
+Creando usuario 758
+Creando usuario 759
+Creando usuario 760
+Creando usuario 761
+Creando usuario 762
+Creando usuario 763
+Creando usuario 764
+Creando usuario 765
+Creando usuario 766
+Creando usuario 767
+Creando usuario 768
+Creando usuario 769
+Creando usuario 770
+Creando usuario 771
+Creando usuario 772
+Creando usuario 773
+Creando usuario 774
+Creando usuario 775
+Creando usuario 776
+Creando usuario 777
+Creando usuario 778
+Creando usuario 779
+Creando usuario 780
+Creando usuario 781
+Creando usuario 782
+Creando usuario 783
+Creando usuario 784
+Creando usuario 785
+Creando usuario 786
+Creando usuario 787
+Creando usuario 788
+Creando usuario 789
+Creando usuario 790
+Creando usuario 791
+Creando usuario 792
+Creando usuario 793
+Creando usuario 794
+Creando usuario 795
+Creando usuario 796
+Creando usuario 797
+Creando usuario 798
+Creando usuario 799
+Creando usuario 800
+Creando usuario 801
+Creando usuario 802
+Creando usuario 803
+Creando usuario 804
+Creando usuario 805
+Creando usuario 806
+Creando usuario 807
+Creando usuario 808
+Creando usuario 809
+Creando usuario 810
+Creando usuario 811
+Creando usuario 812
+Creando usuario 813
+Creando usuario 814
+Creando usuario 815
+Creando usuario 816
+Creando usuario 817
+Creando usuario 818
+Creando usuario 819
+Creando usuario 820
+Creando usuario 821
+Creando usuario 822
+Creando usuario 823
+Creando usuario 824
+Creando usuario 825
+Creando usuario 826
+Creando usuario 827
+Creando usuario 828
+Creando usuario 829
+Creando usuario 830
+Creando usuario 831
+Creando usuario 832
+Creando usuario 833
+Creando usuario 834
+Creando usuario 835
+Creando usuario 836
+Creando usuario 837
+Creando usuario 838
+Creando usuario 839
+Creando usuario 840
+Creando usuario 841
+Creando usuario 842
+Creando usuario 843
+Creando usuario 844
+Creando usuario 845
+Creando usuario 846
+Creando usuario 847
+Creando usuario 848
+Creando usuario 849
+Creando usuario 850
+Creando usuario 851
+Creando usuario 852
+Creando usuario 853
+Creando usuario 854
+Creando usuario 855
+Creando usuario 856
+Creando usuario 857
+Creando usuario 858
+Creando usuario 859
+Creando usuario 860
+Creando usuario 861
+Creando usuario 862
+Creando usuario 863
+Creando usuario 864
+Creando usuario 865
+Creando usuario 866
+Creando usuario 867
+Creando usuario 868
+Creando usuario 869
+Creando usuario 870
+Creando usuario 871
+Creando usuario 872
+Creando usuario 873
+Creando usuario 874
+Creando usuario 875
+Creando usuario 876
+Creando usuario 877
+Creando usuario 878
+Creando usuario 879
+Creando usuario 880
+Creando usuario 881
+Creando usuario 882
+Creando usuario 883
+Creando usuario 884
+Creando usuario 885
+Creando usuario 886
+Creando usuario 887
+Creando usuario 888
+Creando usuario 889
+Creando usuario 890
+Creando usuario 891
+Creando usuario 892
+Creando usuario 893
+Creando usuario 894
+Creando usuario 895
+Creando usuario 896
+Creando usuario 897
+Creando usuario 898
+Creando usuario 899
+Creando usuario 900
+Creando usuario 901
+Creando usuario 902
+Creando usuario 903
+Creando usuario 904
+Creando usuario 905
+Creando usuario 906
+Creando usuario 907
+Creando usuario 908
+Creando usuario 909
+Creando usuario 910
+Creando usuario 911
+Creando usuario 912
+Creando usuario 913
+Creando usuario 914
+Creando usuario 915
+Creando usuario 916
+Creando usuario 917
+Creando usuario 918
+Creando usuario 919
+Creando usuario 920
+Creando usuario 921
+Creando usuario 922
+Creando usuario 923
+Creando usuario 924
+Creando usuario 925
+Creando usuario 926
+Creando usuario 927
+Creando usuario 928
+Creando usuario 929
+Creando usuario 930
+Creando usuario 931
+Creando usuario 932
+Creando usuario 933
+Creando usuario 934
+Creando usuario 935
+Creando usuario 936
+Creando usuario 937
+Creando usuario 938
+Creando usuario 939
+Creando usuario 940
+Creando usuario 941
+Creando usuario 942
+Creando usuario 943
+Creando usuario 944
+Creando usuario 945
+Creando usuario 946
+Creando usuario 947
+Creando usuario 948
+Creando usuario 949
+Creando usuario 950
+Creando usuario 951
+Creando usuario 952
+Creando usuario 953
+Creando usuario 954
+Creando usuario 955
+Creando usuario 956
+Creando usuario 957
+Creando usuario 958
+Creando usuario 959
+Creando usuario 960
+Creando usuario 961
+Creando usuario 962
+Creando usuario 963
+Creando usuario 964
+Creando usuario 965
+Creando usuario 966
+Creando usuario 967
+Creando usuario 968
+Creando usuario 969
+Creando usuario 970
+Creando usuario 971
+Creando usuario 972
+Creando usuario 973
+Creando usuario 974
+Creando usuario 975
+Creando usuario 976
+Creando usuario 977
+Creando usuario 978
+Creando usuario 979
+Creando usuario 980
+Creando usuario 981
+Creando usuario 982
+Creando usuario 983
+Creando usuario 984
+Creando usuario 985
+Creando usuario 986
+Creando usuario 987
+Creando usuario 988
+Creando usuario 989
+Creando usuario 990
+Creando usuario 991
+Creando usuario 992
+Creando usuario 993
+Creando usuario 994
+Creando usuario 995
+Creando usuario 996
+Creando usuario 997
+Creando usuario 998
+Creando usuario 999
+Creando usuario 1000
+Creando usuario 1001
+Creando usuario 1002
+Creando usuario 1003
+Creando usuario 1004
+Creando usuario 1005
+Creando usuario 1006
+Creando usuario 1007
+Creando usuario 1008
+Creando usuario 1009
+Creando usuario 1010
+Creando usuario 1011
+Creando usuario 1012
+Creando usuario 1013
+Creando usuario 1014
+Creando usuario 1015
+Creando usuario 1016
+Creando usuario 1017
+Creando usuario 1018
+Creando usuario 1019
+Creando usuario 1020
+Creando usuario 1021
+Creando usuario 1022
+Creando usuario 1023
+Creando usuario 1024
+Creando usuario 1025
+Creando usuario 1026
+Creando usuario 1027
+Creando usuario 1028
+Creando usuario 1029
+Creando usuario 1030
+Creando usuario 1031
+Creando usuario 1032
+Creando usuario 1033
+Creando usuario 1034
+Creando usuario 1035
+Creando usuario 1036
+Creando usuario 1037
+Creando usuario 1038
+Creando usuario 1039
+Creando usuario 1040
+Creando usuario 1041
+Creando usuario 1042
+Creando usuario 1043
+Creando usuario 1044
+Creando usuario 1045
+Creando usuario 1046
+Creando usuario 1047
+Creando usuario 1048
+Creando usuario 1049
+Creando usuario 1050
+Creando usuario 1051
+Creando usuario 1052
+Creando usuario 1053
+Creando usuario 1054
+Creando usuario 1055
+Creando usuario 1056
+Creando usuario 1057
+Creando usuario 1058
+Creando usuario 1059
+Creando usuario 1060
+Creando usuario 1061
+Creando usuario 1062
+Creando usuario 1063
+Creando usuario 1064
+Creando usuario 1065
+Creando usuario 1066
+Creando usuario 1067
+Creando usuario 1068
+Creando usuario 1069
+Creando usuario 1070
+Creando usuario 1071
+Creando usuario 1072
+Creando usuario 1073
+Creando usuario 1074
+Creando usuario 1075
+Creando usuario 1076
+Creando usuario 1077
+Creando usuario 1078
+Creando usuario 1079
+Creando usuario 1080
+Creando usuario 1081
+Creando usuario 1082
+Creando usuario 1083
+Creando usuario 1084
+Creando usuario 1085
+Creando usuario 1086
+Creando usuario 1087
+Creando usuario 1088
+Creando usuario 1089
+Creando usuario 1090
+Creando usuario 1091
+Creando usuario 1092
+Creando usuario 1093
+Creando usuario 1094
+Creando usuario 1095
+Creando usuario 1096
+Creando usuario 1097
+Creando usuario 1098
+Creando usuario 1099
+Creando usuario 1100
+Creando usuario 1101
+Creando usuario 1102
+Creando usuario 1103
+Creando usuario 1104
+Creando usuario 1105
+Creando usuario 1106
+Creando usuario 1107
+Creando usuario 1108
+Creando usuario 1109
+Creando usuario 1110
+Creando usuario 1111
+Creando usuario 1112
+Creando usuario 1113
+Creando usuario 1114
+Creando usuario 1115
+Creando usuario 1116
+Creando usuario 1117
+Creando usuario 1118
+Creando usuario 1119
+Creando usuario 1120
+Creando usuario 1121
+Creando usuario 1122
+Creando usuario 1123
+Creando usuario 1124
+Creando usuario 1125
+Creando usuario 1126
+Creando usuario 1127
+Creando usuario 1128
+Creando usuario 1129
+Creando usuario 1130
+Creando usuario 1131
+Creando usuario 1132
+Creando usuario 1133
+Creando usuario 1134
+Creando usuario 1135
+Creando usuario 1136
+Creando usuario 1137
+Creando usuario 1138
+Creando usuario 1139
+Creando usuario 1140
+Creando usuario 1141
+Creando usuario 1142
+Creando usuario 1143
+Creando usuario 1144
+Creando usuario 1145
+Creando usuario 1146
+Creando usuario 1147
+Creando usuario 1148
+Creando usuario 1149
+Creando usuario 1150
+Creando usuario 1151
+Creando usuario 1152
+Creando usuario 1153
+Creando usuario 1154
+Creando usuario 1155
+Creando usuario 1156
+Creando usuario 1157
+Creando usuario 1158
+Creando usuario 1159
+Creando usuario 1160
+Creando usuario 1161
+Creando usuario 1162
+Creando usuario 1163
+Creando usuario 1164
+Creando usuario 1165
+Creando usuario 1166
+Creando usuario 1167
+Creando usuario 1168
+Creando usuario 1169
+Creando usuario 1170
+Creando usuario 1171
+Creando usuario 1172
+Creando usuario 1173
+Creando usuario 1174
+Creando usuario 1175
+Creando usuario 1176
+Creando usuario 1177
+Creando usuario 1178
+Creando usuario 1179
+Creando usuario 1180
+Creando usuario 1181
+Creando usuario 1182
+Creando usuario 1183
+Creando usuario 1184
+Creando usuario 1185
+Creando usuario 1186
+Creando usuario 1187
+Creando usuario 1188
+Creando usuario 1189
+Creando usuario 1190
+Creando usuario 1191
+Creando usuario 1192
+Creando usuario 1193
+Creando usuario 1194
+Creando usuario 1195
+Creando usuario 1196
+Creando usuario 1197
+Creando usuario 1198
+Creando usuario 1199
+Creando usuario 1200
+Creando usuario 1201
+Creando usuario 1202
+Creando usuario 1203
+Creando usuario 1204
+Creando usuario 1205
+Creando usuario 1206
+Creando usuario 1207
+Creando usuario 1208
+Creando usuario 1209
+Creando usuario 1210
+Creando usuario 1211
+Creando usuario 1212
+Creando usuario 1213
+Creando usuario 1214
+Creando usuario 1215
+Creando usuario 1216
+Creando usuario 1217
+Creando usuario 1218
+Creando usuario 1219
+Creando usuario 1220
+Creando usuario 1221
+Creando usuario 1222
+Creando usuario 1223
+Creando usuario 1224
+Creando usuario 1225
+Creando usuario 1226
+Creando usuario 1227
+Creando usuario 1228
+Creando usuario 1229
+Creando usuario 1230
+Creando usuario 1231
+Creando usuario 1232
+Creando usuario 1233
+Creando usuario 1234
+Creando usuario 1235
+Creando usuario 1236
+Creando usuario 1237
+Creando usuario 1238
+Creando usuario 1239
+Creando usuario 1240
+Creando usuario 1241
+Creando usuario 1242
+Creando usuario 1243
+Creando usuario 1244
+Creando usuario 1245
+Creando usuario 1246
+Creando usuario 1247
+Creando usuario 1248
+Creando usuario 1249
+Creando usuario 1250
+Creando usuario 1251
+Creando usuario 1252
+Creando usuario 1253
+Creando usuario 1254
+Creando usuario 1255
+Creando usuario 1256
+Creando usuario 1257
+Creando usuario 1258
+Creando usuario 1259
+Creando usuario 1260
+Creando usuario 1261
+Creando usuario 1262
+Creando usuario 1263
+Creando usuario 1264
+Creando usuario 1265
+Creando usuario 1266
+Creando usuario 1267
+Creando usuario 1268
+Creando usuario 1269
+Creando usuario 1270
+Creando usuario 1271
+Creando usuario 1272
+Creando usuario 1273
+Creando usuario 1274
+Creando usuario 1275
+Creando usuario 1276
+Creando usuario 1277
+Creando usuario 1278
+Creando usuario 1279
+Creando usuario 1280
+Creando usuario 1281
+Creando usuario 1282
+Creando usuario 1283
+Creando usuario 1284
+Creando usuario 1285
+Creando usuario 1286
+Creando usuario 1287
+Creando usuario 1288
+Creando usuario 1289
+Creando usuario 1290
+Creando usuario 1291
+Creando usuario 1292
+Creando usuario 1293
+Creando usuario 1294
+Creando usuario 1295
+Creando usuario 1296
+Creando usuario 1297
+Creando usuario 1298
+Creando usuario 1299
+Creando usuario 1300
+Creando usuario 1301
+Creando usuario 1302
+Creando usuario 1303
+Creando usuario 1304
+Creando usuario 1305
+Creando usuario 1306
+Creando usuario 1307
+Creando usuario 1308
+Creando usuario 1309
+Creando usuario 1310
+Creando usuario 1311
+Creando usuario 1312
+Creando usuario 1313
+Creando usuario 1314
+Creando usuario 1315
+Creando usuario 1316
+Creando usuario 1317
+Creando usuario 1318
+Creando usuario 1319
+Creando usuario 1320
+Creando usuario 1321
+Creando usuario 1322
+Creando usuario 1323
+Creando usuario 1324
+Creando usuario 1325
+Creando usuario 1326
+Creando usuario 1327
+Creando usuario 1328
+Creando usuario 1329
+Creando usuario 1330
+Creando usuario 1331
+Creando usuario 1332
+Creando usuario 1333
+Creando usuario 1334
+Creando usuario 1335
+Creando usuario 1336
+Creando usuario 1337
+Creando usuario 1338
+Creando usuario 1339
+Creando usuario 1340
+Creando usuario 1341
+Creando usuario 1342
+Creando usuario 1343
+Creando usuario 1344
+Creando usuario 1345
+Creando usuario 1346
+Creando usuario 1347
+Creando usuario 1348
+Creando usuario 1349
+Creando usuario 1350
+Creando usuario 1351
+Creando usuario 1352
+Creando usuario 1353
+Creando usuario 1354
+Creando usuario 1355
+Creando usuario 1356
+Creando usuario 1357
+Creando usuario 1358
+Creando usuario 1359
+Creando usuario 1360
+Creando usuario 1361
+Creando usuario 1362
+Creando usuario 1363
+Creando usuario 1364
+Creando usuario 1365
+Creando usuario 1366
+Creando usuario 1367
+Creando usuario 1368
+Creando usuario 1369
+Creando usuario 1370
+Creando usuario 1371
+Creando usuario 1372
+Creando usuario 1373
+Creando usuario 1374
+Creando usuario 1375
+Creando usuario 1376
+Creando usuario 1377
+Creando usuario 1378
+Creando usuario 1379
+Creando usuario 1380
+Creando usuario 1381
+Creando usuario 1382
+Creando usuario 1383
+Creando usuario 1384
+Creando usuario 1385
+Creando usuario 1386
+Creando usuario 1387
+Creando usuario 1388
+Creando usuario 1389
+Creando usuario 1390
+Creando usuario 1391
+Creando usuario 1392
+Creando usuario 1393
+Creando usuario 1394
+Creando usuario 1395
+Creando usuario 1396
+Creando usuario 1397
+Creando usuario 1398
+Creando usuario 1399
+Creando usuario 1400
+Creando usuario 1401
+Creando usuario 1402
+Creando usuario 1403
+Creando usuario 1404
+Creando usuario 1405
+Creando usuario 1406
+Creando usuario 1407
+Creando usuario 1408
+Creando usuario 1409
+Creando usuario 1410
+Creando usuario 1411
+Creando usuario 1412
+Creando usuario 1413
+Creando usuario 1414
+Creando usuario 1415
+Creando usuario 1416
+Creando usuario 1417
+Creando usuario 1418
+Creando usuario 1419
+Creando usuario 1420
+Creando usuario 1421
+Creando usuario 1422
+Creando usuario 1423
+Creando usuario 1424
+Creando usuario 1425
+Creando usuario 1426
+Creando usuario 1427
+Creando usuario 1428
+Creando usuario 1429
+Creando usuario 1430
+Creando usuario 1431
+Creando usuario 1432
+Creando usuario 1433
+Creando usuario 1434
+Creando usuario 1435
+Creando usuario 1436
+Creando usuario 1437
+Creando usuario 1438
+Creando usuario 1439
+Creando usuario 1440
+Creando usuario 1441
+Creando usuario 1442
+Creando usuario 1443
+Creando usuario 1444
+Creando usuario 1445
+Creando usuario 1446
+Creando usuario 1447
+Creando usuario 1448
+Creando usuario 1449
+Creando usuario 1450
+Creando usuario 1451
+Creando usuario 1452
+Creando usuario 1453
+Creando usuario 1454
+Creando usuario 1455
+Creando usuario 1456
+Creando usuario 1457
+Creando usuario 1458
+Creando usuario 1459
+Creando usuario 1460
+Creando usuario 1461
+Creando usuario 1462
+Creando usuario 1463
+Creando usuario 1464
+Creando usuario 1465
+Creando usuario 1466
+Creando usuario 1467
+Creando usuario 1468
+Creando usuario 1469
+Creando usuario 1470
+Creando usuario 1471
+Creando usuario 1472
+Creando usuario 1473
+Creando usuario 1474
+Creando usuario 1475
+Creando usuario 1476
+Creando usuario 1477
+Creando usuario 1478
+Creando usuario 1479
+Creando usuario 1480
+Creando usuario 1481
+Creando usuario 1482
+Creando usuario 1483
+Creando usuario 1484
+Creando usuario 1485
+Creando usuario 1486
+Creando usuario 1487
+Creando usuario 1488
+Creando usuario 1489
+Creando usuario 1490
+Creando usuario 1491
+Creando usuario 1492
+Creando usuario 1493
+Creando usuario 1494
+Creando usuario 1495
+Creando usuario 1496
+Creando usuario 1497
+Creando usuario 1498
+Creando usuario 1499
+Creando usuario 1500
+Creando usuario 1501
+Creando usuario 1502
+Creando usuario 1503
+Creando usuario 1504
+Creando usuario 1505
+Creando usuario 1506
+Creando usuario 1507
+Creando usuario 1508
+Creando usuario 1509
+Creando usuario 1510
+Creando usuario 1511
+Creando usuario 1512
+Creando usuario 1513
+Creando usuario 1514
+Creando usuario 1515
+Creando usuario 1516
+Creando usuario 1517
+Creando usuario 1518
+Creando usuario 1519
+Creando usuario 1520
+Creando usuario 1521
+Creando usuario 1522
+Creando usuario 1523
+Creando usuario 1524
+Creando usuario 1525
+Creando usuario 1526
+Creando usuario 1527
+Creando usuario 1528
+Creando usuario 1529
+Creando usuario 1530
+Creando usuario 1531
+Creando usuario 1532
+Creando usuario 1533
+Creando usuario 1534
+Creando usuario 1535
+Creando usuario 1536
+Creando usuario 1537
+Creando usuario 1538
+Creando usuario 1539
+Creando usuario 1540
+Creando usuario 1541
+Creando usuario 1542
+Creando usuario 1543
+Creando usuario 1544
+Creando usuario 1545
+Creando usuario 1546
+Creando usuario 1547
+Creando usuario 1548
+Creando usuario 1549
+Creando usuario 1550
+Creando usuario 1551
+Creando usuario 1552
+Creando usuario 1553
+Creando usuario 1554
+Creando usuario 1555
+Creando usuario 1556
+Creando usuario 1557
+Creando usuario 1558
+Creando usuario 1559
+Creando usuario 1560
+Creando usuario 1561
+Creando usuario 1562
+Creando usuario 1563
+Creando usuario 1564
+Creando usuario 1565
+Creando usuario 1566
+Creando usuario 1567
+Creando usuario 1568
+Creando usuario 1569
+Creando usuario 1570
+Creando usuario 1571
+Creando usuario 1572
+Creando usuario 1573
+Creando usuario 1574
+Creando usuario 1575
+Creando usuario 1576
+Creando usuario 1577
+Creando usuario 1578
+Creando usuario 1579
+Creando usuario 1580
+Creando usuario 1581
+Creando usuario 1582
+Creando usuario 1583
+Creando usuario 1584
+Creando usuario 1585
+Creando usuario 1586
+Creando usuario 1587
+Creando usuario 1588
+Creando usuario 1589
+Creando usuario 1590
+Creando usuario 1591
+Creando usuario 1592
+Creando usuario 1593
+Creando usuario 1594
+Creando usuario 1595
+Creando usuario 1596
+Creando usuario 1597
+Creando usuario 1598
+Creando usuario 1599
+Creando usuario 1600
+Creando usuario 1601
+Creando usuario 1602
+Creando usuario 1603
+Creando usuario 1604
+Creando usuario 1605
+Creando usuario 1606
+Creando usuario 1607
+Creando usuario 1608
+Creando usuario 1609
+Creando usuario 1610
+Creando usuario 1611
+Creando usuario 1612
+Creando usuario 1613
+Creando usuario 1614
+Creando usuario 1615
+Creando usuario 1616
+Creando usuario 1617
+Creando usuario 1618
+Creando usuario 1619
+Creando usuario 1620
+Creando usuario 1621
+Creando usuario 1622
+Creando usuario 1623
+Creando usuario 1624
+Creando usuario 1625
+Creando usuario 1626
+Creando usuario 1627
+Creando usuario 1628
+Creando usuario 1629
+Creando usuario 1630
+Creando usuario 1631
+Creando usuario 1632
+Creando usuario 1633
+Creando usuario 1634
+Creando usuario 1635
+Creando usuario 1636
+Creando usuario 1637
+Creando usuario 1638
+Creando usuario 1639
+Creando usuario 1640
+Creando usuario 1641
+Creando usuario 1642
+Creando usuario 1643
+Creando usuario 1644
+Creando usuario 1645
+Creando usuario 1646
+Creando usuario 1647
+Creando usuario 1648
+Creando usuario 1649
+Creando usuario 1650
+Creando usuario 1651
+Creando usuario 1652
+Creando usuario 1653
+Creando usuario 1654
+Creando usuario 1655
+Creando usuario 1656
+Creando usuario 1657
+Creando usuario 1658
+Creando usuario 1659
+Creando usuario 1660
+Creando usuario 1661
+Creando usuario 1662
+Creando usuario 1663
+Creando usuario 1664
+Creando usuario 1665
+Creando usuario 1666
+Creando usuario 1667
+Creando usuario 1668
+Creando usuario 1669
+Creando usuario 1670
+Creando usuario 1671
+Creando usuario 1672
+Creando usuario 1673
+Creando usuario 1674
+Creando usuario 1675
+Creando usuario 1676
+Creando usuario 1677
+Creando usuario 1678
+Creando usuario 1679
+Creando usuario 1680
+Creando usuario 1681
+Creando usuario 1682
+Creando usuario 1683
+Creando usuario 1684
+Creando usuario 1685
+Creando usuario 1686
+Creando usuario 1687
+Creando usuario 1688
+Creando usuario 1689
+Creando usuario 1690
+Creando usuario 1691
+Creando usuario 1692
+Creando usuario 1693
+Creando usuario 1694
+Creando usuario 1695
+Creando usuario 1696
+Creando usuario 1697
+Creando usuario 1698
+Creando usuario 1699
+Creando usuario 1700
+Creando usuario 1701
+Creando usuario 1702
+Creando usuario 1703
+Creando usuario 1704
+Creando usuario 1705
+Creando usuario 1706
+Creando usuario 1707
+Creando usuario 1708
+Creando usuario 1709
+Creando usuario 1710
+Creando usuario 1711
+Creando usuario 1712
+Creando usuario 1713
+Creando usuario 1714
+Creando usuario 1715
+Creando usuario 1716
+Creando usuario 1717
+Creando usuario 1718
+Creando usuario 1719
+Creando usuario 1720
+Creando usuario 1721
+Creando usuario 1722
+Creando usuario 1723
+Creando usuario 1724
+Creando usuario 1725
+Creando usuario 1726
+Creando usuario 1727
+Creando usuario 1728
+Creando usuario 1729
+Creando usuario 1730
+Creando usuario 1731
+Creando usuario 1732
+Creando usuario 1733
+Creando usuario 1734
+Creando usuario 1735
+Creando usuario 1736
+Creando usuario 1737
+Creando usuario 1738
+Creando usuario 1739
+Creando usuario 1740
+Creando usuario 1741
+Creando usuario 1742
+Creando usuario 1743
+Creando usuario 1744
+Creando usuario 1745
+Creando usuario 1746
+Creando usuario 1747
+Creando usuario 1748
+Creando usuario 1749
+Creando usuario 1750
+Creando usuario 1751
+Creando usuario 1752
+Creando usuario 1753
+Creando usuario 1754
+Creando usuario 1755
+Creando usuario 1756
+Creando usuario 1757
+Creando usuario 1758
+Creando usuario 1759
+Creando usuario 1760
+Creando usuario 1761
+Creando usuario 1762
+Creando usuario 1763
+Creando usuario 1764
+Creando usuario 1765
+Creando usuario 1766
+Creando usuario 1767
+Creando usuario 1768
+Creando usuario 1769
+Creando usuario 1770
+Creando usuario 1771
+Creando usuario 1772
+Creando usuario 1773
+Creando usuario 1774
+Creando usuario 1775
+Creando usuario 1776
+Creando usuario 1777
+Creando usuario 1778
+Creando usuario 1779
+Creando usuario 1780
+Creando usuario 1781
+Creando usuario 1782
+Creando usuario 1783
+Creando usuario 1784
+Creando usuario 1785
+Creando usuario 1786
+Creando usuario 1787
+Creando usuario 1788
+Creando usuario 1789
+Creando usuario 1790
+Creando usuario 1791
+Creando usuario 1792
+Creando usuario 1793
+Creando usuario 1794
+Creando usuario 1795
+Creando usuario 1796
+Creando usuario 1797
+Creando usuario 1798
+Creando usuario 1799
+Creando usuario 1800
+Creando usuario 1801
+Creando usuario 1802
+Creando usuario 1803
+Creando usuario 1804
+Creando usuario 1805
+Creando usuario 1806
+Creando usuario 1807
+Creando usuario 1808
+Creando usuario 1809
+Creando usuario 1810
+Creando usuario 1811
+Creando usuario 1812
+Creando usuario 1813
+Creando usuario 1814
+Creando usuario 1815
+Creando usuario 1816
+Creando usuario 1817
+Creando usuario 1818
+Creando usuario 1819
+Creando usuario 1820
+Creando usuario 1821
+Creando usuario 1822
+Creando usuario 1823
+Creando usuario 1824
+Creando usuario 1825
+Creando usuario 1826
+Creando usuario 1827
+Creando usuario 1828
+Creando usuario 1829
+Creando usuario 1830
+Creando usuario 1831
+Creando usuario 1832
+Creando usuario 1833
+Creando usuario 1834
+Creando usuario 1835
+Creando usuario 1836
+Creando usuario 1837
+Creando usuario 1838
+Creando usuario 1839
+Creando usuario 1840
+Creando usuario 1841
+Creando usuario 1842
+Creando usuario 1843
+Creando usuario 1844
+Creando usuario 1845
+Creando usuario 1846
+Creando usuario 1847
+Creando usuario 1848
+Creando usuario 1849
+Creando usuario 1850
+Creando usuario 1851
+Creando usuario 1852
+Creando usuario 1853
+Creando usuario 1854
+Creando usuario 1855
+Creando usuario 1856
+Creando usuario 1857
+Creando usuario 1858
+Creando usuario 1859
+Creando usuario 1860
+Creando usuario 1861
+Creando usuario 1862
+Creando usuario 1863
+Creando usuario 1864
+Creando usuario 1865
+Creando usuario 1866
+Creando usuario 1867
+Creando usuario 1868
+Creando usuario 1869
+Creando usuario 1870
+Creando usuario 1871
+Creando usuario 1872
+Creando usuario 1873
+Creando usuario 1874
+Creando usuario 1875
+Creando usuario 1876
+Creando usuario 1877
+Creando usuario 1878
+Creando usuario 1879
+Creando usuario 1880
+Creando usuario 1881
+Creando usuario 1882
+Creando usuario 1883
+Creando usuario 1884
+Creando usuario 1885
+Creando usuario 1886
+Creando usuario 1887
+Creando usuario 1888
+Creando usuario 1889
+Creando usuario 1890
+Creando usuario 1891
+Creando usuario 1892
+Creando usuario 1893
+Creando usuario 1894
+Creando usuario 1895
+Creando usuario 1896
+Creando usuario 1897
+Creando usuario 1898
+Creando usuario 1899
+Creando usuario 1900
+Creando usuario 1901
+Creando usuario 1902
+Creando usuario 1903
+Creando usuario 1904
+Creando usuario 1905
+Creando usuario 1906
+Creando usuario 1907
+Creando usuario 1908
+Creando usuario 1909
+Creando usuario 1910
+Creando usuario 1911
+Creando usuario 1912
+Creando usuario 1913
+Creando usuario 1914
+Creando usuario 1915
+Creando usuario 1916
+Creando usuario 1917
+Creando usuario 1918
+Creando usuario 1919
+Creando usuario 1920
+Creando usuario 1921
+Creando usuario 1922
+Creando usuario 1923
+Creando usuario 1924
+Creando usuario 1925
+Creando usuario 1926
+Creando usuario 1927
+Creando usuario 1928
+Creando usuario 1929
+Creando usuario 1930
+Creando usuario 1931
+Creando usuario 1932
+Creando usuario 1933
+Creando usuario 1934
+Creando usuario 1935
+Creando usuario 1936
+Creando usuario 1937
+Creando usuario 1938
+Creando usuario 1939
+Creando usuario 1940
+Creando usuario 1941
+Creando usuario 1942
+Creando usuario 1943
+Creando usuario 1944
+Creando usuario 1945
+Creando usuario 1946
+Creando usuario 1947
+Creando usuario 1948
+Creando usuario 1949
+Creando usuario 1950
+Creando usuario 1951
+Creando usuario 1952
+Creando usuario 1953
+Creando usuario 1954
+Creando usuario 1955
+Creando usuario 1956
+Creando usuario 1957
+Creando usuario 1958
+Creando usuario 1959
+Creando usuario 1960
+Creando usuario 1961
+Creando usuario 1962
+Creando usuario 1963
+Creando usuario 1964
+Creando usuario 1965
+Creando usuario 1966
+Creando usuario 1967
+Creando usuario 1968
+Creando usuario 1969
+Creando usuario 1970
+Creando usuario 1971
+Creando usuario 1972
+Creando usuario 1973
+Creando usuario 1974
+Creando usuario 1975
+Creando usuario 1976
+Creando usuario 1977
+Creando usuario 1978
+Creando usuario 1979
+Creando usuario 1980
+Creando usuario 1981
+Creando usuario 1982
+Creando usuario 1983
+Creando usuario 1984
+Creando usuario 1985
+Creando usuario 1986
+Creando usuario 1987
+Creando usuario 1988
+Creando usuario 1989
+Creando usuario 1990
+Creando usuario 1991
+Creando usuario 1992
+Creando usuario 1993
+Creando usuario 1994
+Creando usuario 1995
+Creando usuario 1996
+Creando usuario 1997
+Creando usuario 1998
+Creando usuario 1999
+Creando usuario 2000
+Creando usuario 2001
+Creando usuario 2002
+Creando usuario 2003
+Creando usuario 2004
+Creando usuario 2005
+Creando usuario 2006
+Creando usuario 2007
+Creando usuario 2008
+Creando usuario 2009
+Creando usuario 2010
+Creando usuario 2011
+Creando usuario 2012
+Creando usuario 2013
+Creando usuario 2014
+Creando usuario 2015
+Creando usuario 2016
+Creando usuario 2017
+Creando usuario 2018
+Creando usuario 2019
+Creando usuario 2020
+Creando usuario 2021
+Creando usuario 2022
+Creando usuario 2023
+Creando usuario 2024
+Creando usuario 2025
+Creando usuario 2026
+Creando usuario 2027
+Creando usuario 2028
+Creando usuario 2029
+Creando usuario 2030
+Creando usuario 2031
+Creando usuario 2032
+Creando usuario 2033
+Creando usuario 2034
+Creando usuario 2035
+Creando usuario 2036
+Creando usuario 2037
+Creando usuario 2038
+Creando usuario 2039
+Creando usuario 2040
+Creando usuario 2041
+Creando usuario 2042
+Creando usuario 2043
+Creando usuario 2044
+Creando usuario 2045
+Creando usuario 2046
+Creando usuario 2047
+Creando usuario 2048
+Creando usuario 2049
+Creando usuario 2050
+Creando usuario 2051
+Creando usuario 2052
+Creando usuario 2053
+Creando usuario 2054
+Creando usuario 2055
+Creando usuario 2056
+Creando usuario 2057
+Creando usuario 2058
+Creando usuario 2059
+Creando usuario 2060
+Creando usuario 2061
+Creando usuario 2062
+Creando usuario 2063
+Creando usuario 2064
+Creando usuario 2065
+Creando usuario 2066
+Creando usuario 2067
+Creando usuario 2068
+Creando usuario 2069
+Creando usuario 2070
+Creando usuario 2071
+Creando usuario 2072
+Creando usuario 2073
+Creando usuario 2074
+Creando usuario 2075
+Creando usuario 2076
+Creando usuario 2077
+Creando usuario 2078
+Creando usuario 2079
+Creando usuario 2080
+Creando usuario 2081
+Creando usuario 2082
+Creando usuario 2083
+Creando usuario 2084
+Creando usuario 2085
+Creando usuario 2086
+Creando usuario 2087
+Creando usuario 2088
+Creando usuario 2089
+Creando usuario 2090
+Creando usuario 2091
+Creando usuario 2092
+Creando usuario 2093
+Creando usuario 2094
+Creando usuario 2095
+Creando usuario 2096
+Creando usuario 2097
+Creando usuario 2098
+Creando usuario 2099
+Creando usuario 2100
+Creando usuario 2101
+Creando usuario 2102
+Creando usuario 2103
+Creando usuario 2104
+Creando usuario 2105
+Creando usuario 2106
+Creando usuario 2107
+Creando usuario 2108
+Creando usuario 2109
+Creando usuario 2110
+Creando usuario 2111
+Creando usuario 2112
+Creando usuario 2113
+Creando usuario 2114
+Creando usuario 2115
+Creando usuario 2116
+Creando usuario 2117
+Creando usuario 2118
+Creando usuario 2119
+Creando usuario 2120
+Creando usuario 2121
+Creando usuario 2122
+Creando usuario 2123
+Creando usuario 2124
+Creando usuario 2125
+Creando usuario 2126
+Creando usuario 2127
+Creando usuario 2128
+Creando usuario 2129
+Creando usuario 2130
+Creando usuario 2131
+Creando usuario 2132
+Creando usuario 2133
+Creando usuario 2134
+Creando usuario 2135
+Creando usuario 2136
+Creando usuario 2137
+Creando usuario 2138
+Creando usuario 2139
+Creando usuario 2140
+Creando usuario 2141
+Creando usuario 2142
+Creando usuario 2143
+Creando usuario 2144
+Creando usuario 2145
+Creando usuario 2146
+Creando usuario 2147
+Creando usuario 2148
+Creando usuario 2149
+Creando usuario 2150
+Creando usuario 2151
+Creando usuario 2152
+Creando usuario 2153
+Creando usuario 2154
+Creando usuario 2155
+Creando usuario 2156
+Creando usuario 2157
+Creando usuario 2158
+Creando usuario 2159
+Creando usuario 2160
+Creando usuario 2161
+Creando usuario 2162
+Creando usuario 2163
+Creando usuario 2164
+Creando usuario 2165
+Creando usuario 2166
+Creando usuario 2167
+Creando usuario 2168
+Creando usuario 2169
+Creando usuario 2170
+Creando usuario 2171
+Creando usuario 2172
+Creando usuario 2173
+Creando usuario 2174
+Creando usuario 2175
+Creando usuario 2176
+Creando usuario 2177
+Creando usuario 2178
+Creando usuario 2179
+Creando usuario 2180
+Creando usuario 2181
+Creando usuario 2182
+Creando usuario 2183
+Creando usuario 2184
+Creando usuario 2185
+Creando usuario 2186
+Creando usuario 2187
+Creando usuario 2188
+Creando usuario 2189
+Creando usuario 2190
+Creando usuario 2191
+Creando usuario 2192
+Creando usuario 2193
+Creando usuario 2194
+Creando usuario 2195
+Creando usuario 2196
+Creando usuario 2197
+Creando usuario 2198
+Creando usuario 2199
+Creando usuario 2200
+Creando usuario 2201
+Creando usuario 2202
+Creando usuario 2203
+Creando usuario 2204
+Creando usuario 2205
+Creando usuario 2206
+Creando usuario 2207
+Creando usuario 2208
+Creando usuario 2209
+Creando usuario 2210
+Creando usuario 2211
+Creando usuario 2212
+Creando usuario 2213
+Creando usuario 2214
+Creando usuario 2215
+Creando usuario 2216
+Creando usuario 2217
+Creando usuario 2218
+Creando usuario 2219
+Creando usuario 2220
+Creando usuario 2221
+Creando usuario 2222
+Creando usuario 2223
+Creando usuario 2224
+Creando usuario 2225
+Creando usuario 2226
+Creando usuario 2227
+Creando usuario 2228
+Creando usuario 2229
+Creando usuario 2230
+Creando usuario 2231
+Creando usuario 2232
+Creando usuario 2233
+Creando usuario 2234
+Creando usuario 2235
+Creando usuario 2236
+Creando usuario 2237
+Creando usuario 2238
+Creando usuario 2239
+Creando usuario 2240
+Creando usuario 2241
+Creando usuario 2242
+Creando usuario 2243
+Creando usuario 2244
+Creando usuario 2245
+Creando usuario 2246
+Creando usuario 2247
+Creando usuario 2248
+Creando usuario 2249
+Creando usuario 2250
+Creando usuario 2251
+Creando usuario 2252
+Creando usuario 2253
+Creando usuario 2254
+Creando usuario 2255
+Creando usuario 2256
+Creando usuario 2257
+Creando usuario 2258
+Creando usuario 2259
+Creando usuario 2260
+Creando usuario 2261
+Creando usuario 2262
+Creando usuario 2263
+Creando usuario 2264
+Creando usuario 2265
+Creando usuario 2266
+Creando usuario 2267
+Creando usuario 2268
+Creando usuario 2269
+Creando usuario 2270
+Creando usuario 2271
+Creando usuario 2272
+Creando usuario 2273
+Creando usuario 2274
+Creando usuario 2275
+Creando usuario 2276
+Creando usuario 2277
+Creando usuario 2278
+Creando usuario 2279
+Creando usuario 2280
+Creando usuario 2281
+Creando usuario 2282
+Creando usuario 2283
+Creando usuario 2284
+Creando usuario 2285
+Creando usuario 2286
+Creando usuario 2287
+Creando usuario 2288
+Creando usuario 2289
+Creando usuario 2290
+Creando usuario 2291
+Creando usuario 2292
+Creando usuario 2293
+Creando usuario 2294
+Creando usuario 2295
+Creando usuario 2296
+Creando usuario 2297
+Creando usuario 2298
+Creando usuario 2299
+Creando usuario 2300
+Creando usuario 2301
+Creando usuario 2302
+Creando usuario 2303
+Creando usuario 2304
+Creando usuario 2305
+Creando usuario 2306
+Creando usuario 2307
+Creando usuario 2308
+Creando usuario 2309
+Creando usuario 2310
+Creando usuario 2311
+Creando usuario 2312
+Creando usuario 2313
+Creando usuario 2314
+Creando usuario 2315
+Creando usuario 2316
+Creando usuario 2317
+Creando usuario 2318
+Creando usuario 2319
+Creando usuario 2320
+Creando usuario 2321
+Creando usuario 2322
+Creando usuario 2323
+Creando usuario 2324
+Creando usuario 2325
+Creando usuario 2326
+Creando usuario 2327
+Creando usuario 2328
+Creando usuario 2329
+Creando usuario 2330
+Creando usuario 2331
+Creando usuario 2332
+Creando usuario 2333
+Creando usuario 2334
+Creando usuario 2335
+Creando usuario 2336
+Creando usuario 2337
+Creando usuario 2338
+Creando usuario 2339
+Creando usuario 2340
+Creando usuario 2341
+Creando usuario 2342
+Creando usuario 2343
+Creando usuario 2344
+Creando usuario 2345
+Creando usuario 2346
+Creando usuario 2347
+Creando usuario 2348
+Creando usuario 2349
+Creando usuario 2350
+Creando usuario 2351
+Creando usuario 2352
+Creando usuario 2353
+Creando usuario 2354
+Creando usuario 2355
+Creando usuario 2356
+Creando usuario 2357
+Creando usuario 2358
+Creando usuario 2359
+Creando usuario 2360
+Creando usuario 2361
+Creando usuario 2362
+Creando usuario 2363
+Creando usuario 2364
+Creando usuario 2365
+Creando usuario 2366
+Creando usuario 2367
+Creando usuario 2368
+Creando usuario 2369
+Creando usuario 2370
+Creando usuario 2371
+Creando usuario 2372
+Creando usuario 2373
+Creando usuario 2374
+Creando usuario 2375
+Creando usuario 2376
+Creando usuario 2377
+Creando usuario 2378
+Creando usuario 2379
+Creando usuario 2380
+Creando usuario 2381
+Creando usuario 2382
+Creando usuario 2383
+Creando usuario 2384
+Creando usuario 2385
+Creando usuario 2386
+Creando usuario 2387
+Creando usuario 2388
+Creando usuario 2389
+Creando usuario 2390
+Creando usuario 2391
+Creando usuario 2392
+Creando usuario 2393
+Creando usuario 2394
+Creando usuario 2395
+Creando usuario 2396
+Creando usuario 2397
+Creando usuario 2398
+Creando usuario 2399
+Creando usuario 2400
+Creando usuario 2401
+Creando usuario 2402
+Creando usuario 2403
+Creando usuario 2404
+Creando usuario 2405
+Creando usuario 2406
+Creando usuario 2407
+Creando usuario 2408
+Creando usuario 2409
+Creando usuario 2410
+Creando usuario 2411
+Creando usuario 2412
+Creando usuario 2413
+Creando usuario 2414
+Creando usuario 2415
+Creando usuario 2416
+Creando usuario 2417
+Creando usuario 2418
+Creando usuario 2419
+Creando usuario 2420
+Creando usuario 2421
+Creando usuario 2422
+Creando usuario 2423
+Creando usuario 2424
+Creando usuario 2425
+Creando usuario 2426
+Creando usuario 2427
+Creando usuario 2428
+Creando usuario 2429
+Creando usuario 2430
+Creando usuario 2431
+Creando usuario 2432
+Creando usuario 2433
+Creando usuario 2434
+Creando usuario 2435
+Creando usuario 2436
+Creando usuario 2437
+Creando usuario 2438
+Creando usuario 2439
+Creando usuario 2440
+Creando usuario 2441
+Creando usuario 2442
+Creando usuario 2443
+Creando usuario 2444
+Creando usuario 2445
+Creando usuario 2446
+Creando usuario 2447
+Creando usuario 2448
+Creando usuario 2449
+Creando usuario 2450
+Creando usuario 2451
+Creando usuario 2452
+Creando usuario 2453
+Creando usuario 2454
+Creando usuario 2455
+Creando usuario 2456
+Creando usuario 2457
+Creando usuario 2458
+Creando usuario 2459
+Creando usuario 2460
+Creando usuario 2461
+Creando usuario 2462
+Creando usuario 2463
+Creando usuario 2464
+Creando usuario 2465
+Creando usuario 2466
+Creando usuario 2467
+Creando usuario 2468
+Creando usuario 2469
+Creando usuario 2470
+Creando usuario 2471
+Creando usuario 2472
+Creando usuario 2473
+Creando usuario 2474
+Creando usuario 2475
+Creando usuario 2476
+Creando usuario 2477
+Creando usuario 2478
+Creando usuario 2479
+Creando usuario 2480
+Creando usuario 2481
+Creando usuario 2482
+Creando usuario 2483
+Creando usuario 2484
+Creando usuario 2485
+Creando usuario 2486
+Creando usuario 2487
+Creando usuario 2488
+Creando usuario 2489
+Creando usuario 2490
+Creando usuario 2491
+Creando usuario 2492
+Creando usuario 2493
+Creando usuario 2494
+Creando usuario 2495
+Creando usuario 2496
+Creando usuario 2497
+Creando usuario 2498
+Creando usuario 2499
+Creando usuario 2500
+Creando usuario 2501
+Creando usuario 2502
+Creando usuario 2503
+Creando usuario 2504
+Creando usuario 2505
+Creando usuario 2506
+Creando usuario 2507
+Creando usuario 2508
+Creando usuario 2509
+Creando usuario 2510
+Creando usuario 2511
+Creando usuario 2512
+Creando usuario 2513
+Creando usuario 2514
+Creando usuario 2515
+Creando usuario 2516
+Creando usuario 2517
+Creando usuario 2518
+Creando usuario 2519
+Creando usuario 2520
+Creando usuario 2521
+Creando usuario 2522
+Creando usuario 2523
+Creando usuario 2524
+Creando usuario 2525
+Creando usuario 2526
+Creando usuario 2527
+Creando usuario 2528
+Creando usuario 2529
+Creando usuario 2530
+Creando usuario 2531
+Creando usuario 2532
+Creando usuario 2533
+Creando usuario 2534
+Creando usuario 2535
+Creando usuario 2536
+Creando usuario 2537
+Creando usuario 2538
+Creando usuario 2539
+Creando usuario 2540
+Creando usuario 2541
+Creando usuario 2542
+Creando usuario 2543
+Creando usuario 2544
+Creando usuario 2545
+Creando usuario 2546
+Creando usuario 2547
+Creando usuario 2548
+Creando usuario 2549
+Creando usuario 2550
+Creando usuario 2551
+Creando usuario 2552
+Creando usuario 2553
+Creando usuario 2554
+Creando usuario 2555
+Creando usuario 2556
+Creando usuario 2557
+Creando usuario 2558
+Creando usuario 2559
+Creando usuario 2560
+Creando usuario 2561
+Creando usuario 2562
+Creando usuario 2563
+Creando usuario 2564
+Creando usuario 2565
+Creando usuario 2566
+Creando usuario 2567
+Creando usuario 2568
+Creando usuario 2569
+Creando usuario 2570
+Creando usuario 2571
+Creando usuario 2572
+Creando usuario 2573
+Creando usuario 2574
+Creando usuario 2575
+Creando usuario 2576
+Creando usuario 2577
+Creando usuario 2578
+Creando usuario 2579
+Creando usuario 2580
+Creando usuario 2581
+Creando usuario 2582
+Creando usuario 2583
+Creando usuario 2584
+Creando usuario 2585
+Creando usuario 2586
+Creando usuario 2587
+Creando usuario 2588
+Creando usuario 2589
+Creando usuario 2590
+Creando usuario 2591
+Creando usuario 2592
+Creando usuario 2593
+Creando usuario 2594
+Creando usuario 2595
+Creando usuario 2596
+Creando usuario 2597
+Creando usuario 2598
+Creando usuario 2599
+Creando usuario 2600
+Creando usuario 2601
+Creando usuario 2602
+Creando usuario 2603
+Creando usuario 2604
+Creando usuario 2605
+Creando usuario 2606
+Creando usuario 2607
+Creando usuario 2608
+Creando usuario 2609
+Creando usuario 2610
+Creando usuario 2611
+Creando usuario 2612
+Creando usuario 2613
+Creando usuario 2614
+Creando usuario 2615
+Creando usuario 2616
+Creando usuario 2617
+Creando usuario 2618
+Creando usuario 2619
+Creando usuario 2620
+Creando usuario 2621
+Creando usuario 2622
+Creando usuario 2623
+Creando usuario 2624
+Creando usuario 2625
+Creando usuario 2626
+Creando usuario 2627
+Creando usuario 2628
+Creando usuario 2629
+Creando usuario 2630
+Creando usuario 2631
+Creando usuario 2632
+Creando usuario 2633
+Creando usuario 2634
+Creando usuario 2635
+Creando usuario 2636
+Creando usuario 2637
+Creando usuario 2638
+Creando usuario 2639
+Creando usuario 2640
+Creando usuario 2641
+Creando usuario 2642
+Creando usuario 2643
+Creando usuario 2644
+Creando usuario 2645
+Creando usuario 2646
+Creando usuario 2647
+Creando usuario 2648
+Creando usuario 2649
+Creando usuario 2650
+Creando usuario 2651
+Creando usuario 2652
+Creando usuario 2653
+Creando usuario 2654
+Creando usuario 2655
+Creando usuario 2656
+Creando usuario 2657
+Creando usuario 2658
+Creando usuario 2659
+Creando usuario 2660
+Creando usuario 2661
+Creando usuario 2662
+Creando usuario 2663
+Creando usuario 2664
+Creando usuario 2665
+Creando usuario 2666
+Creando usuario 2667
+Creando usuario 2668
+Creando usuario 2669
+Creando usuario 2670
+Creando usuario 2671
+Creando usuario 2672
+Creando usuario 2673
+Creando usuario 2674
+Creando usuario 2675
+Creando usuario 2676
+Creando usuario 2677
+Creando usuario 2678
+Creando usuario 2679
+Creando usuario 2680
+Creando usuario 2681
+Creando usuario 2682
+Creando usuario 2683
+Creando usuario 2684
+Creando usuario 2685
+Creando usuario 2686
+Creando usuario 2687
+Creando usuario 2688
+Creando usuario 2689
+Creando usuario 2690
+Creando usuario 2691
+Creando usuario 2692
+Creando usuario 2693
+Creando usuario 2694
+Creando usuario 2695
+Creando usuario 2696
+Creando usuario 2697
+Creando usuario 2698
+Creando usuario 2699
+Creando usuario 2700
+Creando usuario 2701
+Creando usuario 2702
+Creando usuario 2703
+Creando usuario 2704
+Creando usuario 2705
+Creando usuario 2706
+Creando usuario 2707
+Creando usuario 2708
+Creando usuario 2709
+Creando usuario 2710
+Creando usuario 2711
+Creando usuario 2712
+Creando usuario 2713
+Creando usuario 2714
+Creando usuario 2715
+Creando usuario 2716
+Creando usuario 2717
+Creando usuario 2718
+Creando usuario 2719
+Creando usuario 2720
+Creando usuario 2721
+Creando usuario 2722
+Creando usuario 2723
+Creando usuario 2724
+Creando usuario 2725
+Creando usuario 2726
+Creando usuario 2727
+Creando usuario 2728
+Creando usuario 2729
+Creando usuario 2730
+Creando usuario 2731
+Creando usuario 2732
+Creando usuario 2733
+Creando usuario 2734
+Creando usuario 2735
+Creando usuario 2736
+Creando usuario 2737
+Creando usuario 2738
+Creando usuario 2739
+Creando usuario 2740
+Creando usuario 2741
+Creando usuario 2742
+Creando usuario 2743
+Creando usuario 2744
+Creando usuario 2745
+Creando usuario 2746
+Creando usuario 2747
+Creando usuario 2748
+Creando usuario 2749
+Creando usuario 2750
+Creando usuario 2751
+Creando usuario 2752
+Creando usuario 2753
+Creando usuario 2754
+Creando usuario 2755
+Creando usuario 2756
+Creando usuario 2757
+Creando usuario 2758
+Creando usuario 2759
+Creando usuario 2760
+Creando usuario 2761
+Creando usuario 2762
+Creando usuario 2763
+Creando usuario 2764
+Creando usuario 2765
+Creando usuario 2766
+Creando usuario 2767
+Creando usuario 2768
+Creando usuario 2769
+Creando usuario 2770
+Creando usuario 2771
+Creando usuario 2772
+Creando usuario 2773
+Creando usuario 2774
+Creando usuario 2775
+Creando usuario 2776
+Creando usuario 2777
+Creando usuario 2778
+Creando usuario 2779
+Creando usuario 2780
+Creando usuario 2781
+Creando usuario 2782
+Creando usuario 2783
+Creando usuario 2784
+Creando usuario 2785
+Creando usuario 2786
+Creando usuario 2787
+Creando usuario 2788
+Creando usuario 2789
+Creando usuario 2790
+Creando usuario 2791
+Creando usuario 2792
+Creando usuario 2793
+Creando usuario 2794
+Creando usuario 2795
+Creando usuario 2796
+Creando usuario 2797
+Creando usuario 2798
+Creando usuario 2799
+Creando usuario 2800
+Creando usuario 2801
+Creando usuario 2802
+Creando usuario 2803
+Creando usuario 2804
+Creando usuario 2805
+Creando usuario 2806
+Creando usuario 2807
+Creando usuario 2808
+Creando usuario 2809
+Creando usuario 2810
+Creando usuario 2811
+Creando usuario 2812
+Creando usuario 2813
+Creando usuario 2814
+Creando usuario 2815
+Creando usuario 2816
+Creando usuario 2817
+Creando usuario 2818
+Creando usuario 2819
+Creando usuario 2820
+Creando usuario 2821
+Creando usuario 2822
+Creando usuario 2823
+Creando usuario 2824
+Creando usuario 2825
+Creando usuario 2826
+Creando usuario 2827
+Creando usuario 2828
+Creando usuario 2829
+Creando usuario 2830
+Creando usuario 2831
+Creando usuario 2832
+Creando usuario 2833
+Creando usuario 2834
+Creando usuario 2835
+Creando usuario 2836
+Creando usuario 2837
+Creando usuario 2838
+Creando usuario 2839
+Creando usuario 2840
+Creando usuario 2841
+Creando usuario 2842
+Creando usuario 2843
+Creando usuario 2844
+Creando usuario 2845
+Creando usuario 2846
+Creando usuario 2847
+Creando usuario 2848
+Creando usuario 2849
+Creando usuario 2850
+Creando usuario 2851
+Creando usuario 2852
+Creando usuario 2853
+Creando usuario 2854
+Creando usuario 2855
+Creando usuario 2856
+Creando usuario 2857
+Creando usuario 2858
+Creando usuario 2859
+Creando usuario 2860
+Creando usuario 2861
+Creando usuario 2862
+Creando usuario 2863
+Creando usuario 2864
+Creando usuario 2865
+Creando usuario 2866
+Creando usuario 2867
+Creando usuario 2868
+Creando usuario 2869
+Creando usuario 2870
+Creando usuario 2871
+Creando usuario 2872
+Creando usuario 2873
+Creando usuario 2874
+Creando usuario 2875
+Creando usuario 2876
+Creando usuario 2877
+Creando usuario 2878
+Creando usuario 2879
+Creando usuario 2880
+Creando usuario 2881
+Creando usuario 2882
+Creando usuario 2883
+Creando usuario 2884
+Creando usuario 2885
+Creando usuario 2886
+Creando usuario 2887
+Creando usuario 2888
+Creando usuario 2889
+Creando usuario 2890
+Creando usuario 2891
+Creando usuario 2892
+Creando usuario 2893
+Creando usuario 2894
+Creando usuario 2895
+Creando usuario 2896
+Creando usuario 2897
+Creando usuario 2898
+Creando usuario 2899
+Creando usuario 2900
+Creando usuario 2901
+Creando usuario 2902
+Creando usuario 2903
+Creando usuario 2904
+Creando usuario 2905
+Creando usuario 2906
+Creando usuario 2907
+Creando usuario 2908
+Creando usuario 2909
+Creando usuario 2910
+Creando usuario 2911
+Creando usuario 2912
+Creando usuario 2913
+Creando usuario 2914
+Creando usuario 2915
+Creando usuario 2916
+Creando usuario 2917
+Creando usuario 2918
+Creando usuario 2919
+Creando usuario 2920
+Creando usuario 2921
+Creando usuario 2922
+Creando usuario 2923
+Creando usuario 2924
+Creando usuario 2925
+Creando usuario 2926
+Creando usuario 2927
+Creando usuario 2928
+Creando usuario 2929
+Creando usuario 2930
+Creando usuario 2931
+Creando usuario 2932
+Creando usuario 2933
+Creando usuario 2934
+Creando usuario 2935
+Creando usuario 2936
+Creando usuario 2937
+Creando usuario 2938
+Creando usuario 2939
+Creando usuario 2940
+Creando usuario 2941
+Creando usuario 2942
+Creando usuario 2943
+Creando usuario 2944
+Creando usuario 2945
+Creando usuario 2946
+Creando usuario 2947
+Creando usuario 2948
+Creando usuario 2949
+Creando usuario 2950
+Creando usuario 2951
+Creando usuario 2952
+Creando usuario 2953
+Creando usuario 2954
+Creando usuario 2955
+Creando usuario 2956
+Creando usuario 2957
+Creando usuario 2958
+Creando usuario 2959
+Creando usuario 2960
+Creando usuario 2961
+Creando usuario 2962
+Creando usuario 2963
+Creando usuario 2964
+Creando usuario 2965
+Creando usuario 2966
+Creando usuario 2967
+Creando usuario 2968
+Creando usuario 2969
+Creando usuario 2970
+Creando usuario 2971
+Creando usuario 2972
+Creando usuario 2973
+Creando usuario 2974
+Creando usuario 2975
+Creando usuario 2976
+Creando usuario 2977
+Creando usuario 2978
+Creando usuario 2979
+Creando usuario 2980
+Creando usuario 2981
+Creando usuario 2982
+Creando usuario 2983
+Creando usuario 2984
+Creando usuario 2985
+Creando usuario 2986
+Creando usuario 2987
+Creando usuario 2988
+Creando usuario 2989
+Creando usuario 2990
+Creando usuario 2991
+Creando usuario 2992
+Creando usuario 2993
+Creando usuario 2994
+Creando usuario 2995
+Creando usuario 2996
+Creando usuario 2997
+Creando usuario 2998
+Creando usuario 2999
+Creando usuario 3000
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=3000, monto=0}
+Actualizando monto de usuario 3000 de 0 a 1
+1
+Actualizando vendedor 3000 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=1976, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=952, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=440, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=184, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=120, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=56, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=24, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=8, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=4, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=3000, monto=1}
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=3000, monto=1, id de transaccion= 0
+Máximo del heap: Usuario{id=3000, monto=1}
+=== extraerMaximo() → root.id=aed.Transaccion@1477089c monto=aed.Transaccion@1477089c ===
+Transacciones restantes en el último bloque:
+Máximo del heap: Usuario{id=3000, monto=1}
+]]></system-out>
+  </testcase>
+  <testcase name="hackearConUnBloque" classname="aed.BerretacoinTests" time="0">
+    <failure message="expected: &lt;4&gt; but was: &lt;3&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <4> but was: <3>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at aed.BerretacoinTests.hackearConUnBloque(BerretacoinTests.java:256)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=2, monto=1}
+Vendedor: Usuario{id=3, monto=0}
+Actualizando monto de usuario 2 de 1 a 0
+0
+Actualizando comprador 2 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 3 de 0 a 1
+1
+Actualizando vendedor 3 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
+Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=2, monto=0}
+Vendedor: Usuario{id=3, monto=1}
+Intercambiando nodo aed.Transaccion@75cd8043 con nodo aed.Transaccion@33b1c5c5
+Antes de la transacción:
+Comprador: Usuario{id=3, monto=1}
+Vendedor: Usuario{id=4, monto=0}
+Actualizando monto de usuario 3 de 1 a 0
+0
+Actualizando comprador 3 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
+Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
+Actualizando monto de usuario 4 de 0 a 1
+1
+Actualizando vendedor 4 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
+Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=3, monto=0}
+Vendedor: Usuario{id=4, monto=1}
+Intercambiando nodo aed.Transaccion@5b202a3a con nodo aed.Transaccion@75cd8043
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
+Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
+Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 2
+=== extraerMaximo() → root.id=aed.Transaccion@5b202a3a monto=aed.Transaccion@5b202a3a ===
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=2, m=1] [id=2, compr=3, vend=4, m=1]
+Máximo del heap: Usuario{id=4, monto=1}
+]]></system-out>
+  </testcase>
+  <testcase name="hackeoAfectaSaldos" classname="aed.BerretacoinTests" time="0">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at aed.BerretacoinTests.hackeoAfectaSaldos(BerretacoinTests.java:303)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Antes de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=0}
+Actualizando monto de usuario 1 de 0 a 1
+1
+Actualizando vendedor 1 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=0, monto=0}
+Vendedor: Usuario{id=1, monto=1}
+Antes de la transacción:
+Comprador: Usuario{id=1, monto=1}
+Vendedor: Usuario{id=2, monto=0}
+Actualizando monto de usuario 1 de 1 a 0
+0
+Actualizando comprador 1 con nuevo monto 0
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
+Actualizando monto de usuario 2 de 0 a 1
+1
+Actualizando vendedor 2 con nuevo monto 1
+Llamando siftUp y siftDown (igualdad)...
+Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
+Después de la transacción:
+Comprador: Usuario{id=1, monto=0}
+Vendedor: Usuario{id=2, monto=1}
+Intercambiando nodo aed.Transaccion@34cdeda2 con nodo aed.Transaccion@6ee660fb
+Transacciones agregadas al bloque:
+Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
+Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
+Máximo del heap: Usuario{id=2, monto=1}
+=== extraerMaximo() → root.id=aed.Transaccion@34cdeda2 monto=aed.Transaccion@34cdeda2 ===
+Transacciones restantes en el último bloque: [id=1, compr=1, vend=2, m=1]
+Máximo del heap: Usuario{id=2, monto=1}
+]]></system-out>
+  </testcase>
+  <testcase name="unSoloUsuario" classname="aed.BerretacoinTests" time="0.003">
+    <failure message="expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at aed.BerretacoinTests.unSoloUsuario(BerretacoinTests.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Creando usuario 1
+Creando usuario 2
+Creando usuario 3
+Creando usuario 4
+Creando usuario 5
+Creando usuario 6
+Creando usuario 7
+Creando usuario 8
+Creando usuario 9
+Creando usuario 10
+Creando usuario 1
+Máximo del heap: Usuario{id=0, monto=0}
+]]></system-out>
+  </testcase>
+</testsuite>

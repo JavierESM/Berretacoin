@@ -55,20 +55,20 @@ public class Berretacoin {
         System.out.println("Vendedor: " + vendedor);
 
         if (comprador.id() == 0) {
-            Usuario vendedorAntes = new Usuario(idVendedor, vendedor.monto());
+          
             vendedor.setearMonto(vendedor.monto() + t.monto());
             System.out.println("Actualizando vendedor " + vendedor.id() + " con nuevo monto " + vendedor.monto());
-            usuariosPorMonto.editar(vendedor.obtenerHandleHeapU(), vendedor, vendedorAntes);
+            usuariosPorMonto.editar(vendedor.obtenerHandleHeapU());
         } else {
-            Usuario compradorAntes = new Usuario(idComprador, comprador.monto());
+        
             comprador.setearMonto(comprador.monto() - t.monto());
             System.out.println("Actualizando comprador " + comprador.id() + " con nuevo monto " + comprador.monto());
-            usuariosPorMonto.editar(comprador.obtenerHandleHeapU(), comprador, compradorAntes);
+            usuariosPorMonto.editar(comprador.obtenerHandleHeapU());
             
-            Usuario vendedorAntes = new Usuario(idVendedor, vendedor.monto());
+          
             vendedor.setearMonto(vendedor.monto() + t.monto());
             System.out.println("Actualizando vendedor " + vendedor.id() + " con nuevo monto " + vendedor.monto());
-            usuariosPorMonto.editar(vendedor.obtenerHandleHeapU(), vendedor, vendedorAntes);
+            usuariosPorMonto.editar(vendedor.obtenerHandleHeapU());
         }
 
         System.out.println("Después de la transacción:");
@@ -81,6 +81,12 @@ public class Berretacoin {
     }
 
     Bloque nuevoBloque = new Bloque(heapTransacciones, listaTransacciones);
+    System.out.println("Transacciones agregadas al bloque:");
+Iterador<Transaccion> debugIt = listaTransacciones.iterador();
+while (debugIt.haySiguiente()) {
+    Transaccion tx = debugIt.siguiente();
+    System.out.println("Tx: comprador=" + tx.id_comprador() + ", vendedor=" + tx.id_vendedor() + ", monto=" + tx.monto() + ", id de transaccion= " + tx.id());
+}
     this.cadena.add(nuevoBloque);
     
 }
@@ -111,13 +117,13 @@ public class Berretacoin {
         Usuario maximoTenedor = usuariosPorMonto.mostrarMaximo();
         System.out.println("Máximo del heap: " + maximoTenedor);
 
-        Usuario u2999 = usuariosLista.obtener(2999);
+        /*Usuario u2999 = usuariosLista.obtener(2999);
         Usuario u3000 = usuariosLista.obtener(3000);
 
         System.out.println("Usuario 2999: id=" + u2999.id() + ", monto=" + u2999.monto());
         System.out.println("Usuario 3000: id=" + u3000.id() + ", monto=" + u3000.monto());
         System.out.println("Comparación: 3000.compareTo(2999) = " + u3000.compareTo(u2999));
-
+        */
 
         return maximoTenedor.id();
     }
@@ -144,22 +150,35 @@ public class Berretacoin {
 
 
     public void hackearTx(){
-        Bloque ultimoBloque = cadena.get(cadena.size() - 1);
+    Bloque ultimoBloque = cadena.get(cadena.size() - 1);
 
-        if (ultimoBloque.transaccionesHeap.tamaño() == 0) {
-            return;
-        }
-
-        Heap<Transaccion>.HandleHeap handleMaximo = ultimoBloque.transaccionesHeap.extraerMaximo();
-        Transaccion transaccionMaxima = handleMaximo.obtener();
-        ultimoBloque.transaccionesLista.eliminar(transaccionMaxima.obtenerHandleLL());
-        
-        this.montoMedioUltimoBloque = montoMedioUltimoBloque();
-
-        if (ultimoBloque.transaccionesHeap.tamaño() == 0) {
-            cadena.removeLast();
-        }
+    if (ultimoBloque.transaccionesHeap.tamaño() == 0) {
+        return;
     }
+
+    Heap<Transaccion>.HandleHeap h = ultimoBloque.transaccionesHeap.extraerMaximo();
+    Transaccion tx = h.obtener();
+    ultimoBloque.transaccionesLista.eliminar(tx.obtenerHandleLL());
+    
+    this.montoMedioUltimoBloque = montoMedioUltimoBloque();
+
+    if (ultimoBloque.transaccionesHeap.tamaño() == 0) {
+        cadena.removeLast();
+    }
+     
+    // ——— Aquí agregamos el print de todas las transacciones que quedan ———
+    System.out.print("Transacciones restantes en el último bloque:");
+    Iterador<Transaccion> it = ultimoBloque.transaccionesLista.iterador();
+    while (it.haySiguiente()) {
+        Transaccion t = it.siguiente();
+        System.out.print(String.format(
+            " [id=%d, compr=%d, vend=%d, m=%d]",
+            t.id(), t.id_comprador(), t.id_vendedor(), t.monto()
+        ));
+    }
+    System.out.println();
+}
+
 }
 
 
