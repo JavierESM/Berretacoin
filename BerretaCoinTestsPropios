@@ -106,15 +106,15 @@ public class BerretacoinTests {
         bc.agregarBloque(Collections.emptyList()); // bloque 2
         bc.agregarBloque(Collections.emptyList()); // bloque 3
 
-        // Hackeamos varias veces el último bloque
+        // Hackeamos varias veces el ultimo bloque
         bc.hackearTx();
         bc.hackearTx();
 
         List<Transaccion> ultimoBloque = bc.txUltimoBloque();
 
-        // Primero, el bloque no estaba vacío, así que el hackear varias veces 
-        // no debería duplicar o dejar más de 1 transacción.
-        assertEquals(1, ultimoBloque.size(), "El bloque hackeado tiene que tener 1 transacción.");
+        // Primero, el bloque no estaba vacio, asi que el hackear varias veces 
+        // no deberia duplicar o dejar mas de 1 transaccion.
+        assertEquals(1, ultimoBloque.size());// el bloque hackeado tiene que tener 1 transaccion
     }
  
     @Test
@@ -128,16 +128,16 @@ public class BerretacoinTests {
         );
         bc.agregarBloque(txs);
         
-        // Después bloque vacío
+        // Despues bloque vacio
         bc.agregarBloque(Collections.emptyList());
 
-        // Hackear bloque vacío
+        // Hackear bloque vacio
         bc.hackearTx();
 
         List<Transaccion> ultimo = bc.txUltimoBloque();
 
-        assertEquals(1, ultimo.size(), "Tras hackear, el bloque vacío tiene que tener 1 transacción.");
-        assertEquals(0, ultimo.get(0).getValor(), "Valor de la transacción hackeada tiene que ser 0.");
+        assertEquals(1, ultimo.size()); // Tras hackear el bloque vacio tiene que tener 1 transaccion
+        assertEquals(0, ultimo.get(0).getValor()); // valor de la transaccin hackeada tiene que ser0
     }
  
     @Test
@@ -158,8 +158,8 @@ public class BerretacoinTests {
 
         List<Transaccion> ultimo = bc.txUltimoBloque();
 
-        assertEquals(1, ultimo.size(), "Bloque vacío tiene que tener 1 transacción luego de hackear.");
-        assertEquals(0, ultimo.get(0).getValor(), "Valor de transacción hackeada tiene que ser 0.");
+        assertEquals(1, ultimo.size()); // Valor tiene que quedar en 0
+        assertEquals(0, ultimo.get(0).getValor()); // Valor de transaccion hackeada tiene que ser 0
     }
  
     @Test
@@ -175,8 +175,8 @@ public class BerretacoinTests {
 
         List<Transaccion> ultimo = bc.txUltimoBloque();
 
-        assertEquals(1, ultimo.size(), "Bloque 3 tiene que tener 1 transacción.");
-        assertEquals(0, ultimo.get(0).getValor(), "Valor tiene que ser 0.");
+        assertEquals(1, ultimo.size()); // , "Bloque 3 tiene que tener 1 transaccion
+        assertEquals(0, ultimo.get(0).getValor()); // valor tiene que ser 0
     }
  
     @Test
@@ -192,8 +192,8 @@ public class BerretacoinTests {
 
         List<Transaccion> ultimo = bc.txUltimoBloque();
 
-        assertEquals(1, ultimo.size(), "Debería tener solo 1 transacción.");
-        assertEquals(0, ultimo.get(0).getValor(), "Valor tiene que quedar en 0.");
+        assertEquals(1, ultimo.size()); // Deberia tener solo 1 transaccion
+        assertEquals(0, ultimo.get(0).getValor()); // Valor tiene que quedar en 0
     }
      @Test
     public void testAgregarBloqueYVerificarTxMayorValor() {
@@ -209,7 +209,7 @@ public class BerretacoinTests {
         
         Transaccion max = bc.txMayorValorUltimoBloque();
 
-        assertEquals(500, max.getValor(), "Deberia encontrar la transaccion de 500 como la de mayor valor.");
+        assertEquals(500, max.getValor()); // deberia encontrar la transaccion de 500 como la de mayor valor
     }
  
     @Test
@@ -227,7 +227,7 @@ public class BerretacoinTests {
         
         int promedio = bc.montoMedioUltimoBloque();
 
-        assertEquals(250, promedio, "Valor medio de 100, 200, 300, 400 es 250.");
+        assertEquals(250, promedio); // valor medio de 100, 200, 300, 400 es 250
     }
  
     @Test
@@ -244,7 +244,7 @@ public class BerretacoinTests {
 
         int max = bc.maximoTenedor();
 
-        assertEquals(5, max, "Usuario 5 tiene más Berretacoin que el resto.");
+        assertEquals(5, max); // usuario 5 el usuario con mayor monton
     }
  
     @Test
@@ -252,10 +252,10 @@ public class BerretacoinTests {
         // 2 usuarios
         Berretacoin bc = new Berretacoin(2);
         
-        bc.agregarBloque(Collections.emptyList()); // bloque vacío
+        bc.agregarBloque(Collections.emptyList()); // bloque vacio
         bc.hackearTx();
 
-        // Aun así podemos preguntar maximoTenedor o monto medio
+        // Aun asi podemos preguntar maximoTenedor o monto medio
         int max = bc.maximoTenedor();
         int medio = bc.montoMedioUltimoBloque();
 
@@ -284,15 +284,18 @@ public class BerretacoinTests {
 
         List<Transaccion> ultimo = bc.txUltimoBloque();
 
-        assertEquals(500, maxTx.getValor(), "Valor más alto antes de hackear.");
-        assertEquals(266, medio, "Valor medio (100 + 200 + 500) / 3 ≅ 266.");
+        assertEquals(500, maxTx.getValor()); // valor mas alto antes de hackear
+        assertEquals(266, medio); // "Valor medio (100 + 200 + 500) / 3  seria maso menos 266."
 
-        assertEquals(1, ultimo.size(), "Tras hackear tiene que quedar 1.");
-        assertEquals(0, ultimo.get(0).getValor(), "Valor tiene que quedar en 0.");
-        assertTrue(max >= 1 && max <= 4, "Máximo tenedor tiene que estar en el rango de usuarios.");
+        assertEquals(1, ultimo.size()); 
+        assertEquals(0, ultimo.get(0).getValor());
+        assertTrue(max >= 1 && max <= 4);
     }
 }
     
     
+    
+
+
     
 
