@@ -1,9 +1,6 @@
 package aed;
 
 import aed.ListaEnlazada.Handle;
-
-import java.util.Objects;
-
 import aed.Heap.HandleHeap;
 
 public class Transaccion implements Comparable<Transaccion> {
@@ -14,8 +11,7 @@ public class Transaccion implements Comparable<Transaccion> {
     private Heap<Transaccion>.HandleHeap handleDelheap;
     private ListaEnlazada<Transaccion>.Handle handleDeLL;
 
-
-
+    
     public Transaccion(int id, int id_comprador, int id_vendedor, int monto) {
         this.id = id;
         this.id_comprador = id_comprador;
@@ -87,19 +83,6 @@ public class Transaccion implements Comparable<Transaccion> {
                 return false;
             }
         }
-
-
-
-    @Override
-        public String toString() {
-            return "Transaccion{id=" + id + ", comprador=" + id_comprador + ", vendedor=" + id_vendedor + ", monto=" + monto + "}";
-        }
-    @Override
-public int hashCode() {
-    return Objects.hash(id(), id_comprador(), id_vendedor(), monto());
-}
-
-
 }
 
 

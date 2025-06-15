@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Heap<T extends Comparable<T>> {
     private Nodo raiz;
     private int tamaño;
-    private ArrayList<Nodo> nodosEnOrden;
+    private ArrayList<Nodo> nodosEnNivel;
 
     private class Nodo {
         T dato;
@@ -30,7 +30,7 @@ public class Heap<T extends Comparable<T>> {
     }
 
     public Heap() {
-        this.nodosEnOrden = new ArrayList<>();
+        this.nodosEnNivel = new ArrayList<>();
     }
 
     public HandleHeap insertar(T nuevoValor) {
@@ -41,7 +41,7 @@ public class Heap<T extends Comparable<T>> {
         if (raiz == null) {
             raiz = nuevoNodo;
         } else {
-            Nodo padre = nodosEnOrden.get((nodosEnOrden.size() - 1) / 2);
+            Nodo padre = nodosEnNivel.get((nodosEnNivel.size() - 1) / 2);
             nuevoNodo.padre = padre;
             if (padre.hijoIzquierdo == null) {
                 padre.hijoIzquierdo = nuevoNodo;
@@ -50,14 +50,14 @@ public class Heap<T extends Comparable<T>> {
             }
         }
 
-        nodosEnOrden.add(nuevoNodo);
+        nodosEnNivel.add(nuevoNodo);
         tamaño++;
         return nuevoHandle;
     }
 
     public void heapifyLloyd() {
-        for (int i = nodosEnOrden.size() / 2 - 1; i >= 0; i--) {
-            siftDown(nodosEnOrden.get(i));
+        for (int i = nodosEnNivel.size() / 2 - 1; i >= 0; i--) {
+            siftDown(nodosEnNivel.get(i));
         }
     }
 
@@ -79,7 +79,7 @@ public class Heap<T extends Comparable<T>> {
         Nodo nodoMaximo = raiz;
         HandleHeap handleMaximo = nodoMaximo.aSiMismo;
 
-        Nodo ultimo = nodosEnOrden.get(nodosEnOrden.size() - 1);
+        Nodo ultimo = nodosEnNivel.get(nodosEnNivel.size() - 1);
         intercambiar(nodoMaximo, ultimo);
 
         if (ultimo.padre != null) {
@@ -92,7 +92,7 @@ public class Heap<T extends Comparable<T>> {
             raiz = null;
         }
 
-        nodosEnOrden.remove(nodosEnOrden.size() - 1);
+        nodosEnNivel.remove(nodosEnNivel.size() - 1);
         tamaño--;
 
         if (raiz != null) {
