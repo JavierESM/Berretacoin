@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="aed.BerretacoinTests" time="0.632" tests="15" errors="0" skipped="0" failures="8">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="aed.BerretacoinTests" time="0.521" tests="15" errors="0" skipped="0" failures="8">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\javie\AppData\Local\Temp\surefire663887478475911447\surefirebooter-20250612143635730_3.jar C:\Users\javie\AppData\Local\Temp\surefire663887478475911447 2025-06-12T14-36-35_574-jvmRun1 surefire-20250612143635730_1tmp surefire_0-20250612143635730_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\javie\AppData\Local\Temp\surefire17064524745390862958\surefirebooter-20250612190313537_3.jar C:\Users\javie\AppData\Local\Temp\surefire17064524745390862958 2025-06-12T19-03-13_330-jvmRun1 surefire-20250612190313537_1tmp surefire_0-20250612190313537_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\javie\Downloads\tp2 (1)\estudiantes\target\test-classes;C:\Users\javie\Downloads\tp2 (1)\estudiantes\target\classes;C:\Users\javie\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\javie\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\javie\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\javie\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\javie\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\javie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\javie\AppData\Local\Temp\surefire663887478475911447\surefirebooter-20250612143635730_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\javie\AppData\Local\Temp\surefire17064524745390862958\surefirebooter-20250612190313537_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-70"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="hackeoUnicaTransaccion" classname="aed.BerretacoinTests" time="0.113">
+  <testcase name="hackeoUnicaTransaccion" classname="aed.BerretacoinTests" time="0.09">
     <system-out><![CDATA[Creando usuario 1
 Creando usuario 2
 Creando usuario 3
@@ -75,18 +75,18 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 1 de 0 a 1
 1
 Actualizando vendedor 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=1, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
-=== extraerMaximo() → root.id=aed.Transaccion@3e7dd664 monto=aed.Transaccion@3e7dd664 ===
+Hackeando transacción: Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Transacciones restantes en el último bloque:
 ]]></system-out>
   </testcase>
-  <testcase name="maximoTenedorEsElMinimoCuandoNuevo" classname="aed.BerretacoinTests" time="0.016">
+  <testcase name="maximoTenedorEsElMinimoCuandoNuevo" classname="aed.BerretacoinTests" time="0">
     <failure message="expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -178,7 +178,7 @@ Creando usuario 10
 Máximo del heap: Usuario{id=0, monto=0}
 ]]></system-out>
   </testcase>
-  <testcase name="hackeoTotalDeBloque" classname="aed.BerretacoinTests" time="0.025">
+  <testcase name="hackeoTotalDeBloque" classname="aed.BerretacoinTests" time="0.019">
     <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -186,7 +186,7 @@ Máximo del heap: Usuario{id=0, monto=0}
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
 	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
-	at aed.BerretacoinTests.hackeoTotalDeBloque(BerretacoinTests.java:272)
+	at aed.BerretacoinTests.hackeoTotalDeBloque(BerretacoinTests.java:273)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -273,7 +273,7 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 1 de 0 a 1
 1
 Actualizando vendedor 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -284,44 +284,45 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 1 a 0
 0
 Actualizando comprador 1 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=0}
 Vendedor: Usuario{id=2, monto=1}
-Intercambiando nodo aed.Transaccion@495b0487 con nodo aed.Transaccion@55dfcc6
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=2, monto=1}
 Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=1}
-Intercambiando nodo aed.Transaccion@222eb8aa con nodo aed.Transaccion@495b0487
+Intercambiando nodo Transaccion{id=2, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
 Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 2
-=== extraerMaximo() → root.id=aed.Transaccion@222eb8aa monto=aed.Transaccion@222eb8aa ===
-Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=2, compr=2, vend=3, m=1]
+Intercambiando nodo Transaccion{id=2, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1}
+Hackeando transacción: Transaccion{id=2, comprador=2, vendedor=3, monto=1}
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=1, compr=1, vend=2, m=1]
 ]]></system-out>
   </testcase>
-  <testcase name="empatesEnTransaccionMayorValor" classname="aed.BerretacoinTests" time="0.022">
+  <testcase name="empatesEnTransaccionMayorValor" classname="aed.BerretacoinTests" time="0.018">
     <system-out><![CDATA[Creando usuario 1
 Creando usuario 2
 Creando usuario 3
@@ -338,7 +339,7 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 1 de 0 a 1
 1
 Actualizando vendedor 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -349,75 +350,75 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 1 a 0
 0
 Actualizando comprador 1 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=0}
 Vendedor: Usuario{id=2, monto=1}
-Intercambiando nodo aed.Transaccion@2a76840c con nodo aed.Transaccion@71454b9d
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=2, monto=1}
 Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=1}
-Intercambiando nodo aed.Transaccion@eda25e5 con nodo aed.Transaccion@2a76840c
+Intercambiando nodo Transaccion{id=2, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=4, monto=0}
 Actualizando monto de usuario 3 de 1 a 0
 0
 Actualizando comprador 3 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 0 a 1
 1
 Actualizando vendedor 4 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=0}
 Vendedor: Usuario{id=4, monto=1}
-Intercambiando nodo aed.Transaccion@7cf6a5f9 con nodo aed.Transaccion@71454b9d
-Intercambiando nodo aed.Transaccion@7cf6a5f9 con nodo aed.Transaccion@eda25e5
+Intercambiando nodo Transaccion{id=3, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
+Intercambiando nodo Transaccion{id=3, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=2, comprador=2, vendedor=3, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=4, monto=1}
 Vendedor: Usuario{id=5, monto=0}
 Actualizando monto de usuario 4 de 1 a 0
 0
 Actualizando comprador 4 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=0}
 Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=2, monto=0}
 Actualizando monto de usuario 5 de 0 a 1
 1
 Actualizando vendedor 5 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=5, monto=1}
 Intercambiando nodo Usuario{id=5, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=5, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=4, monto=0}
 Vendedor: Usuario{id=5, monto=1}
-Intercambiando nodo aed.Transaccion@623e088f con nodo aed.Transaccion@2a76840c
-Intercambiando nodo aed.Transaccion@623e088f con nodo aed.Transaccion@7cf6a5f9
+Intercambiando nodo Transaccion{id=4, comprador=4, vendedor=5, monto=1} con nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1}
+Intercambiando nodo Transaccion{id=4, comprador=4, vendedor=5, monto=1} con nodo Transaccion{id=3, comprador=3, vendedor=4, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
 Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
@@ -426,7 +427,7 @@ Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 3
 Tx: comprador=4, vendedor=5, monto=1, id de transaccion= 4
 ]]></system-out>
   </testcase>
-  <testcase name="empatesEnMaximoTenedor" classname="aed.BerretacoinTests" time="0.02">
+  <testcase name="empatesEnMaximoTenedor" classname="aed.BerretacoinTests" time="0.006">
     <system-out><![CDATA[Creando usuario 1
 Creando usuario 2
 Creando usuario 3
@@ -443,7 +444,7 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 1 de 0 a 1
 1
 Actualizando vendedor 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -454,17 +455,17 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 1 a 0
 0
 Actualizando comprador 1 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=0}
 Vendedor: Usuario{id=2, monto=1}
-Intercambiando nodo aed.Transaccion@5023bb8b con nodo aed.Transaccion@5d5f10b2
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
 Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
@@ -475,7 +476,7 @@ Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -486,25 +487,25 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=1, monto=0}
 Actualizando monto de usuario 1 de 0 a 1
 1
 Actualizando vendedor 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=3, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=1, monto=1}
-Intercambiando nodo aed.Transaccion@74c79fa2 con nodo aed.Transaccion@1e0f9063
+Intercambiando nodo Transaccion{id=3, comprador=2, vendedor=1, monto=1} con nodo Transaccion{id=2, comprador=0, vendedor=3, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=3, monto=1, id de transaccion= 2
 Tx: comprador=2, vendedor=1, monto=1, id de transaccion= 3
 Máximo del heap: Usuario{id=1, monto=1}
 ]]></system-out>
   </testcase>
-  <testcase name="agregarVariosBloques" classname="aed.BerretacoinTests" time="0.01">
+  <testcase name="agregarVariosBloques" classname="aed.BerretacoinTests" time="0.006">
     <system-out><![CDATA[Creando usuario 1
 Creando usuario 2
 Creando usuario 3
@@ -521,7 +522,7 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -532,37 +533,37 @@ Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=1}
-Intercambiando nodo aed.Transaccion@53bd8fca con nodo aed.Transaccion@7642df8f
+Intercambiando nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=2, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=4, monto=0}
 Actualizando monto de usuario 3 de 1 a 0
 0
 Actualizando comprador 3 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 0 a 1
 1
 Actualizando vendedor 4 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=0}
 Vendedor: Usuario{id=4, monto=1}
-Intercambiando nodo aed.Transaccion@3e30646a con nodo aed.Transaccion@53bd8fca
+Intercambiando nodo Transaccion{id=2, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
@@ -573,7 +574,7 @@ Vendedor: Usuario{id=4, monto=1}
 Actualizando monto de usuario 4 de 1 a 2
 2
 Actualizando vendedor 4 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=2}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=4, monto=2}
@@ -583,29 +584,29 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 2 a 0
 0
 Actualizando comprador 4 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=0}
 Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 0 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=4, monto=0}
 Vendedor: Usuario{id=1, monto=2}
-Intercambiando nodo aed.Transaccion@5cde6747 con nodo aed.Transaccion@63a270c9
+Intercambiando nodo Transaccion{id=1, comprador=4, vendedor=1, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=4, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=1, monto=2}
 Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 2 a 1
 1
 Actualizando comprador 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=1}
 Vendedor: Usuario{id=2, monto=1}
@@ -620,7 +621,7 @@ Vendedor: Usuario{id=1, monto=1}
 Actualizando monto de usuario 1 de 1 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=1, monto=2}
@@ -630,61 +631,61 @@ Vendedor: Usuario{id=2, monto=1}
 Actualizando monto de usuario 1 de 2 a 0
 0
 Actualizando comprador 1 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=2, monto=1}
 Actualizando monto de usuario 2 de 1 a 3
 3
 Actualizando vendedor 2 con nuevo monto 3
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=3}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=0}
 Vendedor: Usuario{id=2, monto=3}
-Intercambiando nodo aed.Transaccion@37c7595 con nodo aed.Transaccion@3ed242a4
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=2, monto=3}
 Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 3 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 3
 3
 Actualizando vendedor 3 con nuevo monto 3
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=3}
 Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=3}
-Intercambiando nodo aed.Transaccion@1199fe66 con nodo aed.Transaccion@37c7595
+Intercambiando nodo Transaccion{id=2, comprador=2, vendedor=3, monto=3} con nodo Transaccion{id=1, comprador=1, vendedor=2, monto=2}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=3}
 Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 3 de 3 a 1
 1
 Actualizando comprador 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Actualizando monto de usuario 1 de 0 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=3, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=1, monto=2}
-Intercambiando nodo aed.Transaccion@614df0a4 con nodo aed.Transaccion@3ed242a4
+Intercambiando nodo Transaccion{id=3, comprador=3, vendedor=1, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=1, monto=2}
 Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 2 a 1
 1
 Actualizando comprador 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=1}
@@ -695,12 +696,12 @@ Vendedor: Usuario{id=3, monto=1}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 1 a 2
 2
 Actualizando vendedor 3 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=2}
 Intercambiando nodo Usuario{id=3, monto=2} con nodo Usuario{id=1, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
@@ -715,7 +716,7 @@ Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 5
 Máximo del heap: Usuario{id=3, monto=2}
 ]]></system-out>
   </testcase>
-  <testcase name="multiplesBloquesPequenos" classname="aed.BerretacoinTests" time="0.018">
+  <testcase name="multiplesBloquesPequenos" classname="aed.BerretacoinTests" time="0.011">
     <system-out><![CDATA[Creando usuario 1
 Creando usuario 2
 Creando usuario 3
@@ -732,7 +733,7 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 1 de 0 a 1
 1
 Actualizando vendedor 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -743,17 +744,17 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 1 a 0
 0
 Actualizando comprador 1 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=0}
 Vendedor: Usuario{id=2, monto=1}
-Intercambiando nodo aed.Transaccion@2d96543c con nodo aed.Transaccion@73a2e526
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
 Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
@@ -764,7 +765,7 @@ Vendedor: Usuario{id=2, monto=1}
 Actualizando monto de usuario 2 de 1 a 2
 2
 Actualizando vendedor 2 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=2}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=2, monto=2}
@@ -774,16 +775,16 @@ Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 2 a 1
 1
 Actualizando comprador 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=1}
 Vendedor: Usuario{id=3, monto=1}
-Intercambiando nodo aed.Transaccion@7d64e326 con nodo aed.Transaccion@13f95696
+Intercambiando nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=2, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
@@ -794,7 +795,7 @@ Vendedor: Usuario{id=3, monto=1}
 Actualizando monto de usuario 3 de 1 a 2
 2
 Actualizando vendedor 3 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=2}
 Intercambiando nodo Usuario{id=3, monto=2} con nodo Usuario{id=2, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -805,17 +806,17 @@ Vendedor: Usuario{id=4, monto=0}
 Actualizando monto de usuario 3 de 2 a 1
 1
 Actualizando comprador 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=2, monto=1}
 Actualizando monto de usuario 4 de 0 a 1
 1
 Actualizando vendedor 4 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=4, monto=1}
-Intercambiando nodo aed.Transaccion@cd1d761 con nodo aed.Transaccion@68be8808
+Intercambiando nodo Transaccion{id=1, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=3, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=3, monto=1, id de transaccion= 0
 Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 1
@@ -826,7 +827,7 @@ Vendedor: Usuario{id=4, monto=1}
 Actualizando monto de usuario 4 de 1 a 2
 2
 Actualizando vendedor 4 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=2}
 Intercambiando nodo Usuario{id=4, monto=2} con nodo Usuario{id=2, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -837,16 +838,16 @@ Vendedor: Usuario{id=5, monto=0}
 Actualizando monto de usuario 4 de 2 a 1
 1
 Actualizando comprador 4 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=1}
 Actualizando monto de usuario 5 de 0 a 1
 1
 Actualizando vendedor 5 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=5, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=4, monto=1}
 Vendedor: Usuario{id=5, monto=1}
-Intercambiando nodo aed.Transaccion@32193bea con nodo aed.Transaccion@6b8d96d9
+Intercambiando nodo Transaccion{id=1, comprador=4, vendedor=5, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=4, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=4, monto=1, id de transaccion= 0
 Tx: comprador=4, vendedor=5, monto=1, id de transaccion= 1
@@ -857,7 +858,7 @@ Vendedor: Usuario{id=5, monto=1}
 Actualizando monto de usuario 5 de 1 a 2
 2
 Actualizando vendedor 5 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=5, monto=2}
 Intercambiando nodo Usuario{id=5, monto=2} con nodo Usuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=5, monto=2} con nodo Usuario{id=2, monto=1}
 Después de la transacción:
@@ -869,17 +870,17 @@ Vendedor: Usuario{id=6, monto=0}
 Actualizando monto de usuario 5 de 2 a 1
 1
 Actualizando comprador 5 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=5, monto=1}
 Intercambiando nodo Usuario{id=5, monto=1} con nodo Usuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=5, monto=1} con nodo Usuario{id=3, monto=1}
 Actualizando monto de usuario 6 de 0 a 1
 1
 Actualizando vendedor 6 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=6, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=5, monto=1}
 Vendedor: Usuario{id=6, monto=1}
-Intercambiando nodo aed.Transaccion@69653e16 con nodo aed.Transaccion@758705fa
+Intercambiando nodo Transaccion{id=1, comprador=5, vendedor=6, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=5, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=5, monto=1, id de transaccion= 0
 Tx: comprador=5, vendedor=6, monto=1, id de transaccion= 1
@@ -890,7 +891,7 @@ Vendedor: Usuario{id=6, monto=1}
 Actualizando monto de usuario 6 de 1 a 2
 2
 Actualizando vendedor 6 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=6, monto=2}
 Intercambiando nodo Usuario{id=6, monto=2} con nodo Usuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=6, monto=2} con nodo Usuario{id=2, monto=1}
 Después de la transacción:
@@ -902,18 +903,18 @@ Vendedor: Usuario{id=7, monto=0}
 Actualizando monto de usuario 6 de 2 a 1
 1
 Actualizando comprador 6 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=6, monto=1}
 Intercambiando nodo Usuario{id=6, monto=1} con nodo Usuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=6, monto=1} con nodo Usuario{id=4, monto=1}
 Actualizando monto de usuario 7 de 0 a 1
 1
 Actualizando vendedor 7 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=7, monto=1}
 Intercambiando nodo Usuario{id=7, monto=1} con nodo Usuario{id=1, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=6, monto=1}
 Vendedor: Usuario{id=7, monto=1}
-Intercambiando nodo aed.Transaccion@ebaa6cb con nodo aed.Transaccion@906d29b
+Intercambiando nodo Transaccion{id=1, comprador=6, vendedor=7, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=6, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=6, monto=1, id de transaccion= 0
 Tx: comprador=6, vendedor=7, monto=1, id de transaccion= 1
@@ -924,7 +925,7 @@ Vendedor: Usuario{id=7, monto=1}
 Actualizando monto de usuario 7 de 1 a 2
 2
 Actualizando vendedor 7 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=7, monto=2}
 Intercambiando nodo Usuario{id=7, monto=2} con nodo Usuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=7, monto=2} con nodo Usuario{id=2, monto=1}
 Después de la transacción:
@@ -936,18 +937,18 @@ Vendedor: Usuario{id=8, monto=0}
 Actualizando monto de usuario 7 de 2 a 1
 1
 Actualizando comprador 7 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=7, monto=1}
 Intercambiando nodo Usuario{id=7, monto=1} con nodo Usuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=7, monto=1} con nodo Usuario{id=3, monto=1}
 Actualizando monto de usuario 8 de 0 a 1
 1
 Actualizando vendedor 8 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=8, monto=1}
 Intercambiando nodo Usuario{id=8, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=7, monto=1}
 Vendedor: Usuario{id=8, monto=1}
-Intercambiando nodo aed.Transaccion@49d3c823 con nodo aed.Transaccion@436bc36
+Intercambiando nodo Transaccion{id=1, comprador=7, vendedor=8, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=7, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=7, monto=1, id de transaccion= 0
 Tx: comprador=7, vendedor=8, monto=1, id de transaccion= 1
@@ -958,7 +959,7 @@ Vendedor: Usuario{id=8, monto=1}
 Actualizando monto de usuario 8 de 1 a 2
 2
 Actualizando vendedor 8 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=8, monto=2}
 Intercambiando nodo Usuario{id=8, monto=2} con nodo Usuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=8, monto=2} con nodo Usuario{id=2, monto=1}
 Después de la transacción:
@@ -970,17 +971,17 @@ Vendedor: Usuario{id=9, monto=0}
 Actualizando monto de usuario 8 de 2 a 1
 1
 Actualizando comprador 8 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=8, monto=1}
 Intercambiando nodo Usuario{id=8, monto=1} con nodo Usuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=8, monto=1} con nodo Usuario{id=4, monto=1}
 Actualizando monto de usuario 9 de 0 a 1
 1
 Actualizando vendedor 9 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=9, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=8, monto=1}
 Vendedor: Usuario{id=9, monto=1}
-Intercambiando nodo aed.Transaccion@5fe1ce85 con nodo aed.Transaccion@604c5de8
+Intercambiando nodo Transaccion{id=1, comprador=8, vendedor=9, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=8, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=8, monto=1, id de transaccion= 0
 Tx: comprador=8, vendedor=9, monto=1, id de transaccion= 1
@@ -991,7 +992,7 @@ Vendedor: Usuario{id=9, monto=1}
 Actualizando monto de usuario 9 de 1 a 2
 2
 Actualizando vendedor 9 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=9, monto=2}
 Intercambiando nodo Usuario{id=9, monto=2} con nodo Usuario{id=5, monto=1}
 Intercambiando nodo Usuario{id=9, monto=2} con nodo Usuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=9, monto=2} con nodo Usuario{id=2, monto=1}
@@ -1004,21 +1005,21 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 9 de 2 a 1
 1
 Actualizando comprador 9 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=9, monto=1}
 Intercambiando nodo Usuario{id=9, monto=1} con nodo Usuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=9, monto=1} con nodo Usuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=9, monto=1} con nodo Usuario{id=5, monto=1}
 Actualizando monto de usuario 1 de 0 a 1
 1
 Actualizando vendedor 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=7, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=2, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=9, monto=1}
 Vendedor: Usuario{id=1, monto=1}
-Intercambiando nodo aed.Transaccion@37091312 con nodo aed.Transaccion@66fdec9
+Intercambiando nodo Transaccion{id=1, comprador=9, vendedor=1, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=9, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=9, monto=1, id de transaccion= 0
 Tx: comprador=9, vendedor=1, monto=1, id de transaccion= 1
@@ -1029,7 +1030,7 @@ Vendedor: Usuario{id=1, monto=1}
 Actualizando monto de usuario 1 de 1 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=1, monto=2}
@@ -1039,23 +1040,23 @@ Vendedor: Usuario{id=2, monto=1}
 Actualizando monto de usuario 1 de 2 a 1
 1
 Actualizando comprador 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Actualizando monto de usuario 2 de 1 a 2
 2
 Actualizando vendedor 2 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=2}
 Intercambiando nodo Usuario{id=2, monto=2} con nodo Usuario{id=1, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=1}
 Vendedor: Usuario{id=2, monto=2}
-Intercambiando nodo aed.Transaccion@57abad67 con nodo aed.Transaccion@550a1967
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
 Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
 Máximo del heap: Usuario{id=2, monto=2}
 ]]></system-out>
   </testcase>
-  <testcase name="hackearVariasVeces" classname="aed.BerretacoinTests" time="0.006">
+  <testcase name="hackearVariasVeces" classname="aed.BerretacoinTests" time="0.005">
     <failure message="expected: &lt;3&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1063,7 +1064,7 @@ Máximo del heap: Usuario{id=2, monto=2}
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.hackearVariasVeces(BerretacoinTests.java:349)
+	at aed.BerretacoinTests.hackearVariasVeces(BerretacoinTests.java:350)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -1150,7 +1151,7 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -1161,37 +1162,37 @@ Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=1}
-Intercambiando nodo aed.Transaccion@2a640157 con nodo aed.Transaccion@52851b44
+Intercambiando nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=2, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=4, monto=0}
 Actualizando monto de usuario 3 de 1 a 0
 0
 Actualizando comprador 3 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 0 a 1
 1
 Actualizando vendedor 4 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=0}
 Vendedor: Usuario{id=4, monto=1}
-Intercambiando nodo aed.Transaccion@584f54e6 con nodo aed.Transaccion@2a640157
+Intercambiando nodo Transaccion{id=2, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
@@ -1202,7 +1203,7 @@ Vendedor: Usuario{id=4, monto=1}
 Actualizando monto de usuario 4 de 1 a 2
 2
 Actualizando vendedor 4 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=2}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=4, monto=2}
@@ -1212,29 +1213,29 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 2 a 0
 0
 Actualizando comprador 4 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=0}
 Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 0 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=4, monto=0}
 Vendedor: Usuario{id=1, monto=2}
-Intercambiando nodo aed.Transaccion@5d8bafa9 con nodo aed.Transaccion@576f63f6
+Intercambiando nodo Transaccion{id=1, comprador=4, vendedor=1, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=4, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=1, monto=2}
 Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 2 a 1
 1
 Actualizando comprador 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=1}
 Vendedor: Usuario{id=2, monto=1}
@@ -1248,7 +1249,7 @@ Vendedor: Usuario{id=1, monto=1}
 Actualizando monto de usuario 1 de 1 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=1, monto=2}
@@ -1258,61 +1259,61 @@ Vendedor: Usuario{id=2, monto=1}
 Actualizando monto de usuario 1 de 2 a 0
 0
 Actualizando comprador 1 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=2, monto=1}
 Actualizando monto de usuario 2 de 1 a 3
 3
 Actualizando vendedor 2 con nuevo monto 3
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=3}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=0}
 Vendedor: Usuario{id=2, monto=3}
-Intercambiando nodo aed.Transaccion@2dca0d64 con nodo aed.Transaccion@f80945f
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=2, monto=3}
 Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 3 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 3
 3
 Actualizando vendedor 3 con nuevo monto 3
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=3}
 Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=3}
-Intercambiando nodo aed.Transaccion@ff684e1 con nodo aed.Transaccion@2dca0d64
+Intercambiando nodo Transaccion{id=2, comprador=2, vendedor=3, monto=3} con nodo Transaccion{id=1, comprador=1, vendedor=2, monto=2}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=3}
 Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 3 de 3 a 1
 1
 Actualizando comprador 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Actualizando monto de usuario 1 de 0 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=3, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=1, monto=2}
-Intercambiando nodo aed.Transaccion@23aa363a con nodo aed.Transaccion@f80945f
+Intercambiando nodo Transaccion{id=3, comprador=3, vendedor=1, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=1, monto=2}
 Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 2 a 1
 1
 Actualizando comprador 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=1}
@@ -1323,12 +1324,12 @@ Vendedor: Usuario{id=3, monto=1}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 1 a 2
 2
 Actualizando vendedor 3 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=2}
 Intercambiando nodo Usuario{id=3, monto=2} con nodo Usuario{id=1, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
@@ -1340,16 +1341,18 @@ Tx: comprador=2, vendedor=3, monto=3, id de transaccion= 2
 Tx: comprador=3, vendedor=1, monto=2, id de transaccion= 3
 Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 4
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 5
-=== extraerMaximo() → root.id=aed.Transaccion@ff684e1 monto=aed.Transaccion@ff684e1 ===
-Intercambiando nodo aed.Transaccion@5ef6ae06 con nodo aed.Transaccion@23aa363a
-Intercambiando nodo aed.Transaccion@5ef6ae06 con nodo aed.Transaccion@55dfebeb
-Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=1, compr=1, vend=2, m=2] [id=2, compr=2, vend=3, m=3] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
-=== extraerMaximo() → root.id=aed.Transaccion@23aa363a monto=aed.Transaccion@23aa363a ===
-Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=2, compr=2, vend=3, m=3] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
+Intercambiando nodo Transaccion{id=2, comprador=2, vendedor=3, monto=3} con nodo Transaccion{id=4, comprador=1, vendedor=2, monto=1}
+Intercambiando nodo Transaccion{id=4, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=3, comprador=3, vendedor=1, monto=2}
+Intercambiando nodo Transaccion{id=4, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=5, comprador=2, vendedor=3, monto=1}
+Hackeando transacción: Transaccion{id=2, comprador=2, vendedor=3, monto=3}
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=1, compr=1, vend=2, m=2] [id=3, compr=3, vend=1, m=2] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
+Intercambiando nodo Transaccion{id=3, comprador=3, vendedor=1, monto=2} con nodo Transaccion{id=1, comprador=1, vendedor=2, monto=2}
+Hackeando transacción: Transaccion{id=3, comprador=3, vendedor=1, monto=2}
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=1, compr=1, vend=2, m=2] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
 Máximo del heap: Usuario{id=3, monto=2}
 ]]></system-out>
   </testcase>
-  <testcase name="agregarBloque" classname="aed.BerretacoinTests" time="0.003">
+  <testcase name="agregarBloque" classname="aed.BerretacoinTests" time="0.002">
     <system-out><![CDATA[Creando usuario 1
 Creando usuario 2
 Creando usuario 3
@@ -1366,7 +1369,7 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -1377,37 +1380,37 @@ Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=1}
-Intercambiando nodo aed.Transaccion@5d9b7a8a con nodo aed.Transaccion@1e8ce150
+Intercambiando nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=2, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=4, monto=0}
 Actualizando monto de usuario 3 de 1 a 0
 0
 Actualizando comprador 3 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 0 a 1
 1
 Actualizando vendedor 4 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=0}
 Vendedor: Usuario{id=4, monto=1}
-Intercambiando nodo aed.Transaccion@604f2bd2 con nodo aed.Transaccion@5d9b7a8a
+Intercambiando nodo Transaccion{id=2, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
@@ -1415,7 +1418,7 @@ Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 2
 Máximo del heap: Usuario{id=4, monto=1}
 ]]></system-out>
   </testcase>
-  <testcase name="bloqueConSoloTransaccionDeCreacion" classname="aed.BerretacoinTests" time="0">
+  <testcase name="bloqueConSoloTransaccionDeCreacion" classname="aed.BerretacoinTests" time="0.001">
     <system-out><![CDATA[Creando usuario 1
 Creando usuario 2
 Creando usuario 3
@@ -1432,7 +1435,7 @@ Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
@@ -1443,7 +1446,7 @@ Tx: comprador=0, vendedor=3, monto=1, id de transaccion= 0
 Máximo del heap: Usuario{id=3, monto=1}
 ]]></system-out>
   </testcase>
-  <testcase name="hackearConVariosBloques" classname="aed.BerretacoinTests" time="0.017">
+  <testcase name="hackearConVariosBloques" classname="aed.BerretacoinTests" time="0.002">
     <failure message="expected: &lt;3&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1451,7 +1454,7 @@ Máximo del heap: Usuario{id=3, monto=1}
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.hackearConVariosBloques(BerretacoinTests.java:322)
+	at aed.BerretacoinTests.hackearConVariosBloques(BerretacoinTests.java:323)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -1538,7 +1541,7 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -1549,37 +1552,37 @@ Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=1}
-Intercambiando nodo aed.Transaccion@1d3ac898 con nodo aed.Transaccion@1b73be9f
+Intercambiando nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=2, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=4, monto=0}
 Actualizando monto de usuario 3 de 1 a 0
 0
 Actualizando comprador 3 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 0 a 1
 1
 Actualizando vendedor 4 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=0}
 Vendedor: Usuario{id=4, monto=1}
-Intercambiando nodo aed.Transaccion@628c4ac0 con nodo aed.Transaccion@1d3ac898
+Intercambiando nodo Transaccion{id=2, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
@@ -1590,7 +1593,7 @@ Vendedor: Usuario{id=4, monto=1}
 Actualizando monto de usuario 4 de 1 a 2
 2
 Actualizando vendedor 4 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=2}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=4, monto=2}
@@ -1600,29 +1603,29 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 2 a 0
 0
 Actualizando comprador 4 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=0}
 Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=4, monto=0} con nodo Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 0 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=4, monto=0}
 Vendedor: Usuario{id=1, monto=2}
-Intercambiando nodo aed.Transaccion@7b84fcf8 con nodo aed.Transaccion@30b19518
+Intercambiando nodo Transaccion{id=1, comprador=4, vendedor=1, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=4, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=1, monto=2}
 Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 2 a 1
 1
 Actualizando comprador 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=1}
 Vendedor: Usuario{id=2, monto=1}
@@ -1636,7 +1639,7 @@ Vendedor: Usuario{id=1, monto=1}
 Actualizando monto de usuario 1 de 1 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
 Vendedor: Usuario{id=1, monto=2}
@@ -1646,61 +1649,61 @@ Vendedor: Usuario{id=2, monto=1}
 Actualizando monto de usuario 1 de 2 a 0
 0
 Actualizando comprador 1 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=2, monto=1}
 Actualizando monto de usuario 2 de 1 a 3
 3
 Actualizando vendedor 2 con nuevo monto 3
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=3}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=0}
 Vendedor: Usuario{id=2, monto=3}
-Intercambiando nodo aed.Transaccion@363042d7 con nodo aed.Transaccion@366ac49b
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=2, monto=3}
 Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 3 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 3
 3
 Actualizando vendedor 3 con nuevo monto 3
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=3}
 Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=3, monto=3} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=3}
-Intercambiando nodo aed.Transaccion@6ad59d92 con nodo aed.Transaccion@363042d7
+Intercambiando nodo Transaccion{id=2, comprador=2, vendedor=3, monto=3} con nodo Transaccion{id=1, comprador=1, vendedor=2, monto=2}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=3}
 Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 3 de 3 a 1
 1
 Actualizando comprador 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Actualizando monto de usuario 1 de 0 a 2
 2
 Actualizando vendedor 1 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=2}
 Intercambiando nodo Usuario{id=1, monto=2} con nodo Usuario{id=3, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=1, monto=2}
-Intercambiando nodo aed.Transaccion@56f0cc85 con nodo aed.Transaccion@366ac49b
+Intercambiando nodo Transaccion{id=3, comprador=3, vendedor=1, monto=2} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=1, monto=2}
 Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 2 a 1
 1
 Actualizando comprador 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=1}
@@ -1711,12 +1714,12 @@ Vendedor: Usuario{id=3, monto=1}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 1 a 2
 2
 Actualizando vendedor 3 con nuevo monto 2
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=2}
 Intercambiando nodo Usuario{id=3, monto=2} con nodo Usuario{id=1, monto=1}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
@@ -1728,14 +1731,15 @@ Tx: comprador=2, vendedor=3, monto=3, id de transaccion= 2
 Tx: comprador=3, vendedor=1, monto=2, id de transaccion= 3
 Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 4
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 5
-=== extraerMaximo() → root.id=aed.Transaccion@6ad59d92 monto=aed.Transaccion@6ad59d92 ===
-Intercambiando nodo aed.Transaccion@62e20a76 con nodo aed.Transaccion@56f0cc85
-Intercambiando nodo aed.Transaccion@62e20a76 con nodo aed.Transaccion@2cc44ad
-Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=1, compr=1, vend=2, m=2] [id=2, compr=2, vend=3, m=3] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
+Intercambiando nodo Transaccion{id=2, comprador=2, vendedor=3, monto=3} con nodo Transaccion{id=4, comprador=1, vendedor=2, monto=1}
+Intercambiando nodo Transaccion{id=4, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=3, comprador=3, vendedor=1, monto=2}
+Intercambiando nodo Transaccion{id=4, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=5, comprador=2, vendedor=3, monto=1}
+Hackeando transacción: Transaccion{id=2, comprador=2, vendedor=3, monto=3}
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1] [id=1, compr=1, vend=2, m=2] [id=3, compr=3, vend=1, m=2] [id=4, compr=1, vend=2, m=1] [id=5, compr=2, vend=3, m=1]
 Máximo del heap: Usuario{id=3, monto=2}
 ]]></system-out>
   </testcase>
-  <testcase name="testStress" classname="aed.BerretacoinTests" time="0.233">
+  <testcase name="testStress" classname="aed.BerretacoinTests" time="0.203">
     <failure message="expected: &lt;1&gt; but was: &lt;3000&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <3000>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1743,7 +1747,7 @@ Máximo del heap: Usuario{id=3, monto=2}
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.testStress(BerretacoinTests.java:425)
+	at aed.BerretacoinTests.testStress(BerretacoinTests.java:426)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -4830,7 +4834,7 @@ Vendedor: Usuario{id=3000, monto=0}
 Actualizando monto de usuario 3000 de 0 a 1
 1
 Actualizando vendedor 3000 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3000, monto=1}
 Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=1976, monto=0}
 Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=952, monto=0}
 Intercambiando nodo Usuario{id=3000, monto=1} con nodo Usuario{id=440, monto=0}
@@ -4848,12 +4852,12 @@ Vendedor: Usuario{id=3000, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=3000, monto=1, id de transaccion= 0
 Máximo del heap: Usuario{id=3000, monto=1}
-=== extraerMaximo() → root.id=aed.Transaccion@1477089c monto=aed.Transaccion@1477089c ===
+Hackeando transacción: Transaccion{id=0, comprador=0, vendedor=3000, monto=1}
 Transacciones restantes en el último bloque:
 Máximo del heap: Usuario{id=3000, monto=1}
 ]]></system-out>
   </testcase>
-  <testcase name="hackearConUnBloque" classname="aed.BerretacoinTests" time="0">
+  <testcase name="hackearConUnBloque" classname="aed.BerretacoinTests" time="0.024">
     <failure message="expected: &lt;4&gt; but was: &lt;3&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <4> but was: <3>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -4861,7 +4865,7 @@ Máximo del heap: Usuario{id=3000, monto=1}
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.hackearConUnBloque(BerretacoinTests.java:256)
+	at aed.BerretacoinTests.hackearConUnBloque(BerretacoinTests.java:257)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -4948,7 +4952,7 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -4959,47 +4963,48 @@ Vendedor: Usuario{id=3, monto=0}
 Actualizando monto de usuario 2 de 1 a 0
 0
 Actualizando comprador 2 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=2, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 3 de 0 a 1
 1
 Actualizando vendedor 3 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=1}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=3, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=2, monto=0}
 Vendedor: Usuario{id=3, monto=1}
-Intercambiando nodo aed.Transaccion@75cd8043 con nodo aed.Transaccion@33b1c5c5
+Intercambiando nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=2, monto=1}
 Antes de la transacción:
 Comprador: Usuario{id=3, monto=1}
 Vendedor: Usuario{id=4, monto=0}
 Actualizando monto de usuario 3 de 1 a 0
 0
 Actualizando comprador 3 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=3, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=0, monto=0}
 Intercambiando nodo Usuario{id=3, monto=0} con nodo Usuario{id=1, monto=0}
 Actualizando monto de usuario 4 de 0 a 1
 1
 Actualizando vendedor 4 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=4, monto=1}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=2, monto=0}
 Intercambiando nodo Usuario{id=4, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=3, monto=0}
 Vendedor: Usuario{id=4, monto=1}
-Intercambiando nodo aed.Transaccion@5b202a3a con nodo aed.Transaccion@75cd8043
+Intercambiando nodo Transaccion{id=2, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=2, monto=1, id de transaccion= 0
 Tx: comprador=2, vendedor=3, monto=1, id de transaccion= 1
 Tx: comprador=3, vendedor=4, monto=1, id de transaccion= 2
-=== extraerMaximo() → root.id=aed.Transaccion@5b202a3a monto=aed.Transaccion@5b202a3a ===
-Transacciones restantes en el último bloque: [id=0, compr=0, vend=2, m=1] [id=2, compr=3, vend=4, m=1]
+Intercambiando nodo Transaccion{id=2, comprador=3, vendedor=4, monto=1} con nodo Transaccion{id=1, comprador=2, vendedor=3, monto=1}
+Hackeando transacción: Transaccion{id=2, comprador=3, vendedor=4, monto=1}
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=2, m=1] [id=1, compr=2, vend=3, m=1]
 Máximo del heap: Usuario{id=4, monto=1}
 ]]></system-out>
   </testcase>
-  <testcase name="hackeoAfectaSaldos" classname="aed.BerretacoinTests" time="0">
+  <testcase name="hackeoAfectaSaldos" classname="aed.BerretacoinTests" time="0.015">
     <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -5007,7 +5012,7 @@ Máximo del heap: Usuario{id=4, monto=1}
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.hackeoAfectaSaldos(BerretacoinTests.java:303)
+	at aed.BerretacoinTests.hackeoAfectaSaldos(BerretacoinTests.java:304)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -5094,7 +5099,7 @@ Vendedor: Usuario{id=1, monto=0}
 Actualizando monto de usuario 1 de 0 a 1
 1
 Actualizando vendedor 1 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=1}
 Intercambiando nodo Usuario{id=1, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=0, monto=0}
@@ -5105,27 +5110,28 @@ Vendedor: Usuario{id=2, monto=0}
 Actualizando monto de usuario 1 de 1 a 0
 0
 Actualizando comprador 1 con nuevo monto 0
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=1, monto=0}
 Intercambiando nodo Usuario{id=1, monto=0} con nodo Usuario{id=0, monto=0}
 Actualizando monto de usuario 2 de 0 a 1
 1
 Actualizando vendedor 2 con nuevo monto 1
-Llamando siftUp y siftDown (igualdad)...
+Llamando siftUp y siftDownUsuario{id=2, monto=1}
 Intercambiando nodo Usuario{id=2, monto=1} con nodo Usuario{id=0, monto=0}
 Después de la transacción:
 Comprador: Usuario{id=1, monto=0}
 Vendedor: Usuario{id=2, monto=1}
-Intercambiando nodo aed.Transaccion@34cdeda2 con nodo aed.Transaccion@6ee660fb
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
 Transacciones agregadas al bloque:
 Tx: comprador=0, vendedor=1, monto=1, id de transaccion= 0
 Tx: comprador=1, vendedor=2, monto=1, id de transaccion= 1
 Máximo del heap: Usuario{id=2, monto=1}
-=== extraerMaximo() → root.id=aed.Transaccion@34cdeda2 monto=aed.Transaccion@34cdeda2 ===
-Transacciones restantes en el último bloque: [id=1, compr=1, vend=2, m=1]
+Intercambiando nodo Transaccion{id=1, comprador=1, vendedor=2, monto=1} con nodo Transaccion{id=0, comprador=0, vendedor=1, monto=1}
+Hackeando transacción: Transaccion{id=1, comprador=1, vendedor=2, monto=1}
+Transacciones restantes en el último bloque: [id=0, compr=0, vend=1, m=1]
 Máximo del heap: Usuario{id=2, monto=1}
 ]]></system-out>
   </testcase>
-  <testcase name="unSoloUsuario" classname="aed.BerretacoinTests" time="0.003">
+  <testcase name="unSoloUsuario" classname="aed.BerretacoinTests" time="0.009">
     <failure message="expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

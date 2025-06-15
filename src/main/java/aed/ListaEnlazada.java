@@ -40,23 +40,18 @@ public class ListaEnlazada<T> {
     }
 
     public Handle agregarAtras(T elem) {
-        Nodo otro = new Nodo(elem);
-        Handle nuevoHandle = new Handle(otro);
-        if (cabeza == null) {
-            cabeza = otro;
-            cola = otro;
-        } else {
-            Nodo actual = cabeza;
-            while (actual.siguiente != null) {
-                actual = actual.siguiente;
-            }
-            otro.anterior = actual;
-            actual.siguiente = otro;
-            cola = otro;
-        }
-        longitud++;
-        return nuevoHandle;
+    Nodo nuevo = new Nodo(elem);
+    Handle handle = new Handle(nuevo);
+    if (cabeza == null) {
+        cabeza = cola = nuevo;
+    } else {
+        nuevo.anterior = cola;
+        cola.siguiente = nuevo;
+        cola = nuevo;
     }
+    longitud++;
+    return handle;
+}
 
    
     public T obtener(int i) {
@@ -88,6 +83,7 @@ public class ListaEnlazada<T> {
             cola = actual.anterior;
             }
         h.nodoApuntado = null;
+        longitud--;
         }
 
     public ListaEnlazada(ListaEnlazada<T> lista) {

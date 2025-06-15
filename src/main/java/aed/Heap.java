@@ -1,19 +1,19 @@
 package aed;
 
+import java.util.ArrayList;
+
 public class Heap<T extends Comparable<T>> {
     private Nodo raiz;
     private int tamaño;
+    private ArrayList<Nodo> nodosEnOrden;
 
     private class Nodo {
         T dato;
         Nodo padre, hijoIzquierdo, hijoDerecho;
-        int tamañoSubarbol;
         HandleHeap aSiMismo;
 
         Nodo(T dato) {
             this.dato = dato;
-            this.tamañoSubarbol = 1;
-
         }
     }
 
@@ -29,6 +29,10 @@ public class Heap<T extends Comparable<T>> {
         }
     }
 
+    public Heap() {
+        this.nodosEnOrden = new ArrayList<>();
+    }
+
     public HandleHeap insertar(T nuevoValor) {
         Nodo nuevoNodo = new Nodo(nuevoValor);
         HandleHeap nuevoHandle = new HandleHeap(nuevoNodo);
@@ -37,7 +41,7 @@ public class Heap<T extends Comparable<T>> {
         if (raiz == null) {
             raiz = nuevoNodo;
         } else {
-            Nodo padre = dondeInsertar(raiz);
+            Nodo padre = nodosEnOrden.get((nodosEnOrden.size() - 1) / 2);
             nuevoNodo.padre = padre;
             if (padre.hijoIzquierdo == null) {
                 padre.hijoIzquierdo = nuevoNodo;
@@ -46,19 +50,21 @@ public class Heap<T extends Comparable<T>> {
             }
         }
 
+        nodosEnOrden.add(nuevoNodo);
         tamaño++;
-        actualizarTamaños(raiz);
-        siftUp(nuevoNodo);
         return nuevoHandle;
     }
 
+    public void heapifyLloyd() {
+        for (int i = nodosEnOrden.size() / 2 - 1; i >= 0; i--) {
+            siftDown(nodosEnOrden.get(i));
+        }
+    }
+
     public void editar(HandleHeap handle) {
-    
-            System.out.println("Llamando siftUp y siftDown (igualdad)...");
-            siftUp(handle.nodoApuntado);
-            siftDown(handle.nodoApuntado);
-      
-}
+        siftUp(handle.nodoApuntado);
+        siftDown(handle.nodoApuntado);
+    }
 
     public T mostrarMaximo() {
         if (raiz == null) {
@@ -68,56 +74,47 @@ public class Heap<T extends Comparable<T>> {
     }
 
     public HandleHeap extraerMaximo() {
-        if (raiz == null) {
-            return null;
-        }
-        System.out.println("=== extraerMaximo() → root.id=" + raiz.dato
-                       + " monto=" + raiz.dato + " ===");
+        if (raiz == null) return null;
 
-        HandleHeap handleMaximo = raiz.aSiMismo;
+        Nodo nodoMaximo = raiz;
+        HandleHeap handleMaximo = nodoMaximo.aSiMismo;
 
-        if (tamaño == 1) {
-            raiz = null;
-            tamaño--;
-            return handleMaximo;
-        }
+        Nodo ultimo = nodosEnOrden.get(nodosEnOrden.size() - 1);
+        intercambiar(nodoMaximo, ultimo);
 
-        Nodo ultimo = obtenerUltimoNodo(raiz);
-        raiz.dato = ultimo.dato;
-        raiz.aSiMismo = ultimo.aSiMismo;
-        if (raiz.aSiMismo != null) {
-        raiz.aSiMismo.nodoApuntado = raiz;
-        }
-
-
-        if (ultimo.padre.hijoIzquierdo == ultimo) {
-            ultimo.padre.hijoIzquierdo = null;
+        if (ultimo.padre != null) {
+            if (ultimo.padre.hijoIzquierdo == ultimo) {
+                ultimo.padre.hijoIzquierdo = null;
+            } else {
+                ultimo.padre.hijoDerecho = null;
+            }
         } else {
-            ultimo.padre.hijoDerecho = null;
+            raiz = null;
         }
 
+        nodosEnOrden.remove(nodosEnOrden.size() - 1);
         tamaño--;
-        actualizarTamaños(raiz);
-        siftDown(raiz);
+
+        if (raiz != null) {
+            siftDown(raiz);
+        }
 
         return handleMaximo;
     }
 
     private void intercambiar(Nodo a, Nodo b) {
-    System.out.println("Intercambiando nodo " + a.dato + " con nodo " + b.dato);
-    T guardarDato = a.dato;
-    a.dato = b.dato;
-    b.dato = guardarDato;
+        T guardarDato = a.dato;
+        a.dato = b.dato;
+        b.dato = guardarDato;
 
-    HandleHeap handleA = a.aSiMismo;
-    HandleHeap handleB = b.aSiMismo;
+        HandleHeap handleA = a.aSiMismo;
+        HandleHeap handleB = b.aSiMismo;
 
-    a.aSiMismo = handleB;
-    b.aSiMismo = handleA;
-    if (a.aSiMismo != null) a.aSiMismo.nodoApuntado = a;
-    if (b.aSiMismo != null) b.aSiMismo.nodoApuntado = b;
-}
-
+        a.aSiMismo = handleB;
+        b.aSiMismo = handleA;
+        if (a.aSiMismo != null) a.aSiMismo.nodoApuntado = a;
+        if (b.aSiMismo != null) b.aSiMismo.nodoApuntado = b;
+    }
 
     private void siftUp(Nodo nodo) {
         while (nodo.padre != null && nodo.dato.compareTo(nodo.padre.dato) < 0) {
@@ -147,60 +144,7 @@ public class Heap<T extends Comparable<T>> {
         }
     }
 
-
-    private Nodo dondeInsertar(Nodo actual) {
-        actual.tamañoSubarbol++;
-
-        if (actual.hijoIzquierdo == null || actual.hijoDerecho == null) {
-            return actual;
-        }
-
-        if (actual.hijoIzquierdo.tamañoSubarbol <= actual.hijoDerecho.tamañoSubarbol) {
-            return dondeInsertar(actual.hijoIzquierdo);
-        } else {
-            return dondeInsertar(actual.hijoDerecho);
-        }
-    }
-
-    private int actualizarTamaños(Nodo nodo) {
-        if (nodo == null) {
-            return 0;
-        }
-        int subIzquierdo = actualizarTamaños(nodo.hijoIzquierdo);
-        int subDerecho = actualizarTamaños(nodo.hijoDerecho);
-        nodo.tamañoSubarbol = 1 + subIzquierdo + subDerecho;
-        return nodo.tamañoSubarbol;
-    }
-
-    private Nodo obtenerUltimoNodo(Nodo actual) {
-        if (actual.hijoIzquierdo == null && actual.hijoDerecho == null) {
-            return actual;
-        }
-
-        if (actual.hijoDerecho == null) {
-            return obtenerUltimoNodo(actual.hijoIzquierdo);
-        }
-
-        if (actual.hijoIzquierdo.tamañoSubarbol >= actual.hijoDerecho.tamañoSubarbol) {
-            return obtenerUltimoNodo(actual.hijoDerecho);
-        } else {
-            return obtenerUltimoNodo(actual.hijoIzquierdo);
-        }
-    }
-
-    public int tamaño(){
+    public int tamaño() {
         return this.tamaño;
-    }
-
-
-    public void imprimirHeap() {
-        imprimirDesde(raiz, "");
-    }
-
-    private void imprimirDesde(Nodo nodo, String indent) {
-        if (nodo == null) return;
-        imprimirDesde(nodo.hijoDerecho, indent + "   ");
-        System.out.println(indent + nodo.dato.toString());
-        imprimirDesde(nodo.hijoIzquierdo, indent + "   ");
     }
 }

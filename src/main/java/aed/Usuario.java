@@ -24,10 +24,8 @@ public class Usuario implements Comparable<Usuario>{
     }
     
     public void setearMonto(int nuevoMonto) {
-        System.out.println("Actualizando monto de usuario " + id + " de " + this.monto + " a " + nuevoMonto);
 
         this.monto = nuevoMonto;
-        System.out.println(this.monto);
     }
 
     public void setearHandleHeapU(Heap<Usuario>.HandleHeap handle) {

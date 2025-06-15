@@ -1,6 +1,9 @@
 package aed;
 
 import aed.ListaEnlazada.Handle;
+
+import java.util.Objects;
+
 import aed.Heap.HandleHeap;
 
 public class Transaccion implements Comparable<Transaccion> {
@@ -65,12 +68,38 @@ public class Transaccion implements Comparable<Transaccion> {
             return Integer.compare(otro.id, this.id); 
         }
 
-            @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (!(o instanceof Transaccion)) return false;
-            Transaccion t = (Transaccion) o;
-            return this.id == t.id;
+    @Override
+        public boolean equals(Object objeto) {
+            if (this == objeto) {
+                return true;
+            }
+
+            Transaccion otra = (Transaccion) objeto;
+
+            boolean mismoId = this.id == otra.id;
+            boolean mismoComprador = this.id_comprador == otra.id_comprador;
+            boolean mismoVendedor = this.id_vendedor == otra.id_vendedor;
+            boolean mismoMonto = this.monto == otra.monto;
+
+            if (mismoId && mismoComprador && mismoVendedor && mismoMonto) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
+
+
+    @Override
+        public String toString() {
+            return "Transaccion{id=" + id + ", comprador=" + id_comprador + ", vendedor=" + id_vendedor + ", monto=" + monto + "}";
+        }
+    @Override
+public int hashCode() {
+    return Objects.hash(id(), id_comprador(), id_vendedor(), monto());
 }
+
+
+}
+
+

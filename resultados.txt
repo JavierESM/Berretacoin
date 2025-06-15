@@ -1,0 +1,5 @@
+- Implementar el algoritmo de Floyd para el heap;
+- Al agregar las transacciones, ir sumando los montos para poder calcular montoMedioUltimoBloque (como un atributo???)
+- Agregar en hackearTx la actualización el montoMedioUltimoBloque
+- Utilizar los breakpoint y watch para ver que diantres pasa
+en el stressTest

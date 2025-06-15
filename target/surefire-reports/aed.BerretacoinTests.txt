@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: aed.BerretacoinTests
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.632 s <<< FAILURE! - in aed.BerretacoinTests
-aed.BerretacoinTests.maximoTenedorEsElMinimoCuandoNuevo  Time elapsed: 0.016 s  <<< FAILURE!
+Tests run: 15, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.521 s <<< FAILURE! - in aed.BerretacoinTests
+aed.BerretacoinTests.maximoTenedorEsElMinimoCuandoNuevo  Time elapsed: 0 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -81,7 +81,7 @@ org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-aed.BerretacoinTests.hackeoTotalDeBloque  Time elapsed: 0.025 s  <<< FAILURE!
+aed.BerretacoinTests.hackeoTotalDeBloque  Time elapsed: 0.019 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -89,7 +89,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
 	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
-	at aed.BerretacoinTests.hackeoTotalDeBloque(BerretacoinTests.java:272)
+	at aed.BerretacoinTests.hackeoTotalDeBloque(BerretacoinTests.java:273)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -160,7 +160,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-aed.BerretacoinTests.hackearVariasVeces  Time elapsed: 0.006 s  <<< FAILURE!
+aed.BerretacoinTests.hackearVariasVeces  Time elapsed: 0.005 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -168,7 +168,7 @@ org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.hackearVariasVeces(BerretacoinTests.java:349)
+	at aed.BerretacoinTests.hackearVariasVeces(BerretacoinTests.java:350)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -239,7 +239,7 @@ org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-aed.BerretacoinTests.hackearConVariosBloques  Time elapsed: 0.017 s  <<< FAILURE!
+aed.BerretacoinTests.hackearConVariosBloques  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -247,7 +247,7 @@ org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.hackearConVariosBloques(BerretacoinTests.java:322)
+	at aed.BerretacoinTests.hackearConVariosBloques(BerretacoinTests.java:323)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -318,7 +318,7 @@ org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-aed.BerretacoinTests.testStress  Time elapsed: 0.233 s  <<< FAILURE!
+aed.BerretacoinTests.testStress  Time elapsed: 0.203 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <1> but was: <3000>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -326,7 +326,7 @@ org.opentest4j.AssertionFailedError: expected: <1> but was: <3000>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.testStress(BerretacoinTests.java:425)
+	at aed.BerretacoinTests.testStress(BerretacoinTests.java:426)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -397,7 +397,7 @@ org.opentest4j.AssertionFailedError: expected: <1> but was: <3000>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-aed.BerretacoinTests.hackearConUnBloque  Time elapsed: 0 s  <<< FAILURE!
+aed.BerretacoinTests.hackearConUnBloque  Time elapsed: 0.024 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <4> but was: <3>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -405,7 +405,7 @@ org.opentest4j.AssertionFailedError: expected: <4> but was: <3>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.hackearConUnBloque(BerretacoinTests.java:256)
+	at aed.BerretacoinTests.hackearConUnBloque(BerretacoinTests.java:257)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -476,7 +476,7 @@ org.opentest4j.AssertionFailedError: expected: <4> but was: <3>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-aed.BerretacoinTests.hackeoAfectaSaldos  Time elapsed: 0 s  <<< FAILURE!
+aed.BerretacoinTests.hackeoAfectaSaldos  Time elapsed: 0.015 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -484,7 +484,7 @@ org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
-	at aed.BerretacoinTests.hackeoAfectaSaldos(BerretacoinTests.java:303)
+	at aed.BerretacoinTests.hackeoAfectaSaldos(BerretacoinTests.java:304)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -555,7 +555,7 @@ org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-aed.BerretacoinTests.unSoloUsuario  Time elapsed: 0.003 s  <<< FAILURE!
+aed.BerretacoinTests.unSoloUsuario  Time elapsed: 0.009 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <1> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
