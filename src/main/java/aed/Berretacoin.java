@@ -6,17 +6,15 @@ public class Berretacoin {
     private Array<Usuario> usuariosLista;
     private Heap<Usuario> usuariosPorMonto;
     private ArrayList<Bloque> cadena;
-    private int montoMedioUltimoBloque;
     private int montoUltimoBloque;
     private int cantidadTransacciones;
     public Berretacoin(int usuariosAGenerar) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(P), P SIENDO usuariosAGenerar */
 
         
         int totalUsuarios = usuariosAGenerar + 1; /*Operación básica, O(1) */
-        this.usuariosLista = new Array<>(totalUsuarios + 1); /*Operación básica, O(1) */
+        this.usuariosLista = new Array<>(totalUsuarios + 1); /*Complejidad O(p)*/
         this.usuariosPorMonto = new Heap<>(); /*Operación básica, O(1) */
         this.cadena = new ArrayList<>(); /*Operación básica, O(1) */
-        this.montoMedioUltimoBloque = 0; /*Operación básica, O(1) */
         Usuario sistema = new Usuario(0, 0); /*Operación básica, O(1) */
         Array<Usuario>.Handle handleSistemaArray = usuariosLista.agregar(sistema); /*Agregar en este array está en orden O(1) ya que 
         agrega utilizando como índice la cantidad de elementos que tiene el array (es decir, agrega al final) y luego suma 1 a 
@@ -24,20 +22,15 @@ public class Berretacoin {
         sistema.setearHandleArray(handleSistemaArray); /*Operación básica, O(1) */
 
 
-        for (int i = 1; i <= usuariosAGenerar; i++) {
+        for (int i = 1; i <= usuariosAGenerar; i++) {/*Complejidad O(p) */
             Usuario usuario = new Usuario(i, 0); /*Operación básica, O(1) */
             Array<Usuario>.Handle handleArray = usuariosLista.agregar(usuario); /*O(1), por lo dicho anteriormente*/
             usuario.setearHandleArray(handleArray); /*Operación básica, O(1) */
             Heap<Usuario>.HandleHeap handleHeap = usuariosPorMonto.insertar(usuario); /*Operación básica, O(1) */
             usuario.setearHandleHeapU(handleHeap); /*Operación básica, O(1) */
-        }  /*Para una cantidad P de usuarios, esto pertenerce al orden O(P) ya que utiliza el algoritmo de Lloyd para la inserción.
-        Primero inserto el nodo con una combinación de operaciones básicas, por lo que la inserción en sí pertenece a un orden proporcional a 
-        O(1). Además, los añado en el atributo nodosEnNivel (un ArrayList) para poder utilizar lo que se vió en clase de como acceder a cada nodo y sus hijos
-        mediante el cálculo de los indices según su posicion en el arraylist. Itero sobre estas posiciones realizando un siftDown. Como los nodos 
-        que están "más abajo" son más y recorren menos y los nodos que estan "más arriba" son menos y recorren más, la suma de esto termina 
-        con un algoritmo que pertenece a O(P)*/
+        }  
 
-        usuariosPorMonto.heapifyLloyd(); /*O(P), por lo dicho anteriormente */
+        usuariosPorMonto.heapifyLloyd(); /*O(P), por lo dicho en la estructura de Heap */
     }
 
     public void agregarBloque(Transaccion[] transacciones) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(N * LOG P), n siendo la cantidad
@@ -70,13 +63,16 @@ public class Berretacoin {
 
         if (comprador.id() == 0) {
             vendedor.setearMonto(vendedor.monto() + t.monto()); /*Operación básica, O(1)*/
-            usuariosPorMonto.editar(vendedor.obtenerHandleHeapU()); /*Edito sobre un heap, esto pertenece a O(log P)*/
+            usuariosPorMonto.editar(vendedor.obtenerHandleHeapU()); /*Si bien editar en un heap normalmente implica buscar el nodo a editar, gracias al handle se puede rápidamente
+            encontrar el nodo y ejecutar los sifts sobre el, por lo que queda en complejidad O(log p)*/
         } else {
             comprador.setearMonto(comprador.monto() - t.monto()); /*Operación básica, O(1)*/
-            usuariosPorMonto.editar(comprador.obtenerHandleHeapU()); /*Edito sobre un heap, esto pertenece a O(log P)*/
+            usuariosPorMonto.editar(comprador.obtenerHandleHeapU()); /*Si bien editar en un heap normalmente implica buscar el nodo a editar, gracias al handle se puede rápidamente
+            encontrar el nodo y ejecutar los sifts sobre el, por lo que queda en complejidad O(log p)*/
 
             vendedor.setearMonto(vendedor.monto() + t.monto()); /*Operación básica, O(1)*/
-            usuariosPorMonto.editar(vendedor.obtenerHandleHeapU()); /*Edito sobre un heap, esto pertenece a O(log P)*/
+            usuariosPorMonto.editar(vendedor.obtenerHandleHeapU()); /*Si bien editar en un heap normalmente implica buscar el nodo a editar, gracias al handle se puede rápidamente
+            encontrar el nodo y ejecutar los sifts sobre el, por lo que queda en complejidad O(log p)*/
 
             montoUltimoBloque += t.monto(); /*Operación básica, O(1)*/
             cantidadTransacciones++; /*Operación básica, O(1)*/
@@ -127,11 +123,11 @@ public class Berretacoin {
         if (cadena.isEmpty()) return 0; /*Operación básica, O(1) */
 
         int promedio = (cantidadTransacciones == 0) ? 0 : montoUltimoBloque / cantidadTransacciones; /*Operación básica, O(1) */
-        this.montoMedioUltimoBloque = promedio; /*Operación básica, O(1) */
+        
         return promedio; /*Operación básica, O(1) */
     }
 
-    public void hackearTx() {/*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(log n) */
+    public void hackearTx() {/*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(log n + log p) */
         Bloque ultimoBloque = cadena.get(cadena.size() - 1); /*Operación básica, O(1) */
         if (ultimoBloque.transaccionesHeap.tamaño() == 0) return; /*Operación básica, O(1) */
 
@@ -145,20 +141,19 @@ public class Berretacoin {
 
         if (t.id_comprador() != 0) { /*Operación básica, O(1) */
             comprador.setearMonto(comprador.monto() + t.monto()); /*Operación básica, O(1) */
-            usuariosPorMonto.editar(comprador.obtenerHandleHeapU()); /*Operación básica, O(1) */
+            usuariosPorMonto.editar(comprador.obtenerHandleHeapU()); /*Por lo susodicho, complejidad O(log p) */
         }
 
         vendedor.setearMonto(vendedor.monto() - t.monto()); /*Operación básica, O(1) */
-        usuariosPorMonto.editar(vendedor.obtenerHandleHeapU()); /*Operación básica, O(1) */
+        usuariosPorMonto.editar(vendedor.obtenerHandleHeapU()); /*Por lo susodicho, complejidad O(log p) */
         
         ultimoBloque.transaccionesLista.eliminar(t.obtenerHandleLL()); /*Gracias al handle sé "dónde está" el nodo en la lista,
          proporcional a O(1)*/
 
         montoUltimoBloque -= t.id_comprador() == 0 ? 0 : t.monto(); /*Operación básica, O(1) */
         cantidadTransacciones -= t.id_comprador() == 0 ? 0 : 1; /*Operación básica, O(1) */
-        int promedio = (cantidadTransacciones == 0) ? 0 : montoUltimoBloque / cantidadTransacciones; /*Operación básica, O(1) */
-
-        this.montoMedioUltimoBloque = promedio; /*Operación básica, O(1) */
+        
+        
 
     }
 
