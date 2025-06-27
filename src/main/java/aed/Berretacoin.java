@@ -29,7 +29,14 @@ public class Berretacoin {
             Heap<Usuario>.HandleHeap handleHeap = usuariosPorMonto.insertar(usuario); /*Operación básica, O(1) */
             usuario.setearHandleHeapU(handleHeap); /*Operación básica, O(1) */
         }  
-
+        /*IMPLEMENTAR EL CONSTRUCTOR DEL HEAP QUE LE PASA EL ARRAY Y HACER HEAPIFY SOBRE ESO, ESTO ROMPE LA ABSTRACCIÓN 
+         * !
+         * !
+         * !
+         * !
+         * !
+         * !
+        */
         usuariosPorMonto.heapifyLloyd(); /*O(P), por lo dicho en la estructura de Heap */
     }
 
@@ -78,7 +85,14 @@ public class Berretacoin {
             cantidadTransacciones++; /*Operación básica, O(1)*/
         }
     }
-
+      /*IMPLEMENTAR EL CONSTRUCTOR DEL HEAP QUE LE PASA EL ARRAY Y HACER HEAPIFY SOBRE ESO, ESTO ROMPE LA ABSTRACCIÓN 
+         * !
+         * !
+         * !
+         * !
+         * !
+         * !
+        */
     heapTransacciones.heapifyLloyd(); /*O(n), por lo dicho anteriormente*/
     Bloque nuevoBloque = new Bloque(heapTransacciones, listaTransacciones); /*Operación básica, O(1)*/
     this.cadena.add(nuevoBloque); /*Operación básica, O(1)*/
@@ -131,9 +145,7 @@ public class Berretacoin {
         Bloque ultimoBloque = cadena.get(cadena.size() - 1); /*Operación básica, O(1) */
         if (ultimoBloque.transaccionesHeap.tamaño() == 0) return; /*Operación básica, O(1) */
 
-        Heap<Transaccion>.HandleHeap h = ultimoBloque.transaccionesHeap.extraerMaximo(); /*Extraer de un max-heap su máximo implica
-        O(1) a la hora de encontrarlo y O(log n) finalmente debido a que muevo el último nodo (último en sentido de completitud del heap) a la raíz
-        y luego le aplico siftDown hasta que se haya restaurado el inv del heap, luego O(log n)*/
+        Heap<Transaccion>.HandleHeap h = ultimoBloque.transaccionesHeap.extraerMaximo(); /* o(log n) E*/
         Transaccion t = h.obtener(); /*Operación básica, O(1) */
 
         Usuario comprador = usuariosLista.obtener(t.id_comprador()); /*Operación básica, O(1) */
