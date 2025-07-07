@@ -9,9 +9,8 @@ public class Berretacoin {
     private int montoMedioUltimoBloque;
     private int montoUltimoBloque;
     private int cantidadTransacciones;
-    public Berretacoin(int usuariosAGenerar) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(P), P SIENDO usuariosAGenerar */
 
-        
+    public Berretacoin(int usuariosAGenerar) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(P), P SIENDO usuariosAGenerar */
         int totalUsuarios = usuariosAGenerar + 1; /*Operación básica, O(1) */
         this.usuariosLista = new Array<>(totalUsuarios + 1); /*Operación básica, O(1) */
         this.usuariosPorMonto = new Heap<>(); /*Operación básica, O(1) */
@@ -131,7 +130,7 @@ public class Berretacoin {
         return promedio; /*Operación básica, O(1) */
     }
 
-    public void hackearTx() {/*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(log n) */
+    public void hackearTx() {/*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(log n + log p) */
         Bloque ultimoBloque = cadena.get(cadena.size() - 1); /*Operación básica, O(1) */
         if (ultimoBloque.transaccionesHeap.tamaño() == 0) return; /*Operación básica, O(1) */
 
@@ -145,11 +144,11 @@ public class Berretacoin {
 
         if (t.id_comprador() != 0) { /*Operación básica, O(1) */
             comprador.setearMonto(comprador.monto() + t.monto()); /*Operación básica, O(1) */
-            usuariosPorMonto.editar(comprador.obtenerHandleHeapU()); /*Operación básica, O(1) */
+            usuariosPorMonto.editar(comprador.obtenerHandleHeapU()); /*Se realiza siftUp y siftDown, O(log p)*/
         }
 
         vendedor.setearMonto(vendedor.monto() - t.monto()); /*Operación básica, O(1) */
-        usuariosPorMonto.editar(vendedor.obtenerHandleHeapU()); /*Operación básica, O(1) */
+        usuariosPorMonto.editar(vendedor.obtenerHandleHeapU()); /*Se realiza siftUp y siftDown, O(log p)*/
         
         ultimoBloque.transaccionesLista.eliminar(t.obtenerHandleLL()); /*Gracias al handle sé "dónde está" el nodo en la lista,
          proporcional a O(1)*/
