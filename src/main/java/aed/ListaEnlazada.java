@@ -34,6 +34,14 @@ public class ListaEnlazada<T> {
         cola = null;
         longitud = 0;
     }
+    
+    public Nodo cabeza(){
+        return this.cabeza;
+    }
+
+    public Nodo cola(){
+        return this.cola;
+    }
 
     public int longitud() {
         return longitud;
@@ -85,6 +93,8 @@ public class ListaEnlazada<T> {
         h.nodoApuntado = null;
         longitud--;
         }
+
+
 
     public ListaEnlazada(ListaEnlazada<T> lista) {
         this();
