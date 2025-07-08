@@ -3,10 +3,8 @@ package aed;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 
 public class BerretaCoinTestsPropios {
@@ -140,6 +138,20 @@ public class BerretaCoinTestsPropios {
             assertEquals(transaccionesCopia1[j], array1[j]);
         }
     }   
+    @Test
+        public void transaccionSaldoInsuficciente() {
+            Berretacoin sistema = new Berretacoin(3);
+
+            Transaccion[] bloque = {
+                new Transaccion(0, 1, 2, 50) 
+            };
+
+            sistema.agregarBloque(bloque);
+
+            assertEquals(1, sistema.maximoTenedor()); 
+            assertEquals(0, sistema.txUltimoBloque().length); 
+        }
+
 
 
 }
