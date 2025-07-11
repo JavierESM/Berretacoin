@@ -30,7 +30,7 @@ public class Berretacoin {
             usuariosCargados.add(usuario); /*Operación básica, O(1) */
         }
 
-        List<Heap<Usuario>.HandleHeap> handles = usuariosPorMonto.insertarDesdeLista(usuariosCargados); /*Complejidad O(p), se aplica heapify de Lloyd */
+        List<Heap<Usuario>.HandleHeap> handles = usuariosPorMonto.insertarDesdeLista(usuariosCargados); /*Complejidad O(p), se aplica heapify de Floyd */
         for (int i = 1; i <= usuariosAGenerar; i++) { /*Complejidad O(p) */
             usuariosLista.obtener(i).setearHandleHeapU(handles.get(i - 1)); /*Operación básica, O(1) */
         }

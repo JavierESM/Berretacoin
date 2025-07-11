@@ -13,7 +13,7 @@ public class Heap<T extends Comparable<T>> {
         Nodo padre, hijoIzquierdo, hijoDerecho;
         HandleHeap aSiMismo;
 
-        Nodo(T dato) { /*Complejidad O(1) */
+        Nodo(T dato) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(1) */
             this.dato = dato; /*Operación básica */
         }
     }
@@ -21,16 +21,16 @@ public class Heap<T extends Comparable<T>> {
     public class HandleHeap {
         private Nodo nodoApuntado;
 
-        private HandleHeap(Nodo nodo) { /*Complejidad O(1) */
+        private HandleHeap(Nodo nodo) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(1) */
             this.nodoApuntado = nodo; /*Operación básica */
         }
 
-        public T obtener() { /*Complejidad O(1) */
+        public T obtener() { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(1) */
             return nodoApuntado.dato; /*Operación básica */
         }
     }
 
-    public Heap() { /*Complejidad O(1) */
+    public Heap() { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(1) */
         this.nodosEnNivel = new ArrayList<>(); /*Operación básica O(1)*/
     }
 
@@ -94,7 +94,7 @@ public class Heap<T extends Comparable<T>> {
         return handles; /*Operación básica, O(1) */
     }
 
-    private void heapifyFloyd() { /*Complejidad O(p) */
+    private void heapifyFloyd() { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(P), p siendo el tamaño del heap*/
         for (int i = nodosEnNivel.size() / 2 - 1; i >= 0; i--) {
             siftDown(nodosEnNivel.get(i));
             /*Para una cantidad P de usuarios, esto pertenerce al orden O(P) ya que utiliza el algoritmo de Floyd para la inserción.
@@ -106,26 +106,26 @@ public class Heap<T extends Comparable<T>> {
         }
     }
 
-    public void editar(HandleHeap handle) { /*Complejidad O(log p) */
+    public void editar(HandleHeap handle) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(log p)*/
         siftUp(handle.nodoApuntado); /*Por lo visto en clase, los sift tienen una complejidad de O(log p)  */
         siftDown(handle.nodoApuntado); /*O(log p) */
     }
 
-    public T mostrarMaximo() { /*Complejidad O(1) */
+    public T mostrarMaximo() { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(1) */
         if (raiz == null) { /*Operación básica, O(1) */
             return null; /*Operación básica, O(1) */
         }
         return raiz.dato; /*El Heap está construido como un maxHeap, luego, encontrar el máximo es de complejidad O(1) */
     }
 
-    public HandleHeap extraerMaximo() { /*Complejidad O(log p) */
+    public HandleHeap extraerMaximo() { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(log p)*/
         if (raiz == null) return null; /*Operación básica, O(1) */
 
         Nodo nodoMaximo = raiz; /*Operación básica, O(1) */
         HandleHeap handleMaximo = nodoMaximo.aSiMismo; /*Operación básica, O(1) */
 
         Nodo ultimo = nodosEnNivel.get(nodosEnNivel.size() - 1); /*Operación básica, O(1) */
-        intercambiar(nodoMaximo, ultimo); /*Complejidad O(1) */
+        intercambiar(nodoMaximo, ultimo); /*Como dice el método, O(1) */
 
         if (ultimo.padre != null) { /*Operación básica, O(1) */
             if (ultimo.padre.hijoIzquierdo == ultimo) { /*Operación básica, O(1) */
@@ -147,7 +147,7 @@ public class Heap<T extends Comparable<T>> {
         return handleMaximo; /*Operación básica, O(1) */
     }
 
-    private void intercambiar(Nodo a, Nodo b) { /*Complejidad O(1) */
+    private void intercambiar(Nodo a, Nodo b) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(1) */
         T guardarDato = a.dato; /*Operación básica, O(1) */
         a.dato = b.dato; /*Operación básica, O(1) */
         b.dato = guardarDato; /*Operación básica, O(1) */
@@ -161,7 +161,7 @@ public class Heap<T extends Comparable<T>> {
         if (b.aSiMismo != null) b.aSiMismo.nodoApuntado = b; /*Operación básica, O(1) */
     }
 
-    private void siftUp(Nodo nodo) { /*Complejidad O(log p) */
+    private void siftUp(Nodo nodo) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(log p) */
         while (nodo.padre != null && nodo.dato.compareTo(nodo.padre.dato) < 0) {
             /*El ciclo realiza las comparaciones con la lógica de compareTo que tiene el dato T que el heap
             ordena. Como va recorriendo los niveles, en el peor de los casos es O(log p) */
@@ -170,7 +170,7 @@ public class Heap<T extends Comparable<T>> {
         }
     }
 
-    private void siftDown(Nodo nodo) { /*Complejidad O(log p) */
+    private void siftDown(Nodo nodo) { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(log p) */
         while (true) { /*Por lo dicho en siftUp, O(log p) */
             Nodo mayor = nodo; /*Operación básica, O(1) */
 
@@ -191,7 +191,7 @@ public class Heap<T extends Comparable<T>> {
         }
     }
 
-    public int tamaño() { /*Complejidad O(1) */
+    public int tamaño() { /*COMPLEJIDAD DEL MÉTODO PERTENECE AL ORDEN O(1) */
         return this.tamaño; /*Operación básica, O(1) */
     }
 }
